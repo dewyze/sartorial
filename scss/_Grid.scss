@@ -14,4 +14,30 @@
   flex-direction: column;
   padding: 0;
   width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &.row-align-top {
+    align-items: top;
+  }
+
+  &.row-align-center {
+    align-items: center;
+  }
+
+  &.row-align-baseline {
+    align-items: baseline;
+  }
+
+  &.row-align-bottom {
+    align-items: bottom;
+  }
+
+  &.row-align-stretch {
+    align-items: stretch;
+  }
+
+  .col {
+    flex: 1 1 auto;
+  }
 }
