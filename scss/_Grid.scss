@@ -1,0 +1,17 @@
+// Grid
+// ---------------------------------------
+
+.container {
+  margin: 0 auto;
+  max-width: 120.0rem;
+  padding: 0 2.0rem;
+  position: relative,
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
