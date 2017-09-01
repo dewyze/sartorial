@@ -1,0 +1,18 @@
+// Float
+// ---------------------------------------
+
+.clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
