@@ -18,23 +18,23 @@
   align-items: stretch;
   margin-bottom: $row-spacing;
 
-  &.row-align-top {
+  &.row--align-top {
     align-items: top;
   }
 
-  &.row-align-center {
+  &.row--align-center {
     align-items: center;
   }
 
-  &.row-align-baseline {
+  &.row--align-baseline {
     align-items: baseline;
   }
 
-  &.row-align-bottom {
+  &.row--align-bottom {
     align-items: bottom;
   }
 
-  &.row-align-stretch {
+  &.row--align-stretch {
     align-items: stretch;
   }
 
@@ -44,12 +44,12 @@
 }
 
 @media (min-width: 40.0rem) {
-	.row {
-		flex-direction: row;
-		margin-left: -1 * $gutter;
-		width: calc(100% + #{$gutter});
+  .row {
+    flex-direction: row;
+    margin-left: -1 * $gutter;
+    width: calc(100% + #{$gutter});
 
-		.col {
+    .col {
       margin-left: $gutter;
     }
   }
