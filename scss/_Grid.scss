@@ -3,9 +3,9 @@
 
 .container {
   margin: 0 auto;
-  max-width: 120.0rem;
+  max-width: $container-width;
   padding: 0 2.0rem;
-  position: relative,
+  position: relative;
   width: 100%;
 }
 
@@ -16,6 +16,7 @@
   width: 100%;
   justify-content: flex-start;
   align-items: stretch;
+  margin-bottom: 2.0rem;
 
   &.row-align-top {
     align-items: top;
@@ -39,5 +40,17 @@
 
   .col {
     flex: 1 1 auto;
+  }
+}
+
+@media (min-width: 40.0rem) {
+	.row {
+		flex-direction: row;
+		margin-left: -1.0rem;
+		width: calc(100% + 1.0rem);
+
+		.col {
+      margin-left: 1.0rem;
+    }
   }
 }
