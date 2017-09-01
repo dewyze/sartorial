@@ -1,7 +1,7 @@
 // Globals
 // ---------------------------------------
 
-$container-width: 120.0rem;
-$container-padding: 2.0rem;
-$row-spacing: $container-padding;
-$gutter: 1.0rem;
+$container-width: 120.0rem !default;
+$container-padding: 2.0rem !default;
+$row-spacing: $container-padding !default;
+$gutter: 1.0rem !default;
