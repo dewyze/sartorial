@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/sartorial.css">
+      <style>
+        #grid div {
+          min-height: 50px;
+        }
+      </style>
+  </head>
+  <body>
+      <!-- Input -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="email">Email</label>
+          <input type="text" placeholder="foo@example.com" name="email"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form__input-group--inline">
+          <label for="email" class="form__label--inline">Inline Email</label>
+          <input type="text" class="form__input--inline" placeholder="foo@example.com" name="email"></input>
+          </div>
+          <div class="form__input-group--inline">
+            <label for="phone" class="form__label--inline">Inline Minimalist Phone</label>
+            <input type="text" class="form__input--inline form__input--minimal" placeholder="555-555-5555" name="phone"></input>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="email">Minimalist Email</label>
+          <input type="text" class="form__input--minimal" placeholder="foo@example.com" name="minimal_email"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="content">Textarea</label>
+          <textarea name="content"></textarea>
+          <label for="minimal-content">Minimalist Textarea</label>
+          <textarea name="minimal-content" class="form__input--minimal"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Radio Buttons:</strong> 
+          <div class="form__group--inline">
+            <div class="form__input-group--inline">
+              <input type="radio" id="inline-radio-vanilla" name="flavor" value="vanilla"/>
+              <label for="inline-radio-vanilla" class="form__label--inline">Vanilla</label>
+            </div>
+            <div class="form__input-group--inline">
+              <input type="radio" id="inline-radio-chocolate" name="flavor" value="chocolate" />
+              <label for="inline-radio-chocolate" class="form__label--inline">Chocolate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong style="font-weight: bold">Stacked Radio Buttons:</strong> 
+          <div class="form__group--stacked">
+            <div class="form__input-group--inline">
+              <input type="radio" id="stacked-radio-vanilla" name="flavor" value="vanilla"/>
+              <label for="stacked-radio-vanilla" class="form__label--inline">Vanilla</label>
+            </div>
+            <div class="form__input-group--inline">
+              <input type="radio" id="stacked-radio-chocolate" name="flavor" value="chocolate" />
+              <label for="stacked-radio-chocolate" class="form__label--inline">Chocolate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Checkboxes:</strong> 
+          <div class="form__group--inline">
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="inline-vanilla" value="vanilla"/>
+              <label for="inline-vanilla" class="form__label--inline">Vanilla</label>
+            </div>
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="inline-chocolate" value="chocolate" />
+              <label for="inline-chocolate" class="form__label--inline">Chocolate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong style="font-weight: bold">Stacked Checkboxes:</strong> 
+          <div class="form__group--stacked">
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="stacked-vanilla" value="vanilla"/>
+              <label for="stacked-vanilla" class="form__label--inline">Vanilla</label>
+            </div>
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="stacked-chocolate" value="chocolate" />
+              <label for="stacked-chocolate" class="form__label--inline">Chocolate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <select name="team" id="team">
+            <option>Chicago Team</option>
+            <option value="1">Bears</option>
+            <option value="2">Cubs</option>
+            <option value="3">Blackhawks</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="container" style="background-color: #d0fbff">
+      <div id="grid">
+        <div class="row" style="background-color: #dcffdf">
+          <div class="col" style="background-color: #ffe7e8">
+          </div>
+          <div class="col" style="background-color: #ffe7e8">
+          </div>
+          <div class="col" style="background-color: #ffe7e8">
+          </div>
+          <div class="col" style="background-color: #ffe7e8">
+            <div class="row" style="background-color: #dcffdf">
+              <div class="col" style="background-color: #ffecdc">
+              </div>
+              <div class="col" style="background-color: #ffecdc">
+              </div>
+            </div>
+            <div class="row" style="background-color: #dcffdf">
+              <div class="col" style="background-color: #ffecdc">
+              </div>
+              <div class="col" style="background-color: #ffecdc">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
