@@ -16,6 +16,10 @@
           <label for="email">Email</label>
           <input type="text" placeholder="foo@example.com" name="email"></input>
         </div>
+        <div class="col">
+          <label for="email">Minimalist Email</label>
+          <input type="text" class="form__input--minimal" placeholder="foo@example.com" name="minimal_email"></input>
+        </div>
       </div>
       <div class="row">
         <div class="col">
@@ -31,31 +35,12 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="email">Minimalist Email</label>
-          <input type="text" class="form__input--minimal" placeholder="foo@example.com" name="minimal_email"></input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
           <label for="content">Textarea</label>
           <textarea name="content"></textarea>
+        </div>
+        <div class="col">
           <label for="minimal-content">Minimalist Textarea</label>
           <textarea name="minimal-content" class="form__input--minimal"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Radio Buttons:</strong> 
-          <div class="form__group--inline">
-            <div class="form__input-group--inline">
-              <input type="radio" id="inline-radio-vanilla" name="flavor" value="vanilla"/>
-              <label for="inline-radio-vanilla" class="form__label--inline">Vanilla</label>
-            </div>
-            <div class="form__input-group--inline">
-              <input type="radio" id="inline-radio-chocolate" name="flavor" value="chocolate" />
-              <label for="inline-radio-chocolate" class="form__label--inline">Chocolate</label>
-            </div>
-          </div>
         </div>
       </div>
       <div class="row">
@@ -71,24 +56,18 @@
               <label for="stacked-radio-chocolate" class="form__label--inline">Chocolate</label>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Checkboxes:</strong> 
+          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Radio Buttons:</strong> 
           <div class="form__group--inline">
             <div class="form__input-group--inline">
-              <input type="checkbox" id="inline-vanilla" value="vanilla"/>
-              <label for="inline-vanilla" class="form__label--inline">Vanilla</label>
+              <input type="radio" id="inline-radio-vanilla" name="flavor" value="vanilla"/>
+              <label for="inline-radio-vanilla" class="form__label--inline">Vanilla</label>
             </div>
             <div class="form__input-group--inline">
-              <input type="checkbox" id="inline-chocolate" value="chocolate" />
-              <label for="inline-chocolate" class="form__label--inline">Chocolate</label>
+              <input type="radio" id="inline-radio-chocolate" name="flavor" value="chocolate" />
+              <label for="inline-radio-chocolate" class="form__label--inline">Chocolate</label>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col">
           <strong style="font-weight: bold">Stacked Checkboxes:</strong> 
           <div class="form__group--stacked">
@@ -99,6 +78,17 @@
             <div class="form__input-group--inline">
               <input type="checkbox" id="stacked-chocolate" value="chocolate" />
               <label for="stacked-chocolate" class="form__label--inline">Chocolate</label>
+            </div>
+          </div>
+          <strong style="margin-right: 2rem; display: inline-block; font-weight: bold">Inline Checkboxes:</strong> 
+          <div class="form__group--inline">
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="inline-vanilla" value="vanilla"/>
+              <label for="inline-vanilla" class="form__label--inline">Vanilla</label>
+            </div>
+            <div class="form__input-group--inline">
+              <input type="checkbox" id="inline-chocolate" value="chocolate" />
+              <label for="inline-chocolate" class="form__label--inline">Chocolate</label>
             </div>
           </div>
         </div>

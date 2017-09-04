@@ -3,10 +3,17 @@
 
 $color__text--default: #001 !default;
 
-$color__theme--primary: #4573A4 !default;
-$color__theme--secondary: #EF6F6C !default;
-$color__theme--tertiary: #56E39F !default;
-$color__theme--quaternary: #67597A !default;
-$color__theme--quinary: #E2F1AF !default;
-$color__theme--grayed: #BBB !default;
+$color__theme--primary: #1693A7 !default;
+$color__theme--primary-border: #1693A7 !default;
+$color__theme--primary-hover: #148799 !default;
+$color__theme--primary-hover-border: #148799 !default;
 
+$color__theme--secondary: #9E9E9E !default;
+$color__theme--secondary-border: #858585 !default;
+$color__theme--secondary-hover: #858585 !default;
+$color__theme--secondary-hover-border: #858585 !default;
+
+$color__theme--danger: #CC333F !default;
+$color__theme--danger-border: #CC333F !default;
+$color__theme--danger-hover: #BF303B !default;
+$color__theme--danger-hover-border: #BF303B !default;
