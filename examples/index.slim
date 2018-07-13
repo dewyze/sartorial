@@ -1,0 +1,113 @@
+html
+  head
+    link rel="stylesheet" href="../css/normalize.css"
+    link rel="stylesheet" href="../css/sartorial.css"
+    style
+      | #grid div {
+          min-height: 50px;
+        }
+  body
+    /! Input
+    .container
+      .row
+        .col
+          label for="email"
+            | Email
+          input type="text" placeholder="foo@example.com" name="email"
+        .col
+          label for="email" Minimalist Email
+          input.form__input--minimal type="text" placeholder="foo@example.com" name="minimal_email"
+      .row
+        .col
+          .form__input-group--inline
+            label.form__label--inline for="email" Inline Email
+            input.form__input--inline type="text" placeholder="foo@example.com" name="email"
+          .form__input-group--inline
+            label.form__label--inline for="phone" Inline Minimalist Phone
+            input.form__input--inline.form__input--minimal type="text" placeholder="555-555-5555" name="phone"
+      .row
+        .col
+          label for="content" Textarea
+          textarea name="content"
+        .col
+          label for="minimal-content" Minimalist Textarea
+          textarea.form__input--minimal name="minimal-content"
+      .row
+        .col
+          strong style="font-weight: bold" Stacked Radio Buttons:
+          .form__group--stacked
+            .form__input-group--inline
+              input#stacked-radio-vanille type="radio" name="flavor" value="vanilla"
+              label.form__label--inline for="stacked-radio-vanilla" Vanilla
+            .form__input-group--inline
+              input#stacked-radio-chocolate type="radio" name="flavor" value="chocolate"
+              label.form__label--inline for="stacked-radio-chocolate" Chocolate
+          strong style="margin-right: 2rem; display: inline-block; font-weight: bold" Inline Radio Buttons:
+          .form__group--inline
+            .form__input-group--inline
+              input#inline-radio-vanilla type="radio" name="flavor" value="vanilla"
+              label.form__label--inline for="inline-radio-vanilla" Vanilla
+            .form__input-group--inline
+              input#inline-radio-chocolate type="radio" name="flavor" value="chocolate"
+              label.form__label--inline for="inline-radio-chocolate" Chocolate
+        .col
+          strong style="font-weight: bold"Stacked Checkboxes:
+          .form__group--stacked
+            .form__input-group--inline
+              input#stacked-vanilla type="checkbox" value="vanilla"
+              label.form__label--inline for="stacked-vanilla" Vanilla
+            .form__input-group--inline
+              input#stacked-chocolate type="checkbox"  value="chocolate"
+              label#form__label--inline for="stacked-chocolate" Chocolate
+          strong style="margin-right: 2rem; display: inline-block; font-weight: bold" Inline Checkboxes:
+          .form__group--inline
+            .form__input-group--inline
+              input#inline-vanilla type="checkbox" value="vanilla"
+              label.form__label--inline for="inline-vanilla" Vanilla
+            .form__input-group--inline
+              input#inline-chocolate type="checkbox" value="chocolate"
+              label.form__label--inline for="inline-chocolate" Chocolate
+      .row
+        .col
+          select#team name="team"
+            option Chicago Team
+            option value=1 Bears
+            option value=2 Cubs
+            option value=3 Blackhawks
+    /! Code
+    .container
+      | The &lt;code&gt; tag can be used <code>inline</code>.
+      pre
+        | &lt;pre&gt;This is a preformatted block&lt;/pre&gt;
+      pre
+        code
+        | &lt;pre&gt;&lt;code&gt;class Code
+          def this_is_code
+              puts "Hello world"
+            end
+          end&lt;/code&gt;&lt;/pre&gt;
+
+    /! Image
+    .container
+      .row
+        .col
+          img src="image.png"
+        .col
+          img src="image.png"
+        .col
+          img src="image.png"
+
+    /! Grid
+    .container style="background-color: #d0fbff"
+      #grid
+        .row style="background-color: #dcffdf"
+          .col style="background-color: #ffe7e8"
+          .col style="background-color: #ffe7e8"
+          .col style="background-color: #ffe7e8"
+          .col style="background-color: #ffe7e8"
+            .row style="background-color: #dcffdf"
+              .col style="background-color: #ffecdc"
+              .col style="background-color: #ffecdc"
+            .row style="background-color: #dcffdf"
+              .col style="background-color: #ffecdc"
+              .col style="background-color: #ffecdc"

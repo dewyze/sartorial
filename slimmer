@@ -1,0 +1,6 @@
+#!/bin/bash
+
+fswatch -0 examples/*slim | while read -d "" path; \
+do \
+  slimrb --pretty $path > ${path//slim/html}
+done
