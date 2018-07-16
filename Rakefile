@@ -3,5 +3,14 @@ task :compile do
 end
 
 task :watch do
-  `sass --watch scss/sartorial.scss:css/sartorial.css`
+  %x(
+    fswatch -0 *.{slim,scss} | while read -d "" path; \
+    do \
+      if [[ $path =~ \.slim$ ]] ; then
+        slimrb --pretty $path > ${path//slim/html}
+      elif [[ $path =~ \.scss$ ]] ; then
+        sass scss/sartorial.scss css/sartorial.css
+      fi
+    done
+  )
 end
