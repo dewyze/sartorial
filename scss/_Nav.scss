@@ -2,19 +2,43 @@ $navbar-height: 3.25em;
 
 nav.navbar {
   width: 100%;
-  min-height: 3em;
-  height: $navbar-height;
+  min-height: $navbar-height;
   display: flex;
 
-  .navbar-left {
+  .navbar-start, .navbar-end, .navbar-right, .navbar-center, .navbar-left {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .navbar-start {
     margin-right: auto;
   }
 
-  .navbar-center {
-    @include margin(null auto);
+  .navbar-end {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  // TODO: Center should not be used without left/right
+  .navbar-left {
+    flex: 1;
   }
 
   .navbar-right {
-    margin-left: auto;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-item {
+    display: flex;
+    align-items: center;
+    min-height: 3em;
+    padding:2em;
   }
 }
