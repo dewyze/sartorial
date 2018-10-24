@@ -39,6 +39,9 @@ nav.navbar {
     display: flex;
     align-items: center;
     min-height: 3em;
-    padding:2em;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
