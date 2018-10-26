@@ -1,4 +1,5 @@
 $navbar-height: 3.25em;
+$navbar-spacing: 1.5rem;
 
 nav.navbar {
   width: 100%;
@@ -24,24 +25,41 @@ nav.navbar {
     flex: 1;
   }
 
-  .navbar-right {
-    flex: 1;
-    justify-content: flex-end;
-  }
-
   .navbar-center {
     flex: 1;
     display: flex;
     justify-content: center;
   }
 
-  .navbar-item {
+  .navbar-right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .navbar-brand, .navbar-item {
     display: flex;
     align-items: center;
-    min-height: 3em;
+    padding: .5rem ($navbar-spacing / 2);
+  }
+
+  .navbar-item {
+    background-color: $color-navbar-background;
+
+    &:hover {
+      background-color: $color-navbar-background-hover;
+    }
+  }
+
+  .navbar-brand img {
+    height: $navbar-height;
   }
 
   a {
     text-decoration: none;
+    color: $color-links;
+
+    &:hover {
+      color: $color-links-hover;
+    }
   }
 }
