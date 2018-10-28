@@ -21,3 +21,13 @@ body {
 	letter-spacing: .01em;
 	line-height: $line-height;
 }
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  @include margin(null auto);
+}
+
+.main {
+  width: $main-width;
+}
