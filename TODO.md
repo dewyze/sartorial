@@ -10,6 +10,10 @@
   - [ ] Symmetrical
   - [ ] Sectioned
   - [ ] Search Bar 
+  - [ ] Active Class Options
+    - [ ] Underlines
+    - [ ] Highlights
+  - [ ] Responsiveness
 - [ ] Type
   - [ ] Titles
   - [ ] h1 - h6
