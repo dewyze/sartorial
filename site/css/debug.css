@@ -1,0 +1,29 @@
+.debug1 {
+  background-color: red;
+  min-height: 1em;
+  min-width: 3.25em;
+}
+
+.debug2 {
+  background-color: purple;
+  min-height: 1em;
+  min-width: 3.25em;
+}
+
+.debug3 {
+  background-color: yellow;
+  min-height: 1em;
+  min-width: 3.25em;
+}
+
+.debug4 {
+  background-color: green;
+  min-height: 1em;
+  min-width: 3.25em;
+}
+
+.debug5 {
+  background-color: blue;
+  min-height: 1em;
+  min-width: 3.25em;
+}

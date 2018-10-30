@@ -5,6 +5,11 @@ nav.navbar {
   width: 100%;
   min-height: $navbar-height;
   display: flex;
+  background-color: $color-navbar-background;
+
+  .test {
+    background-color: red;
+  }
 
   .navbar-start, .navbar-end, .navbar-right, .navbar-center, .navbar-left {
     display: flex;
@@ -44,10 +49,18 @@ nav.navbar {
   }
 
   .navbar-item {
-    background-color: $color-navbar-background;
+    background-color: transparent;
 
     &:hover {
       background-color: $color-navbar-background-hover;
+    }
+
+    &:first-child {
+      padding-left: $navbar-spacing;
+    }
+
+    &:last-child {
+      padding-right: $navbar-spacing;
     }
   }
 

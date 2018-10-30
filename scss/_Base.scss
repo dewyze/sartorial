@@ -24,8 +24,12 @@ body {
 
 .container {
   width: 100%;
-  max-width: $container-width;
   @include margin(null auto);
+
+  // TODO: container should be full-width
+  &:not(.full-width) {
+    max-width: $container-width;
+  }
 }
 
 .main {
