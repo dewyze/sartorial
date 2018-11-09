@@ -1,5 +1,3 @@
-task :default => ["build"]
-
 task :compile do
   system("sass scss/sartorial.scss css/sartorial.css")
 end
