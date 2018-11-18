@@ -1,84 +1,87 @@
 $navbar-height: 3.25em;
 $navbar-spacing: 1.5rem;
 
-nav.navbar {
-  width: 100%;
-  min-height: $navbar-height;
-  display: flex;
-  background-color: $color-navbar-background;
-
-  .test {
-    background-color: red;
-  }
-
-  .navbar-start, .navbar-end, .navbar-right, .navbar-center, .navbar-left {
+nav {
+  .container { padding: 0; }
+  .navbar {
+    width: 100%;
+    min-height: $navbar-height;
     display: flex;
-    align-items: stretch;
-  }
+    background-color: $color-navbar-background;
 
-  .navbar-start {
-    margin-right: auto;
-  }
-
-  .navbar-end {
-    margin-left: auto;
-    justify-content: flex-end;
-  }
-
-  // TODO: Center should not be used without left/right
-  .navbar-left {
-    flex: 1;
-  }
-
-  .navbar-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar-right {
-    flex: 1;
-    justify-content: flex-end;
-  }
-
-
-  .navbar-brand, .navbar-item {
-    display: flex;
-    align-items: center;
-    padding: .5rem ($navbar-spacing / 2);
-  }
-
-  .navbar-item {
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-navbar-background-hover;
+    .test {
+      background-color: red;
     }
 
-    &:first-child {
-      padding-left: $navbar-spacing;
+    .navbar-start, .navbar-end, .navbar-right, .navbar-center, .navbar-left {
+      display: flex;
+      align-items: stretch;
     }
 
-    &:last-child {
-      padding-right: $navbar-spacing;
+    .navbar-start {
+      margin-right: auto;
     }
-  }
 
-  // TODO: Brand is visible on small screen
-  .navbar-brand img {
-    height: $navbar-height;
-  }
+    .navbar-end {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
 
-  a {
-    text-decoration: none;
-    color: $color-links;
+    // TODO: Center should not be used without left/right
+    .navbar-left {
+      flex: 1;
+    }
 
-    &:hover {
-      color: $color-links-hover;
-   }
-  }
+    .navbar-center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-  .icon, i {
-    margin-right: .75rem;
+    .navbar-right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+
+    .navbar-brand, .navbar-item {
+      display: flex;
+      align-items: center;
+      padding: .5rem ($navbar-spacing / 2);
+    }
+
+    .navbar-item {
+      background-color: transparent;
+
+      &:hover {
+        background-color: $color-navbar-background-hover;
+      }
+
+      &:first-child {
+        padding-left: $navbar-spacing;
+      }
+
+      &:last-child {
+        padding-right: $navbar-spacing;
+      }
+    }
+
+    // TODO: Brand is visible on small screen
+    .navbar-brand img {
+      height: $navbar-height;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-links;
+
+      &:hover {
+        color: $color-links-hover;
+      }
+    }
+
+    .icon, i {
+      margin-right: .75rem;
+    }
   }
 }

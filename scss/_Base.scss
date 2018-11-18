@@ -12,19 +12,10 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  color: black;
-	// color: $color__text--default;
-	font-family: $font-sans-serif;
-	font-size: $font-size;
-	font-weight: 300;
-	letter-spacing: .01em;
-	line-height: $line-height;
-}
-
 .container {
   width: 100%;
   @include margin(null auto);
+  padding: $container-padding;
 
   // TODO: container should be full-width
   &:not(.full-width) {
