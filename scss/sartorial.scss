@@ -1,12 +1,13 @@
 @import "bourbon/bourbon";
 
+@import "mixins";
 @import "Globals";
-
 @import "Font";
 @import "Color";
 
 @import "Base";
 
+@import "Type";
 @import "Nav";
 
 // @import "Grid";

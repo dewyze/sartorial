@@ -13,7 +13,7 @@ body {
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: .01em;
-  line-height: 1.6; }
+  line-height: 1.5; }
 
 .container {
   width: 100%;
@@ -24,6 +24,68 @@ body {
 
 .main {
   width: 96rem; }
+
+body h1 {
+  line-height: 1.15; }
+body h2 {
+  line-height: 1.15; }
+body h3 {
+  line-height: 1.25; }
+body h4 {
+  line-height: 1.4; }
+body h5 {
+  line-height: 1.5; }
+body h6 {
+  line-height: 1.5; }
+@media (min-width: 320px) {
+  body body {
+    font-size: 1.6em; }
+  body h1 {
+    font-size: calc(1.6em * calc(calc(calc(calc(calc(1 * 1.125) * 1.125) * 1.125) * 1.125) * 1.125)); }
+  body h2 {
+    font-size: calc(1.6em * calc(calc(calc(calc(1 * 1.125) * 1.125) * 1.125) * 1.125)); }
+  body h3 {
+    font-size: calc(1.6em * calc(calc(calc(1 * 1.125) * 1.125) * 1.125)); }
+  body h4 {
+    font-size: calc(1.6em * calc(calc(1 * 1.125) * 1.125)); }
+  body h5 {
+    font-size: calc(1.6em * calc(1 * 1.125)); }
+  body h6 {
+    font-size: calc(1.6em * 1); } }
+@media (min-width: 768px) {
+  body {
+    line-height: 1.4; }
+    body body {
+      font-size: 1.6em; }
+    body h1 {
+      font-size: calc(1.6em * calc(calc(calc(calc(calc(1 * 1.200) * 1.200) * 1.200) * 1.200) * 1.200)); }
+    body h2 {
+      font-size: calc(1.6em * calc(calc(calc(calc(1 * 1.200) * 1.200) * 1.200) * 1.200)); }
+    body h3 {
+      font-size: calc(1.6em * calc(calc(calc(1 * 1.200) * 1.200) * 1.200)); }
+    body h4 {
+      font-size: calc(1.6em * calc(calc(1 * 1.200) * 1.200)); }
+    body h5 {
+      font-size: calc(1.6em * calc(1 * 1.200)); }
+    body h6 {
+      font-size: calc(1.6em * 1); } }
+@media (min-width: 1140px) {
+  body {
+    line-height: 1.6; }
+    body body {
+      font-size: 1.6em; }
+    body h1 {
+      font-size: calc(1.6em * calc(calc(calc(calc(calc(1 * 1.250) * 1.250) * 1.250) * 1.250) * 1.250)); }
+    body h2 {
+      font-size: calc(1.6em * calc(calc(calc(calc(1 * 1.250) * 1.250) * 1.250) * 1.250)); }
+    body h3 {
+      font-size: calc(1.6em * calc(calc(calc(1 * 1.250) * 1.250) * 1.250)); }
+    body h4 {
+      font-size: calc(1.6em * calc(calc(1 * 1.250) * 1.250)); }
+    body h5 {
+      font-size: calc(1.6em * calc(1 * 1.250)); }
+    body h6 {
+      font-size: calc(1.6em * 1); } }
 
 nav.navbar {
   width: 100%;
