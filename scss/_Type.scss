@@ -1,0 +1,22 @@
+body {
+  h1 { line-height: 1.15; }
+  h2 { line-height: 1.15; }
+  h3 { line-height: 1.25; }
+  h4 { line-height: 1.4; }
+  h5 { line-height: #{$line-height}; }
+  h6 { line-height: #{$line-height}; }
+
+  @include phone {
+    @include type-with-ratio(#{$ratio-major-second}, #{$font-size});
+  }
+
+  @include tablet {
+    line-height: 1.4;
+    @include type-with-ratio(#{$ratio-minor-third}, #{$font-size});
+  }
+
+  @include desktop {
+    line-height: 1.6;
+    @include type-with-ratio(#{$ratio-major-third}, #{$font-size});
+  }
+}

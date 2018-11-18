@@ -7,6 +7,23 @@ $main-width: 96.0rem !default;
 $row-spacing: $container-padding !default;
 $gutter: 1.0rem !default;
 $font-size: 1.6em !default;
-$line-height: 1.6 !default;
+$line-height: 1.5 !default;
 
+$screen-phone: 320px !default;
+$screen-tablet: 768px !default;
+$screen-desktop: 1140px !default;
+$screen-widescreen: 1690px !default;
 
+$ratio-minor-second: '1.067';
+$ratio-major-second: '1.125';
+$ratio-minor-third: '1.200';
+$ratio-major-third: '1.250';
+$ratio-perfect-fourth: '1.333';
+$ratio-augmented-fourth: '1.414';
+$ratio-perfect-fifth: '1.500';
+$ratio-golden-ratio: '1.618';
+
+$ratio-phone: $ratio-major-second !default;
+$ratio-tablet: $ratio-minor-third !default;
+$ratio-desktop: $ratio-major-third !default;
+$ratio-widescreen: $ratio-desktop !default;
