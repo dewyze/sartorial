@@ -14,14 +14,14 @@
   $scale-3: calc(#{$scale-2} * #{$ratio});
   $scale-4: calc(#{$scale-3} * #{$ratio});
   $scale-5: calc(#{$scale-4} * #{$ratio});
-
+  $scale-6: calc(#{$scale-5} * #{$ratio});
 
   body { font-size: #{$font-size}; }
-  h1 { font-size: calc(#{$font-size} * #{$scale-4}); }
-  h2 { font-size: calc(#{$font-size} * #{$scale-3}); }
-  h3 { font-size: calc(#{$font-size} * #{$scale-2}); }
-  h4 { font-size: calc(#{$font-size} * #{$scale-1}); }
-  h5 { font-size: calc(#{$font-size} * #{$scale-0}); }
-  h6 { font-size: calc(#{$font-size} * #{$scale--1}); }
-  .jumbo { font-size: calc(#{$font-size} * #{$scale-5}); }
+  .jumbo-text { font-size: calc(#{$font-size} * #{$scale-6}); }
+  h1 { font-size: calc(#{$font-size} * #{$scale-5}); }
+  h2 { font-size: calc(#{$font-size} * #{$scale-4}); }
+  h3 { font-size: calc(#{$font-size} * #{$scale-3}); }
+  h4 { font-size: calc(#{$font-size} * #{$scale-2}); }
+  h5 { font-size: calc(#{$font-size} * #{$scale-1}); }
+  h6 { font-size: calc(#{$font-size} * #{$scale-0}); }
 }

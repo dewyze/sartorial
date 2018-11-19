@@ -6,7 +6,10 @@ body {
   letter-spacing: .01em;
   line-height: $line-height;
 
-  h1, h2, h3, h4, h5, h6 { margin: 0px; }
+  h1, h2, h3, h4, h5, h6 {
+    @include margin(0px null 20px);
+    font-weight: 300;
+  }
   h1 { line-height: 1.15; }
   h2 { line-height: 1.15; }
   h3 { line-height: 1.25; }
