@@ -26,6 +26,7 @@ defaults:
       path: "assets/img"
     values:
       image: true
+highlighter: "rouge"
 
 # Build settings
 markdown: kramdown

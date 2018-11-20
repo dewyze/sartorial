@@ -118,6 +118,7 @@ DEPENDENCIES
   jekyll (~> 3.7.4)
   jekyll-slim!
   rake
+  rouge
   slim
   travis
 
