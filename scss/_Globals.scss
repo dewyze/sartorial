@@ -27,5 +27,7 @@ $ratio-tablet: $ratio-minor-third !default;
 $ratio-desktop: $ratio-major-third !default;
 $ratio-widescreen: $ratio-desktop !default;
 
-$font-sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-serif: Georgia, serif;
+$font-sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-serif: Georgia, serif !default;
+
+$type-header-font-weight: 700 !default;

@@ -8,7 +8,10 @@ body {
 
   h1, h2, h3, h4, h5, h6 {
     @include margin(0px null 20px);
-    font-weight: 300;
+    font-weight: $type-header-font-weight;
+    & + .subheader {
+      margin-top: -10px;
+    }
   }
   h1 { line-height: 1.15; }
   h2 { line-height: 1.15; }
@@ -30,4 +33,9 @@ body {
     line-height: 1.6;
     @include type-with-ratio(#{$ratio-major-third}, #{$font-size});
   }
+}
+
+.subheader {
+  font-weight: 300;
+  color: #A8A8A8;
 }

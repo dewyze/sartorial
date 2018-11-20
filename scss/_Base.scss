@@ -13,6 +13,7 @@ html {
 }
 
 .container {
+  margin-top: 20px; // TODO: Document this
   width: 100%;
   @include margin(null auto);
   padding: $container-padding;
