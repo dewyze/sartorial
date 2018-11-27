@@ -5,8 +5,6 @@ gem "bourbon"
 gem "rake"
 
 gem "jekyll", "~> 3.7.4"
-gem "jekyll-slim", github: "olery/jekyll-slim"
-gem "slim"
 gem "rouge"
 
 gem "travis"

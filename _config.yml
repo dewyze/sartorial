@@ -30,8 +30,6 @@ highlighter: "rouge"
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-slim
 sass:
   load_paths:
     - scss
