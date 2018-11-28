@@ -4,7 +4,7 @@
 *,
 *:after,
 *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 }
 
 .container {
-  margin-top: 20px; // TODO: Document this
+  margin-top: 40px; // TODO: Document this
   width: 100%;
   @include margin(null auto);
   padding: $container-padding;
@@ -21,6 +21,10 @@ html {
   // TODO: container should be full-width
   &:not(.full-width) {
     max-width: $container-width;
+  }
+
+  &:first-child {
+    margin-top: 0px; // TODO: Document that first container doens't have top margin
   }
 }
 
