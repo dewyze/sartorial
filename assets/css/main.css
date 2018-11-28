@@ -119,13 +119,15 @@ html {
   font-size: 62.5%; }
 
 .container {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 2rem; }
   .container:not(.full-width) {
     max-width: 120rem; }
+  .container:first-child {
+    margin-top: 0px; }
 
 .main {
   width: 96rem; }
@@ -140,7 +142,11 @@ nav.navbar {
   background-color: #ffffff; }
   nav.navbar .test {
     background-color: red; }
-  nav.navbar .navbar-start, nav.navbar .navbar-end, nav.navbar .navbar-right, nav.navbar .navbar-center, nav.navbar .navbar-left {
+  nav.navbar .navbar-start,
+  nav.navbar .navbar-end,
+  nav.navbar .navbar-right,
+  nav.navbar .navbar-center,
+  nav.navbar .navbar-left {
     display: flex;
     align-items: stretch; }
   nav.navbar .navbar-start {
@@ -157,7 +163,8 @@ nav.navbar {
   nav.navbar .navbar-right {
     flex: 1;
     justify-content: flex-end; }
-  nav.navbar .navbar-brand, nav.navbar .navbar-item {
+  nav.navbar .navbar-brand,
+  nav.navbar .navbar-item {
     display: flex;
     align-items: center;
     padding: 0.5rem 0.75rem; }
@@ -170,14 +177,16 @@ nav.navbar {
     nav.navbar .navbar-item:last-child {
       padding-right: 1.5rem; }
   nav.navbar .navbar-brand img {
+    padding: 8px;
     height: 3.25em; }
   nav.navbar a {
     text-decoration: none;
     color: #4a4a4a; }
     nav.navbar a:hover {
       color: #3273dc; }
-  nav.navbar .icon, nav.navbar i {
-    margin-right: .75rem; }
+  nav.navbar .icon,
+  nav.navbar i {
+    margin-right: 0.75rem; }
 
 .no-pad {
   padding: 0px; }

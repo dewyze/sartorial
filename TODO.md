@@ -1,4 +1,5 @@
-- [ ] Move away from BEM to simpler words
+- [ ] Copy code snippets
+- [x] Move away from BEM to simpler words
 - [ ] Margin helpers
 - [ ] Padding helpers
 - [ ] Media breakpoints
@@ -9,7 +10,7 @@
   - [ ] Right Logo
   - [ ] Symmetrical
   - [ ] Sectioned
-  - [ ] Search Bar 
+  - [ ] Search Bar
   - [ ] Active Class Options
     - [ ] Underlines
     - [ ] Highlights
@@ -22,7 +23,7 @@
 - [ ] Form additions
   - [ ] Input with buttons
   - [ ] Button group
-  - [ ] Search Bar 
+  - [ ] Search Bar
 - [ ] Hero boxes
 - [ ] Columns with images
 - [ ] Columns with icons
