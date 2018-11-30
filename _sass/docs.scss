@@ -1,14 +1,14 @@
-$tie-blue: #4A90E290;
+$tie-blue: #4a90e290;
 .example {
   border: 2px solid $tie-blue;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
   .rendered {
     padding: 20px 30px;
   }
   .source {
     padding: 20px 30px;
     border-top: 2px solid $tie-blue;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     white-space: pre;
   }
 }
@@ -21,3 +21,6 @@ $tie-blue: #4A90E290;
   margin: 0;
 }
 
+.scss-var {
+  color: red;
+}
