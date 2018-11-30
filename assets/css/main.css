@@ -3,14 +3,24 @@ body {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700; }
-  h1 + .subheader, h2 + .subheader, h3 + .subheader, h4 + .subheader, h5 + .subheader, h6 + .subheader {
+  h1 + .subheader,
+  h2 + .subheader,
+  h3 + .subheader,
+  h4 + .subheader,
+  h5 + .subheader,
+  h6 + .subheader {
     margin-top: -10px; }
 
 h1 {
@@ -105,9 +115,34 @@ h6 {
 
   h6 {
     font-size: calc(1.6rem * 1); } }
+@media (min-width: 1690px) {
+  line-height: 1.6;
+  body {
+    font-size: 1.6rem; }
+
+  .jumbo-text {
+    font-size: calc(1.6rem * calc(calc(calc(calc(calc(calc(1 * 1.250) * 1.250) * 1.250) * 1.250) * 1.250) * 1.250)); }
+
+  h1 {
+    font-size: calc(1.6rem * calc(calc(calc(calc(calc(1 * 1.250) * 1.250) * 1.250) * 1.250) * 1.250)); }
+
+  h2 {
+    font-size: calc(1.6rem * calc(calc(calc(calc(1 * 1.250) * 1.250) * 1.250) * 1.250)); }
+
+  h3 {
+    font-size: calc(1.6rem * calc(calc(calc(1 * 1.250) * 1.250) * 1.250)); }
+
+  h4 {
+    font-size: calc(1.6rem * calc(calc(1 * 1.250) * 1.250)); }
+
+  h5 {
+    font-size: calc(1.6rem * calc(1 * 1.250)); }
+
+  h6 {
+    font-size: calc(1.6rem * 1); } }
 .subheader {
   font-weight: 300;
-  color: #A8A8A8; }
+  color: #a8a8a8; }
 
 *,
 *:after,
@@ -500,14 +535,14 @@ nav.navbar {
 
 /* Literal.Number.Integer.Long */
 .example {
-  border: 2px solid #4A90E290;
+  border: 2px solid #4a90e290;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
   .example .rendered {
     padding: 20px 30px; }
   .example .source {
     padding: 20px 30px;
-    border-top: 2px solid #4A90E290;
-    background-color: #F2F2F2;
+    border-top: 2px solid #4a90e290;
+    background-color: #f2f2f2;
     white-space: pre; }
 
 .highlight {
@@ -515,3 +550,6 @@ nav.navbar {
 
 .example figure {
   margin: 0; }
+
+.scss-var {
+  color: red; }
