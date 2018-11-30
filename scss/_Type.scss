@@ -3,39 +3,61 @@ body {
   font-family: $font-sans-serif;
   font-size: $font-size;
   font-weight: 300;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   line-height: $line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @include margin(0px null 20px);
   font-weight: $type-header-font-weight;
   & + .subheader {
     margin-top: -10px;
   }
 }
-h1 { line-height: 1.15; }
-h2 { line-height: 1.15; }
-h3 { line-height: 1.25; }
-h4 { line-height: 1.4; }
-h5 { line-height: #{$line-height}; }
-h6 { line-height: #{$line-height}; }
+h1 {
+  line-height: 1.15;
+}
+h2 {
+  line-height: 1.15;
+}
+h3 {
+  line-height: 1.25;
+}
+h4 {
+  line-height: 1.4;
+}
+h5 {
+  line-height: #{$line-height};
+}
+h6 {
+  line-height: #{$line-height};
+}
 
 @include phone {
-  @include type-with-ratio(#{$ratio-major-second}, #{$font-size});
+  @include type-with-ratio(#{$ratio-phone}, #{$font-size});
 }
 
 @include tablet {
-  line-height: 1.4;
-  @include type-with-ratio(#{$ratio-minor-third}, #{$font-size});
+  line-height: #{$line-height-tablet};
+  @include type-with-ratio(#{$ratio-tablet}, #{$font-size});
 }
 
 @include desktop {
-  line-height: 1.6;
-  @include type-with-ratio(#{$ratio-major-third}, #{$font-size});
+  line-height: #{$line-height-desktop};
+  @include type-with-ratio(#{$ratio-desktop}, #{$font-size});
+}
+
+@include widescreen {
+  line-height: #{$line-height-desktop};
+  @include type-with-ratio(#{$ratio-widescreen}, #{$font-size});
 }
 
 .subheader {
   font-weight: 300;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }

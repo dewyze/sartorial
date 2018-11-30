@@ -15,8 +15,121 @@ title: Typography
         <h3>Usage</h3>
         {% include snippet.html file="type/h.html" %}
       </div>
-      <div class="section"><h3>Customize</h3></div>
-      <div class="section"><h3>Why</h3></div>
+      <div class="section">
+        <h3>Customize</h3>
+        <p>
+          The type sizes are built off of a base font-size and a ratio. Additionally, there are
+          separate variables that can be used to build those up per media seize. See the table below
+          for what you can set and the defaults.
+        </p>
+        <table>
+          <tr>
+            <th>Variable</th>
+            <th>Default Value</th>
+          </tr>
+          <tr>
+            <td>$font-size</td>
+            <td>1.6rem</td>
+          </tr>
+          <tr>
+            <td>$font-sans-serif</td>
+            <td>'Roboto'</td>
+          </tr>
+          <tr>
+            <td>$font-serif</td>
+            <td>Georgia</td>
+          </tr>
+          <tr>
+            <td>$line-height</td>
+            <td>1.5</td>
+          </tr>
+          <tr>
+            <td>$line-height-phone</td>
+            <td>$line-height</td>
+          </tr>
+          <tr>
+            <td>$line-height-tablet</td>
+            <td>1.4</td>
+          </tr>
+          <tr>
+            <td>$line-height-desktop</td>
+            <td>1.6</td>
+          </tr>
+          <tr>
+            <td>$line-height-widescreen</td>
+            <td>1.6</td>
+          </tr>
+        </table>
+
+        <h4>Available Ratios</h4>
+        <table>
+          <tr>
+            <th>Ratio Name</th>
+            <th>Step Value</th>
+          </tr>
+          <tr>
+            <td>Minor Second</td>
+            <td>1.067</td>
+          </tr>
+          <tr>
+            <td>Major Second</td>
+            <td>1.125</td>
+          </tr>
+          <tr>
+            <td>Minor Third</td>
+            <td>1.200</td>
+          </tr>
+          <tr>
+            <td>Major Third</td>
+            <td>1.250</td>
+          </tr>
+          <tr>
+            <td>Perfect Fourth</td>
+            <td>1.333</td>
+          </tr>
+          <tr>
+            <td>Augmented Fourth</td>
+            <td>1.414</td>
+          </tr>
+          <tr>
+            <td>Perfect Fifth</td>
+            <td>1.500</td>
+          </tr>
+          <tr>
+            <td>Golden Ratio</td>
+            <td>1.618</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h3>Why</h3>
+        <h4>Ratios</h4>
+        <p>
+          The header and paragraph styling is designed to respect a ratio between the font-size
+          (&lt;p&gt; tags) and the various headers. &lt;h6&gt; will match the font-size of the
+          &lt;p&gt; tags, and each header after that will be 1 step higher.
+        </p>
+        <p>The ratios are also, by default, different for different screen sizes.</p>
+        <table>
+          <tr>
+            <th>Screen Size</th>
+            <th>Ratio</th>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>Major Second (1.067)</td>
+          </tr>
+          <tr>
+            <td>Tablet</td>
+            <td>Minor Third (1.200)</td>
+          </tr>
+          <tr>
+            <td>Desktop and up</td>
+            <td>Major Third (1.250)</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </div>
