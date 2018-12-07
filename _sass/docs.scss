@@ -24,3 +24,7 @@ $tie-blue: #4a90e290;
 .scss-var {
   color: red;
 }
+
+.variable-table tr td:nth-child(1) {
+  @extend .scss-var;
+}

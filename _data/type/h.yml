@@ -1,30 +1,34 @@
 variables:
+  td_tags:
+    0:
+      wrapper: code
+      classes: "scss-var"
   headers:
     - Variable
     - Default Value
     - Details
   rows:
-    - - <code class="scss-var">$font-size</code>
+    - - $font-size
       - 1.6rem
       - Default font-size in rem as 10% of pixel size
-    - - <code class="scss-var">$font-sans-serif</code>
+    - - $font-sans-serif
       - 'Roboto'
       - Default sans-serif font, used with `.serif`
-    - - <code class="scss-var">$font-serif</code>
+    - - $font-serif
       - Georgia
       - Default serif font, used with `.sans-serif`
-    - - <code class="scss-var">$line-height</code>
+    - - $line-height
       - 1.5
       - Default line-height
-    - - <code class="scss-var">$line-height-phone</code>
-      - <code class="red">$line-height</code>
+    - - $line-height-phone
+      - $line-height
       - Phone matches default line height
-    - - <code class="scss-var">$line-height-tablet</code>
+    - - $line-height-tablet
       - 1.4
       - Default line-height for tablets
-    - - <code class="scss-var">$line-height-desktop</code>
+    - - $line-height-desktop
       - 1.4
       - Default line-height for desktops
-    - - <code class="scss-var">$line-height-widescreen</code>
+    - - $line-height-widescreen
       - 1.4
       - Default line-height for widescreens
