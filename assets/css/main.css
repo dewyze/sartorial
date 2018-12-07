@@ -551,5 +551,5 @@ nav.navbar {
 .example figure {
   margin: 0; }
 
-.scss-var {
+.scss-var, .variable-table tr td:nth-child(1) {
   color: red; }
