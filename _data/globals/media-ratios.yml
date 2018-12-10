@@ -1,0 +1,22 @@
+style:
+  table:
+    classes: "docs-table"
+  columns:
+    0:
+      wrapper: code
+      classes: "scss-var"
+data:
+  headers:
+    - Variable
+    - Details
+  rows:
+    - - $ratio-global
+      - Ratio for all media sizes. <em>Not recommended as a default as type size should scale appropriately for different devices.</em>
+    - - $ratio-phone
+      - Ratio for <code>$screen-phone</code> breakpoint
+    - - $ratio-tablet
+      - Ratio for <code>$screen-tablet</code> breakpoint
+    - - $ratio-desktop
+      - Ratio for <code>$screen-desktop</code> breakpoint
+    - - $ratio-widescreen
+      - Ratio for <code>$screen-widescreen</code> breakpoint

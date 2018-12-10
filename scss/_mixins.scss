@@ -1,10 +1,26 @@
 // Mixins
 
 // Media queries
-@mixin phone { @media (min-width: #{$screen-phone}) {@content;} }
-@mixin tablet { @media (min-width: #{$screen-tablet}) {@content;} }
-@mixin desktop { @media (min-width: #{$screen-desktop}) {@content;} }
-@mixin widescreen { @media (min-width: #{$screen-widescreen}) {@content;} }
+@mixin phone {
+  @media (min-width: #{$screen-phone}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$screen-desktop}) {
+    @content;
+  }
+}
+@mixin widescreen {
+  @media (min-width: #{$screen-widescreen}) {
+    @content;
+  }
+}
 
 @mixin type-with-ratio($ratio, $font-size) {
   $scale-0: 1;
@@ -16,12 +32,28 @@
   $scale-5: calc(#{$scale-4} * #{$ratio});
   $scale-6: calc(#{$scale-5} * #{$ratio});
 
-  body { font-size: #{$font-size}; }
-  .jumbo-text { font-size: calc(#{$font-size} * #{$scale-6}); }
-  h1 { font-size: calc(#{$font-size} * #{$scale-5}); }
-  h2 { font-size: calc(#{$font-size} * #{$scale-4}); }
-  h3 { font-size: calc(#{$font-size} * #{$scale-3}); }
-  h4 { font-size: calc(#{$font-size} * #{$scale-2}); }
-  h5 { font-size: calc(#{$font-size} * #{$scale-1}); }
-  h6 { font-size: calc(#{$font-size} * #{$scale-0}); }
+  body {
+    font-size: #{$font-size};
+  }
+  .jumbo-text {
+    font-size: calc(#{$font-size} * #{$scale-6});
+  }
+  h1 {
+    font-size: calc(#{$font-size} * #{$scale-5});
+  }
+  h2 {
+    font-size: calc(#{$font-size} * #{$scale-4});
+  }
+  h3 {
+    font-size: calc(#{$font-size} * #{$scale-3});
+  }
+  h4 {
+    font-size: calc(#{$font-size} * #{$scale-2});
+  }
+  h5 {
+    font-size: calc(#{$font-size} * #{$scale-1});
+  }
+  h6 {
+    font-size: calc(#{$font-size} * #{$scale-0});
+  }
 }

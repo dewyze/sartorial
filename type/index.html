@@ -17,52 +17,22 @@ title: Typography
       </div>
       <div class="section">
         <h3>Customize</h3>
+        <h4>Font & Line Height Variables</h4>
         <p>
           The type sizes are built off of a base font-size and a ratio. Additionally, there are
-          separate variables that can be used to build those up per media seize. See the table below
+          separate variables that can be used to build those up per media size. See the table below
           for what you can set and the defaults.
         </p>
-        {% styled_table site.data.type.h.variables %}
+        {% styled_table site.data.type.h %}
 
         <h4>Available Ratios</h4>
-        <table>
-          <tr>
-            <th>Ratio Name</th>
-            <th>Step Value</th>
-          </tr>
-          <tr>
-            <td>Minor Second</td>
-            <td>1.067</td>
-          </tr>
-          <tr>
-            <td>Major Second</td>
-            <td>1.125</td>
-          </tr>
-          <tr>
-            <td>Minor Third</td>
-            <td>1.200</td>
-          </tr>
-          <tr>
-            <td>Major Third</td>
-            <td>1.250</td>
-          </tr>
-          <tr>
-            <td>Perfect Fourth</td>
-            <td>1.333</td>
-          </tr>
-          <tr>
-            <td>Augmented Fourth</td>
-            <td>1.414</td>
-          </tr>
-          <tr>
-            <td>Perfect Fifth</td>
-            <td>1.500</td>
-          </tr>
-          <tr>
-            <td>Golden Ratio</td>
-            <td>1.618</td>
-          </tr>
-        </table>
+        <p>
+          The ratio between the main height and the header size is based on an explicit ratio. You
+          can either use one of these or your own. The ratios are set per media size:
+        </p>
+        {% styled_table site.data.globals.media-ratios %}
+        <p>You can set your own ratio or use one of the below variables.</p>
+        {% styled_table site.data.globals.ratios %}
       </div>
 
       <div class="section">

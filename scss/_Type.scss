@@ -18,6 +18,10 @@ h6 {
   & + .subheader {
     margin-top: -10px;
   }
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 h1 {
   line-height: 1.15;
@@ -38,26 +42,30 @@ h6 {
   line-height: #{$line-height};
 }
 
-@include phone {
-  @include type-with-ratio(#{$ratio-phone}, #{$font-size});
-}
+@if global-variable-exists(ratio-global) {
+  @include type-with-ratio(#{$ratio-global}, #{$font-size});
+} @else {
+  @include phone {
+    @include type-with-ratio(#{$ratio-phone}, #{$font-size});
+  }
 
-@include tablet {
-  line-height: #{$line-height-tablet};
-  @include type-with-ratio(#{$ratio-tablet}, #{$font-size});
-}
+  @include tablet {
+    line-height: #{$line-height-tablet};
+    @include type-with-ratio(#{$ratio-tablet}, #{$font-size});
+  }
 
-@include desktop {
-  line-height: #{$line-height-desktop};
-  @include type-with-ratio(#{$ratio-desktop}, #{$font-size});
-}
+  @include desktop {
+    line-height: #{$line-height-desktop};
+    @include type-with-ratio(#{$ratio-desktop}, #{$font-size});
+  }
 
-@include widescreen {
-  line-height: #{$line-height-desktop};
-  @include type-with-ratio(#{$ratio-widescreen}, #{$font-size});
-}
+  @include widescreen {
+    line-height: #{$line-height-desktop};
+    @include type-with-ratio(#{$ratio-widescreen}, #{$font-size});
+  }
 
-.subheader {
-  font-weight: 300;
-  color: #a8a8a8;
+  .subheader {
+    font-weight: 300;
+    color: #a8a8a8;
+  }
 }

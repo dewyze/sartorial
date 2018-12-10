@@ -1,17 +1,18 @@
 module Jekyll
   class StyledTabledTag < Liquid::Tag
 
-    def initialize(tag_name, data, tokens)
+    def initialize(tag_name, source, tokens)
       super
-      @data = data
+      @source = source
     end
 
     def render(context)
-      @table = context[@data]
+      @data = context[@source]["data"]
+      @style = context[@source]["style"]
 
-      result = "<table>"
-      result << _headers(@table["headers"])
-      result << _rows(@table["rows"])
+      result = "<table class=#{@style["table"]["classes"]}>"
+      result << _headers(@data["headers"])
+      result << _rows(@data["rows"])
       result << "</table>\n"
     end
 
@@ -23,32 +24,32 @@ module Jekyll
       result << "</tr>\n"
     end
 
-    def _th(header)
-      "<th>#{header}</th>\n"
-    end
-
     def _rows(rows)
-      @table["rows"].reduce("") do |acc, row|
+      @data["rows"].reduce("") do |acc, row|
         acc += _tr(row)
       end
     end
 
     def _tr(row)
-      result = "<tr>"
+      result = "<tr>\n"
       row.each_with_index do |cell, idx|
         result << _td(cell, idx)
       end
       result << "</tr>\n"
     end
 
+    def _th(header)
+      "<th>#{header}</th>\n"
+    end
+
     def _td(text, idx)
-      classes = @table.dig("td_tags", idx, "classes")
+      classes = @style.dig("columns", idx, "classes")
       klass = "class=\"#{classes}\"" if classes
       "<td #{klass}>#{_wrap(text, idx)}</td>\n"
     end
 
     def _wrap(text, idx)
-      wrapper = @table.dig("td_tags", idx, "wrapper")
+      wrapper = @style.dig("columns", idx, "wrapper")
       open = "<#{wrapper}>" if wrapper
       close = "</#{wrapper}>" if wrapper
       "#{open}#{text.to_s}#{close}\n"

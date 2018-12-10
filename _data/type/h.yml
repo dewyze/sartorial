@@ -1,8 +1,11 @@
-variables:
-  td_tags:
+style:
+  table:
+    classes: "docs-table"
+  columns:
     0:
       wrapper: code
       classes: "scss-var"
+data:
   headers:
     - Variable
     - Default Value

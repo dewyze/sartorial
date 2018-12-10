@@ -1,0 +1,37 @@
+style:
+  table:
+    classes: "docs-table"
+  columns:
+    0:
+      wrapper: code
+      classes: "scss-var"
+data:
+  headers:
+    - Variable
+    - Step Value
+    - Ratio Name
+  rows:
+    - - $minor_second
+      - Minor Second
+      - 1.067
+    - - $major_second
+      - Major Second
+      - 1.125
+    - - $minor_third
+      - Minor Third
+      - 1.200
+    - - $major_third
+      - Major Third
+      - 1.250
+    - - $perfect_fourth
+      - Perfect Fourth
+      - 1.333
+    - - $augmented_fourth
+      - Augmented Fourth
+      - 1.414
+    - - $perfect_fifth
+      - Perfect Fifth
+      - 1.500
+    - - $golden_ratio
+      - Golden Ratio
+      - 1.618
