@@ -11,27 +11,27 @@ data:
     - Step Value
     - Ratio Name
   rows:
-    - - $minor_second
+    - - $ratio-minor-second
       - Minor Second
       - 1.067
-    - - $major_second
+    - - $ratio-major-second
       - Major Second
       - 1.125
-    - - $minor_third
+    - - $ratio-minor-third
       - Minor Third
       - 1.200
-    - - $major_third
+    - - $ratio-major-third
       - Major Third
       - 1.250
-    - - $perfect_fourth
+    - - $ratio-perfect-fourth
       - Perfect Fourth
       - 1.333
-    - - $augmented_fourth
+    - - $ratio-augmented-fourth
       - Augmented Fourth
       - 1.414
-    - - $perfect_fifth
+    - - $ratio-perfect-fifth
       - Perfect Fifth
       - 1.500
-    - - $golden_ratio
+    - - $ratio-golden-ratio
       - Golden Ratio
       - 1.618
