@@ -65,66 +65,75 @@
       </div>
       <div class="section">
         <h3>Customize</h3>
+        <h4>Font & Line Height Variables</h4>
         <p>
           The type sizes are built off of a base font-size and a ratio. Additionally, there are
-          separate variables that can be used to build those up per media seize. See the table below
+          separate variables that can be used to build those up per media size. See the table below
           for what you can set and the defaults.
         </p>
-        <table><tr>
+        <table class=docs-table><tr>
 <th>Variable</th>
 <th>Default Value</th>
 <th>Details</th>
 </tr>
-<tr><td class="scss-var"><code>$font-size</code>
+<tr>
+<td class="scss-var"><code>$font-size</code>
 </td>
 <td >1.6rem
 </td>
 <td >Default font-size in rem as 10% of pixel size
 </td>
 </tr>
-<tr><td class="scss-var"><code>$font-sans-serif</code>
+<tr>
+<td class="scss-var"><code>$font-sans-serif</code>
 </td>
 <td >Roboto
 </td>
 <td >Default sans-serif font, used with `.serif`
 </td>
 </tr>
-<tr><td class="scss-var"><code>$font-serif</code>
+<tr>
+<td class="scss-var"><code>$font-serif</code>
 </td>
 <td >Georgia
 </td>
 <td >Default serif font, used with `.sans-serif`
 </td>
 </tr>
-<tr><td class="scss-var"><code>$line-height</code>
+<tr>
+<td class="scss-var"><code>$line-height</code>
 </td>
 <td >1.5
 </td>
 <td >Default line-height
 </td>
 </tr>
-<tr><td class="scss-var"><code>$line-height-phone</code>
+<tr>
+<td class="scss-var"><code>$line-height-phone</code>
 </td>
 <td >$line-height
 </td>
 <td >Phone matches default line height
 </td>
 </tr>
-<tr><td class="scss-var"><code>$line-height-tablet</code>
+<tr>
+<td class="scss-var"><code>$line-height-tablet</code>
 </td>
 <td >1.4
 </td>
 <td >Default line-height for tablets
 </td>
 </tr>
-<tr><td class="scss-var"><code>$line-height-desktop</code>
+<tr>
+<td class="scss-var"><code>$line-height-desktop</code>
 </td>
 <td >1.4
 </td>
 <td >Default line-height for desktops
 </td>
 </tr>
-<tr><td class="scss-var"><code>$line-height-widescreen</code>
+<tr>
+<td class="scss-var"><code>$line-height-widescreen</code>
 </td>
 <td >1.4
 </td>
@@ -135,44 +144,118 @@
 
 
         <h4>Available Ratios</h4>
-        <table>
-          <tr>
-            <th>Ratio Name</th>
-            <th>Step Value</th>
-          </tr>
-          <tr>
-            <td>Minor Second</td>
-            <td>1.067</td>
-          </tr>
-          <tr>
-            <td>Major Second</td>
-            <td>1.125</td>
-          </tr>
-          <tr>
-            <td>Minor Third</td>
-            <td>1.200</td>
-          </tr>
-          <tr>
-            <td>Major Third</td>
-            <td>1.250</td>
-          </tr>
-          <tr>
-            <td>Perfect Fourth</td>
-            <td>1.333</td>
-          </tr>
-          <tr>
-            <td>Augmented Fourth</td>
-            <td>1.414</td>
-          </tr>
-          <tr>
-            <td>Perfect Fifth</td>
-            <td>1.500</td>
-          </tr>
-          <tr>
-            <td>Golden Ratio</td>
-            <td>1.618</td>
-          </tr>
-        </table>
+        <p>
+          The ratio between the main height and the header size is based on an explicit ratio. You
+          can either use one of these or your own. The ratios are set per media size:
+        </p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Details</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-global</code>
+</td>
+<td >Ratio for all media sizes. <em>Not recommended as a default as type size should scale appropriately for different devices.</em>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-phone</code>
+</td>
+<td >Ratio for <code>$screen-phone</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-tablet</code>
+</td>
+<td >Ratio for <code>$screen-tablet</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-desktop</code>
+</td>
+<td >Ratio for <code>$screen-desktop</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-widescreen</code>
+</td>
+<td >Ratio for <code>$screen-widescreen</code> breakpoint
+</td>
+</tr>
+</table>
+
+        <p>You can set your own ratio or use one of the below variables.</p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Step Value</th>
+<th>Ratio Name</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$minor_second</code>
+</td>
+<td >Minor Second
+</td>
+<td >1.067
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$major_second</code>
+</td>
+<td >Major Second
+</td>
+<td >1.125
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$minor_third</code>
+</td>
+<td >Minor Third
+</td>
+<td >1.2
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$major_third</code>
+</td>
+<td >Major Third
+</td>
+<td >1.25
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$perfect_fourth</code>
+</td>
+<td >Perfect Fourth
+</td>
+<td >1.333
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$augmented_fourth</code>
+</td>
+<td >Augmented Fourth
+</td>
+<td >1.414
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$perfect_fifth</code>
+</td>
+<td >Perfect Fifth
+</td>
+<td >1.5
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$golden_ratio</code>
+</td>
+<td >Golden Ratio
+</td>
+<td >1.618
+</td>
+</tr>
+</table>
+
       </div>
 
       <div class="section">

@@ -22,6 +22,13 @@ h6 {
   h5 + .subheader,
   h6 + .subheader {
     margin-top: -10px; }
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child),
+  h4:not(:first-child),
+  h5:not(:first-child),
+  h6:not(:first-child) {
+    margin-top: 20px; }
 
 h1 {
   line-height: 1.15; }
