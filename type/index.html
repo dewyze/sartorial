@@ -11,58 +11,7 @@ title: Typography
         Sartorial's <em>Type</em> module provides classes, mixins, and defaults for creating a
         responsive, scaled, and decorated typography system
       </h4>
-      <div class="section">
-        <h3>Usage</h3>
-        {% include snippet.html file="type/h.html" %}
-      </div>
-      <div class="section">
-        <h3>Customize</h3>
-        <h4>Font & Line Height Variables</h4>
-        <p>
-          The type sizes are built off of a base font-size and a ratio. Additionally, there are
-          separate variables that can be used to build those up per media size. See the table below
-          for what you can set and the defaults.
-        </p>
-        {% styled_table site.data.type.h %}
-
-        <h4>Available Ratios</h4>
-        <p>
-          The ratio between the main height and the header size is based on an explicit ratio. You
-          can either use one of these or your own. The ratios are set per media size:
-        </p>
-        {% styled_table site.data.globals.media-ratios %}
-        <p>You can set your own ratio or use one of the below variables.</p>
-        {% styled_table site.data.globals.ratios %}
-      </div>
-
-      <div class="section">
-        <h3>Why</h3>
-        <h4>Ratios</h4>
-        <p>
-          The header and paragraph styling is designed to respect a ratio between the font-size
-          (&lt;p&gt; tags) and the various headers. &lt;h6&gt; will match the font-size of the
-          &lt;p&gt; tags, and each header after that will be 1 step higher.
-        </p>
-        <p>The ratios are also, by default, different for different screen sizes.</p>
-        <table>
-          <tr>
-            <th>Screen Size</th>
-            <th>Ratio</th>
-          </tr>
-          <tr>
-            <td>Phone</td>
-            <td>Major Second (1.067)</td>
-          </tr>
-          <tr>
-            <td>Tablet</td>
-            <td>Minor Third (1.200)</td>
-          </tr>
-          <tr>
-            <td>Desktop and up</td>
-            <td>Major Third (1.250)</td>
-          </tr>
-        </table>
-      </div>
+      <div class="section">{% link_to "Headings", type/headings.html %}</div>
     </div>
   </div>
 </div>

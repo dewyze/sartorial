@@ -1,0 +1,44 @@
+---
+layout: default
+title: Typography
+---
+
+<div class="container">
+  <div class="main">
+    <div class="section">
+      <h2>Headings</h2>
+      <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
+      <div class="section">
+        <h3>Usage</h3>
+        {% include snippet.html file="type/h.html" %}
+      </div>
+      <div class="section">
+        <h3>Why</h3>
+        <p>
+          Type is important. It can be hard to find good settings for headers that are also
+          responsive. Sartorial sets a ratio that deterines the relationship between each font-size
+          instead of needing to manually define it.
+        </p>
+      </div>
+      <div class="section">
+        <h3>Customize</h3>
+        <h4>Font & Line Height Variables</h4>
+        <p>
+          The type sizes are built off of a base font-size and a ratio. Additionally, there are
+          separate variables that can be used to build those up per media size. See the table below
+          for what you can set and the defaults.
+        </p>
+        {% styled_table site.data.type.h %}
+
+        <h4>Available Ratios</h4>
+        <p>
+          The ratio between the main height and the header size is based on an explicit ratio. You
+          can either use one of these or your own. The ratios are set per media size:
+        </p>
+        {% styled_table site.data.globals.media_ratios_table %}
+        <p>You can set your own ratio or use one of the below variables.</p>
+        {% styled_table site.data.globals.ratios_table %}
+      </div>
+    </div>
+  </div>
+</div>
