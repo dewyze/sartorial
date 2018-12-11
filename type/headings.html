@@ -1,0 +1,270 @@
+<html>
+  <head>
+    <title>Sartorial - Typography</title>
+    <link rel="shortcut icon" href="/sartorial/assets/img/logo.png" />
+    <link rel="stylesheet" href="/sartorial/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/sartorial/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container no-pad">
+  <nav class="navbar">
+    <div class="navbar-start">
+      <div class="navbar-brand">
+        <a href="#">
+          <img src="/sartorial/assets/img/word_logo.png" alt="Logo" />
+        </a>
+      </div>
+      <a class="navbar-item test" href="#">
+        <i class="fas fa-home icon"></i> Home
+      </a>
+      <a class="navbar-item" href="#">
+        <i class="fas fa-book icon"></i> Docs
+      </a>
+      <a class="navbar-item" href="#">More</a>
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item" href="#">About</a>
+      <a class="navbar-item" href="#">Signup</a>
+    </div>
+  </nav>
+</div>
+ <div class="container">
+  <div class="main">
+    <div class="section">
+      <h2>Headings</h2>
+      <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
+      <div class="section">
+        <h3>Usage</h3>
+        <div class="example">
+  <div class="rendered"><h1>This is h1 text.</h1>
+<h2>This is h2 text.</h2>
+<h3>This is h3 text.</h3>
+<h4>This is h4 text.</h4>
+<h5>This is h5 text.</h5>
+<h6>This is h6 text.</h6>
+<p>This is p text.</p>
+</div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>This is h1 text.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>This is h2 text.<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>This is h3 text.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>This is h4 text.<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>This is h5 text.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>This is h6 text.<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is p text.<span class="nt">&lt;/p&gt;</span></code></pre></figure></div>
+</div>
+
+      </div>
+      <div class="section">
+        <h3>Why</h3>
+        <p>
+          Type is important. It can be hard to find good settings for headers that are also
+          responsive. Sartorial sets a ratio that deterines the relationship between each font-size
+          instead of needing to manually define it.
+        </p>
+      </div>
+      <div class="section">
+        <h3>Customize</h3>
+        <h4>Font & Line Height Variables</h4>
+        <p>
+          The type sizes are built off of a base font-size and a ratio. Additionally, there are
+          separate variables that can be used to build those up per media size. See the table below
+          for what you can set and the defaults.
+        </p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Default Value</th>
+<th>Details</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$font-size</code>
+</td>
+<td >1.6rem
+</td>
+<td >Default font-size in rem as 10% of pixel size
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$font-sans-serif</code>
+</td>
+<td >Roboto
+</td>
+<td >Default sans-serif font, used with `.serif`
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$font-serif</code>
+</td>
+<td >Georgia
+</td>
+<td >Default serif font, used with `.sans-serif`
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$line-height</code>
+</td>
+<td >1.5
+</td>
+<td >Default line-height
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$line-height-phone</code>
+</td>
+<td >$line-height
+</td>
+<td >Phone matches default line height
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$line-height-tablet</code>
+</td>
+<td >1.4
+</td>
+<td >Default line-height for tablets
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$line-height-desktop</code>
+</td>
+<td >1.4
+</td>
+<td >Default line-height for desktops
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$line-height-widescreen</code>
+</td>
+<td >1.4
+</td>
+<td >Default line-height for widescreens
+</td>
+</tr>
+</table>
+
+
+        <h4>Available Ratios</h4>
+        <p>
+          The ratio between the main height and the header size is based on an explicit ratio. You
+          can either use one of these or your own. The ratios are set per media size:
+        </p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Details</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-global</code>
+</td>
+<td >Ratio for all media sizes. <em>Not recommended as a default as type size should scale appropriately for different devices.</em>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-phone</code>
+</td>
+<td >Ratio for <code>$screen-phone</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-tablet</code>
+</td>
+<td >Ratio for <code>$screen-tablet</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-desktop</code>
+</td>
+<td >Ratio for <code>$screen-desktop</code> breakpoint
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-widescreen</code>
+</td>
+<td >Ratio for <code>$screen-widescreen</code> breakpoint
+</td>
+</tr>
+</table>
+
+        <p>You can set your own ratio or use one of the below variables.</p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Step Value</th>
+<th>Ratio Name</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-minor-second</code>
+</td>
+<td >Minor Second
+</td>
+<td >1.067
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-major-second</code>
+</td>
+<td >Major Second
+</td>
+<td >1.125
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-minor-third</code>
+</td>
+<td >Minor Third
+</td>
+<td >1.2
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-major-third</code>
+</td>
+<td >Major Third
+</td>
+<td >1.25
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-perfect-fourth</code>
+</td>
+<td >Perfect Fourth
+</td>
+<td >1.333
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-augmented-fourth</code>
+</td>
+<td >Augmented Fourth
+</td>
+<td >1.414
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-perfect-fifth</code>
+</td>
+<td >Perfect Fifth
+</td>
+<td >1.5
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$ratio-golden-ratio</code>
+</td>
+<td >Golden Ratio
+</td>
+<td >1.618
+</td>
+</tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
