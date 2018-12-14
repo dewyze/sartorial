@@ -16,10 +16,10 @@ h6 {
   @include margin(0px null 20px);
   font-weight: $type-header-font-weight;
   & + .subheader {
-    margin-top: -10px;
+    margin-top: -20px;
   }
 
-  &:not(:first-child) {
+  &:not(:first-child):not(.subheader) {
     margin-top: 20px;
   }
 }
