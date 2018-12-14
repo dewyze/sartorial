@@ -38,3 +38,7 @@
 - [ ] Flash?
 - [ ] Hover caption/text
 - [ ] Progress Bar?
+
+
+# Stylings
+- Table stylings on variable tables
