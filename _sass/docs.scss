@@ -28,3 +28,11 @@ $tie-blue: #4a90e290;
 .variable-table tr td:nth-child(1) {
   @extend .scss-var;
 }
+
+hr {
+  border-color: $tie-blue;
+}
+
+.source code {
+  font-size: 1.4rem;
+}

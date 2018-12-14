@@ -6,14 +6,40 @@ title: Typography
 <div class="container">
   <div class="main">
     <div class="section">
-      <h2>Headings</h2>
+      <h1>Headings</h1>
       <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
       <div class="section">
-        <h3>Usage</h3>
+        <h3>Headers</h3>
+        <hr />
+        <p>The Sartorial Type modules provides the following header tags.</p>
+        {% styled_table site.data.type.headers_table %}
+        <p>The default ratios between the texts are:</p>
+        <ul style="list-style-type:none;">
+          <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
+          <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
+        </ul>
+        <h4>Usage</h4>
         {% include snippet.html file="type/h.html" %}
       </div>
       <div class="section">
+        <h3>Modifiers</h3>
+        <hr />
+        <p>The following clases can be used to modify headers</p>
+        <ul style="list-style-type:none;">
+          <li>
+            <code class="scss-var">.subheader</code> : This can be used for a muted colored and
+            light stroke text.
+          </li>
+        </ul>
+
+        <h4>Usage</h4>
+        {% include snippet.html file="type/subheader.html" %}
+      </div>
+      <div class="section">
         <h3>Why</h3>
+        <hr />
         <p>
           Type is important. It can be hard to find good settings for headers that are also
           responsive. Sartorial sets a ratio that deterines the relationship between each font-size
@@ -26,13 +52,14 @@ title: Typography
       </div>
       <div class="section">
         <h3>Customize</h3>
+        <hr />
         <h4>Font & Line Height Variables</h4>
         <p>
           The type sizes are built off of a base font-size and a ratio. Additionally, there are
           separate variables that can be used to build those up per media size. See the table below
           for what you can set and the defaults.
         </p>
-        {% styled_table site.data.type.h %}
+        {% styled_table site.data.type.font_line_height_table %}
 
         <h4>Available Ratios</h4>
         <p>
