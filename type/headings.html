@@ -37,10 +37,101 @@
  <div class="container">
   <div class="main">
     <div class="section">
-      <h2>Headings</h2>
+      <h1>Headings</h1>
       <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
       <div class="section">
-        <h3>Usage</h3>
+        <h3>Headers</h3>
+        <hr />
+        <p>The Sartorial Type modules provides the following header tags.</p>
+        <table class=docs-table><tr>
+<th>Html tag</th>
+<th>Widescreen size</th>
+<th>Desktop size</th>
+<th>Tablet size</th>
+<th>Phone size</th>
+</tr>
+<tr>
+<td class="scss-var"><code>h1</code>
+</td>
+<td ><i>48.8px</i>
+</td>
+<td ><i>48.8px</i>
+</td>
+<td ><i>39.8px</i>
+</td>
+<td ><i>28.8px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h2</code>
+</td>
+<td ><i>39.1px</i>
+</td>
+<td ><i>39.1px</i>
+</td>
+<td ><i>33.2px</i>
+</td>
+<td ><i>25.6px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h3</code>
+</td>
+<td ><i>31.3px</i>
+</td>
+<td ><i>31.3px</i>
+</td>
+<td ><i>27.6px</i>
+</td>
+<td ><i>22.8px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h4</code>
+</td>
+<td ><i>25.0px</i>
+</td>
+<td ><i>25.0px</i>
+</td>
+<td ><i>23.0px</i>
+</td>
+<td ><i>20.3px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h5</code>
+</td>
+<td ><i>20.0px</i>
+</td>
+<td ><i>20.0px</i>
+</td>
+<td ><i>19.2px</i>
+</td>
+<td ><i>18.0px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h6</code>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+</tr>
+</table>
+
+        <p>The default ratios between the texts are:</p>
+        <ul style="list-style-type:none;">
+          <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
+          <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
+        </ul>
+        <h4>Usage</h4>
         <div class="example">
   <div class="rendered"><h1>This is h1 text.</h1>
 <h2>This is h2 text.</h2>
@@ -61,7 +152,29 @@
 
       </div>
       <div class="section">
+        <h3>Modifiers</h3>
+        <hr />
+        <p>The following clases can be used to modify headers</p>
+        <ul style="list-style-type:none;">
+          <li>
+            <code class="scss-var">.subheader</code> : This can be used for a muted colored and
+            light stroke text.
+          </li>
+        </ul>
+
+        <h4>Usage</h4>
+        <div class="example">
+  <div class="rendered"><h3>Main heading</h3>
+<h4 class="subheader">Some information about my heading</h4>
+</div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>Main heading<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"subheader"</span><span class="nt">&gt;</span>Some information about my heading<span class="nt">&lt;/h4&gt;</span></code></pre></figure></div>
+</div>
+
+      </div>
+      <div class="section">
         <h3>Why</h3>
+        <hr />
         <p>
           Type is important. It can be hard to find good settings for headers that are also
           responsive. Sartorial sets a ratio that deterines the relationship between each font-size
@@ -74,6 +187,7 @@
       </div>
       <div class="section">
         <h3>Customize</h3>
+        <hr />
         <h4>Font & Line Height Variables</h4>
         <p>
           The type sizes are built off of a base font-size and a ratio. Additionally, there are

@@ -177,6 +177,11 @@ html {
 .section {
   margin-bottom: 40px; }
 
+hr {
+  margin-top: -10px;
+  border-color: #a8a8a8;
+  border-width: 0.5px; }
+
 nav.navbar {
   width: 100%;
   min-height: 3.25em;
@@ -560,3 +565,9 @@ nav.navbar {
 
 .scss-var, .variable-table tr td:nth-child(1) {
   color: red; }
+
+hr {
+  border-color: #4a90e290; }
+
+.source code {
+  font-size: 1.4rem; }
