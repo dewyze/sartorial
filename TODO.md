@@ -42,3 +42,8 @@
 
 # Stylings
 - Table stylings on variable tables
+
+# Features
+- Copy Source
+- Hide/reveal source
+- Hide/reveal Customize/why

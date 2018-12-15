@@ -1,0 +1,223 @@
+<html>
+  <head>
+    <title>Sartorial - Navigation</title>
+    <link rel="shortcut icon" href="/sartorial/assets/img/logo.png" />
+    <link rel="stylesheet" href="/sartorial/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/sartorial/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container no-pad">
+  <nav class="navbar">
+    <div class="navbar-start">
+      <div class="navbar-brand">
+        <a href="#">
+          <img src="/sartorial/assets/img/word_logo.png" alt="Logo" />
+        </a>
+      </div>
+      <a class="navbar-item test" href="#">
+        <i class="fas fa-home icon"></i> Home
+      </a>
+      <a class="navbar-item" href="#">
+        <i class="fas fa-book icon"></i> Docs
+      </a>
+      <a class="navbar-item" href="#">More</a>
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item" href="#">About</a>
+      <a class="navbar-item" href="#">Signup</a>
+    </div>
+  </nav>
+</div>
+ <div class="container">
+  <div class="main">
+    <div class="section">
+      <h1>Navbar</h1>
+      <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
+      <div class="section">
+        <h3>Headers</h3>
+        <hr />
+        <p>
+          The Sartorial Nav module provides the following classes for building responsive navbars:
+        </p>
+        <table class=docs-table><tr>
+<th>Html tag</th>
+<th>Widescreen size</th>
+<th>Desktop size</th>
+<th>Tablet size</th>
+<th>Phone size</th>
+</tr>
+<tr>
+<td class="scss-var"><code>h1</code>
+</td>
+<td ><i>48.8px</i>
+</td>
+<td ><i>48.8px</i>
+</td>
+<td ><i>39.8px</i>
+</td>
+<td ><i>28.8px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h2</code>
+</td>
+<td ><i>39.1px</i>
+</td>
+<td ><i>39.1px</i>
+</td>
+<td ><i>33.2px</i>
+</td>
+<td ><i>25.6px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h3</code>
+</td>
+<td ><i>31.3px</i>
+</td>
+<td ><i>31.3px</i>
+</td>
+<td ><i>27.6px</i>
+</td>
+<td ><i>22.8px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h4</code>
+</td>
+<td ><i>25.0px</i>
+</td>
+<td ><i>25.0px</i>
+</td>
+<td ><i>23.0px</i>
+</td>
+<td ><i>20.3px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h5</code>
+</td>
+<td ><i>20.0px</i>
+</td>
+<td ><i>20.0px</i>
+</td>
+<td ><i>19.2px</i>
+</td>
+<td ><i>18.0px</i>
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>h6</code>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+<td ><i>16.0px</i>
+</td>
+</tr>
+</table>
+
+        <p>The default ratios between the texts are:</p>
+        <ul style="list-style-type:none;">
+          <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+          <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
+          <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
+        </ul>
+        <h4>Usage</h4>
+        <div class="example">
+  <div class="rendered"><h1>This is h1 text.</h1>
+<h2>This is h2 text.</h2>
+<h3>This is h3 text.</h3>
+<h4>This is h4 text.</h4>
+<h5>This is h5 text.</h5>
+<h6>This is h6 text.</h6>
+<p>This is p text.</p>
+</div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>This is h1 text.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>This is h2 text.<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>This is h3 text.<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>This is h4 text.<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>This is h5 text.<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>This is h6 text.<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is p text.<span class="nt">&lt;/p&gt;</span></code></pre></figure></div>
+</div>
+
+      </div>
+      <div class="section">
+        <h3>Why</h3>
+        <hr />
+        <p>
+          Type is important. It can be hard to find good settings for headers that are also
+          responsive. Sartorial sets a ratio that deterines the relationship between each font-size
+          instead of needing to manually define it.
+        </p>
+        <p>
+          I decided to not require any classes for text and just add the styling to the heading tags
+          directly to ease use.
+        </p>
+      </div>
+      <div class="section">
+        <h3>Customize</h3>
+        <hr />
+        <h4>Navbar variables</h4>
+        <p>
+          The type sizes are built off of a base font-size and a ratio. Additionally, there are
+          separate variables that can be used to build those up per media size. See the table below
+          for what you can set and the defaults.
+        </p>
+        <table class=docs-table><tr>
+<th>Variable</th>
+<th>Default Value</th>
+<th>Details</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$navbar-height</code>
+</td>
+<td >3.25rem
+</td>
+<td >Default height of navbar
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$navbar-spacing</code>
+</td>
+<td >1.5rem
+</td>
+<td >Default spacing between navbar elements
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$color-navbar-background</code>
+</td>
+<td ><code>#ffffff</code> (white)
+</td>
+<td >Background color of navbar
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$color-navbar-background-hover</code>
+</td>
+<td ><code>#fafafa</code> (light gray)
+</td>
+<td >Background color of navbar element on hover
+</td>
+</tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

@@ -187,8 +187,6 @@ nav.navbar {
   min-height: 3.25em;
   display: flex;
   background-color: #ffffff; }
-  nav.navbar .test {
-    background-color: red; }
   nav.navbar .navbar-start,
   nav.navbar .navbar-end,
   nav.navbar .navbar-right,
@@ -237,6 +235,9 @@ nav.navbar {
 
 .no-pad {
   padding: 0px; }
+
+.no-wrap, .scss-var, .variable-table tr td:nth-child(1) {
+  white-space: nowrap; }
 
 .highlight .hll {
   background-color: #ffffcc; }
