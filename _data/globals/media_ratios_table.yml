@@ -8,15 +8,21 @@ style:
 data:
   headers:
     - Variable
+    - Default (See below table for details)
     - Details
   rows:
     - - $ratio-global
+      - None
       - Ratio for all media sizes. <em>Not recommended as a default as type size should scale appropriately for different devices.</em>
     - - $ratio-phone
+      - Major Second
       - Ratio for <code>$screen-phone</code> breakpoint
     - - $ratio-tablet
+      - Minor Third
       - Ratio for <code>$screen-tablet</code> breakpoint
     - - $ratio-desktop
+      - Major Third
       - Ratio for <code>$screen-desktop</code> breakpoint
     - - $ratio-widescreen
+      - Major Third
       - Ratio for <code>$screen-widescreen</code> breakpoint

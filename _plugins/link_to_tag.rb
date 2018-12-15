@@ -1,6 +1,5 @@
 module Jekyll
   class LinkToTag < Liquid::Tag
-
     def initialize(tag_name, source, tokens)
       super
       @source = source

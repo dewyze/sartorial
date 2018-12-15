@@ -1,0 +1,25 @@
+style:
+  table:
+    classes: "docs-table"
+  columns:
+    0:
+      wrapper: code
+      classes: "scss-var"
+data:
+  headers:
+    - Variable
+    - Default Value
+    - Details
+  rows:
+    - - $navbar-height
+      - 3.25rem
+      - Default height of navbar
+    - - $navbar-spacing
+      - 1.5rem
+      - Default spacing between navbar elements
+    - - $color-navbar-background
+      - <code>#ffffff</code> (white)
+      - Background color of navbar
+    - - $color-navbar-background-hover
+      - <code>#fafafa</code> (light gray)
+      - Background color of navbar element on hover 

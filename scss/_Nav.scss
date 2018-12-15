@@ -1,15 +1,8 @@
-$navbar-height: 3.25em;
-$navbar-spacing: 1.5rem;
-
 nav.navbar {
   width: 100%;
   min-height: $navbar-height;
   display: flex;
   background-color: $color-navbar-background;
-
-  .test {
-    background-color: red;
-  }
 
   .navbar-start,
   .navbar-end,
