@@ -9,13 +9,20 @@ title: Navigation
       <h1>Navbar</h1>
       <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
       <div class="section">
-        <h3>Headers</h3>
-        <hr />
-        <p>There are two types of navbars available in sartorial.</p>
-        {% structured_html site.data.navigation.left_right_navbar_structure %} {% structured_html
-        site.data.navigation.left_middle_right_navbar_structure %}
-        <h4>Usage</h4>
-        TODO
+        <div class="section">
+          <p>There are two types of navbars available in sartorial.</p>
+          {% structured_html site.data.navigation.left_right_navbar_structure %}
+          <h4>Usage</h4>
+          {% include snippet.html file="navigation/navbar/start_end.html" class="no-pad" %}
+        </div>
+        <div class="section">
+          {% structured_html site.data.navigation.left_middle_right_navbar_structure %}
+          <h4>Usage</h4>
+          {% include snippet.html file="navigation/navbar/left_middle_right.html" class="no-pad" %}
+        </div>
+
+        <div class="section">{% note site.data.navigation.notes.navbar_full_width %}</div>
+        <div class="section">{% note site.data.navigation.notes.navbar_container %}</div>
       </div>
       <div class="section">
         <h3>Why</h3>

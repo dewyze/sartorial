@@ -1,0 +1,8 @@
+navbar_container:
+  kind: warning
+  content: | 
+      The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
+navbar_full_width:
+  kind: info
+  content: | 
+    Use the <code>.full-width</code> class if you want the navbar to expand to the full size of the screen.

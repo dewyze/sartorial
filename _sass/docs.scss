@@ -2,11 +2,8 @@ $tie-blue: #4a90e290;
 .example {
   border: 2px solid $tie-blue;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  .rendered {
-    padding: 20px 30px;
-  }
   .source {
-    padding: 20px 30px;
+    padding: 5px 20px;
     border-top: 2px solid $tie-blue;
     background-color: #f2f2f2;
     white-space: pre;
@@ -36,4 +33,41 @@ hr {
 
 .source code {
   font-size: 1.4rem;
+}
+
+.callout {
+  &:before {
+    padding: 2px 5px;
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 100%;
+    margin-left: -11px;
+  }
+  padding: 5px 10px;
+  margin-top: 58px;
+  width: 100%;
+  @include desktop {
+    width: 75%;
+  }
+}
+.callout-warning {
+  &:before {
+    background-color: #ffd11a;
+    border: 1px solid #e6b800;
+    content: 'NOTE';
+    border-bottom: none;
+  }
+  background-color: #fff0b3;
+  border: 1px solid #e6b800;
+}
+.callout-info {
+  &:before {
+    background-color: #3273dc;
+    border: 1px solid #1e55ae;
+    content: 'INFO';
+    border-bottom: none;
+    color: white;
+  }
+  background-color: #a8c4f0;
+  border: 1px solid #1e55ae;
 }

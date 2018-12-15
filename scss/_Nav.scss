@@ -1,4 +1,8 @@
-nav.navbar {
+.navbar {
+  &:not(.full-width) {
+    max-width: $container-width;
+    @include margin(null auto);
+  }
   width: 100%;
   min-height: $navbar-height;
   display: flex;

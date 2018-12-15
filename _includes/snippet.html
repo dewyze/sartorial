@@ -1,5 +1,7 @@
 <div class="example">
-  <div class="rendered">{%- include {{include.file}} -%}</div>
+  <div class="rendered">
+    <div class="container {{ include.class }}">{%- include {{include.file}} -%}</div>
+  </div>
   <div class="source">
     {%- highlight html -%} {%- include {{include.file}} -%} {%- endhighlight -%}
   </div>

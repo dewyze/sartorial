@@ -1,26 +1,23 @@
-title: Left/Right Navbar
+title: Left/Middle/Right Navbar
 description: If you need a centered section of a navbar
 items:
-  - tag: nav
-    description: using the <code>nav</code> component is good for accessibility purposes
+  - tag: .navbar
+    description: class that includes all navbar elements
     children:
-      - tag: .navbar
-        description: class that includes all navbar elements
+      - tag: .navbar-left
+        description: class for what goes on the left side of the navbar
         children:
-          - tag: .navbar-left
-            description: class for what goes on the left side of the navbar
-            children:
-              - tag: .navbar-item
-                description: regular old navbar-item
-          - tag: .navbar-middle
-            description: class for what goes in the middle of the navbar
-            children:
-              - tag: .navbar-brand
-                description: class for your logo
-              - tag: .navbar-item
-                description: regular old navbar-item
-          - tag: .navbar-right
-            description: class for what goes on the right side of the navbar
-            children:
-              - tag: .navbar-item
-                description: regular old navbar-item
+          - tag: .navbar-item
+            description: regular old navbar-item
+      - tag: .navbar-middle
+        description: class for what goes in the middle of the navbar
+        children:
+          - tag: .navbar-brand
+            description: class for your logo
+          - tag: .navbar-item
+            description: regular old navbar-item
+      - tag: .navbar-right
+        description: class for what goes on the right side of the navbar
+        children:
+          - tag: .navbar-item
+            description: regular old navbar-item

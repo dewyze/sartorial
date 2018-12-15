@@ -15,11 +15,11 @@ html {
 .container {
   margin-top: 40px; // TODO: Document this
   width: 100%;
-  @include margin(null auto);
   padding: $container-padding;
 
   // TODO: container should be full-width
   &:not(.full-width) {
+    @include margin(null auto);
     max-width: $container-width;
   }
 
@@ -29,11 +29,12 @@ html {
 }
 
 .main {
-  width: $main-width;
+  max-width: $main-width;
 }
 
 .section {
   margin-bottom: 40px;
+  position: relative;
 }
 
 hr {
