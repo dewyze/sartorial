@@ -16,21 +16,14 @@
   <nav class="navbar">
     <div class="navbar-start">
       <div class="navbar-brand">
-        <a href="#">
-          <img src="/sartorial/assets/img/word_logo.png" alt="Logo" />
-        </a>
+        <a href="#"><img src="/sartorial/assets/img/word_logo.png" alt="Logo" /> </a>
       </div>
-      <a class="navbar-item test" href="#">
-        <i class="fas fa-home icon"></i> Home
-      </a>
-      <a class="navbar-item" href="#">
-        <i class="fas fa-book icon"></i> Docs
-      </a>
+      <a class="navbar-item test" href="#"> <i class="fas fa-home icon"></i> Home </a>
+      <a class="navbar-item" href="#"> <i class="fas fa-book icon"></i> Docs </a>
       <a class="navbar-item" href="#">More</a>
     </div>
     <div class="navbar-end">
-      <a class="navbar-item" href="#">About</a>
-      <a class="navbar-item" href="#">Signup</a>
+      <a class="navbar-item" href="#">About</a> <a class="navbar-item" href="#">Signup</a>
     </div>
   </nav>
 </div>
@@ -43,78 +36,89 @@
         <h3>Headers</h3>
         <hr />
         <p>There are two types of navbars available in sartorial.</p>
-        <h4>Left/Right Navbar</h4>
-        <p>If you only have a left side and right side, you can use this setup.</p>
-        <ul>
-          <li>
-            <code class="scss-var">nav</code> - Using the <code>nav</code> component is good for
-            accessibility purposes.
-            <ul>
-              <li>
-                <code class="scss-var">.navbar</code> - class that includes all navbar elements
-                <ul>
-                  <li>
-                    <code class="scss-var">.navbar-start</code> - class for what goes on the left
-                    side of the navbar
-                    <ul>
-                      <li>
-                        <code class="scss-var">.navbar-brand</code> - class for your site logo
-                      </li>
-                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code class="scss-var">.navbar-end</code> - class for what goes on the right
-                    side of the navbar
-                    <ul>
-                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <h4>Left/Middle/Right Navbar</h4>
-        <p>
-          If you want a navbar that has a section centered, you MUST include a left/right/center tag
-          even if they are empty.
-        </p>
-        <ul>
-          <li>
-            <code class="scss-var">nav</code> - Using the <code>nav</code> component is good for
-            accessibility purposes.
-            <ul>
-              <li>
-                <code class="scss-var">.navbar</code> - class that includes all navbar elements
-                <ul>
-                  <li>
-                    <code class="scss-var">.navbar-left</code> - class for what goes on the left
-                    side of the navbar
-                    <ul>
-                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code class="scss-var">.navbar-center</code> - class for what goes in the middle
-                    of the navbar
-                    <ul>
-                      <li><code class="scss-var">.navbar-brand</code> - regular</li>
-                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code class="scss-var">.navbar-right</code> - class for what goes on the right
-                    side of the navbar
-                    <ul>
-                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <h4>Left/Right Navbar</h4><p>If you only have a left side and right side, you can use this setup.</p><ul class="structured_html">
+<ul>
+<li>
+<code class="scss-var">nav</code> - using the <code>nav</code> component is good for accessibility purposes
+<ul>
+<li>
+<code class="scss-var">.navbar</code> - class that includes all navbar elements
+<ul>
+<li>
+<code class="scss-var">.navbar-start</code> - class for what goes on the left side of the navbar
+<ul>
+<li>
+<code class="scss-var">.navbar-brand</code> - class for your logo
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - regular old navbar-item
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-end</code> - class for what goes on the right side of the navbar
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - regular old navbar-item
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul> <h4>Left/Right Navbar</h4><p>If you need a centered section of a navbar</p><ul class="structured_html">
+<ul>
+<li>
+<code class="scss-var">nav</code> - using the <code>nav</code> component is good for accessibility purposes
+<ul>
+<li>
+<code class="scss-var">.navbar</code> - class that includes all navbar elements
+<ul>
+<li>
+<code class="scss-var">.navbar-left</code> - class for what goes on the left side of the navbar
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - regular old navbar-item
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-middle</code> - class for what goes in the middle of the navbar
+<ul>
+<li>
+<code class="scss-var">.navbar-brand</code> - class for your logo
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - regular old navbar-item
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-right</code> - class for what goes on the right side of the navbar
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - regular old navbar-item
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
         <h4>Usage</h4>
         TODO
       </div>
