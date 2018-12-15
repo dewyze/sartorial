@@ -11,32 +11,86 @@ title: Navigation
       <div class="section">
         <h3>Headers</h3>
         <hr />
+        <p>There are two types of navbars available in sartorial.</p>
+        <h4>Left/Right Navbar</h4>
+        <p>If you only have a left side and right side, you can use this setup.</p>
+        <ul>
+          <li>
+            <code class="scss-var">nav</code> - Using the <code>nav</code> component is good for
+            accessibility purposes.
+            <ul>
+              <li>
+                <code class="scss-var">.navbar</code> - class that includes all navbar elements
+                <ul>
+                  <li>
+                    <code class="scss-var">.navbar-start</code> - class for what goes on the left
+                    side of the navbar
+                    <ul>
+                      <li>
+                        <code class="scss-var">.navbar-brand</code> - class for your site logo
+                      </li>
+                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class="scss-var">.navbar-end</code> - class for what goes on the right
+                    side of the navbar
+                    <ul>
+                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4>Left/Middle/Right Navbar</h4>
         <p>
-          The Sartorial Nav module provides the following classes for building responsive navbars:
+          If you want a navbar that has a section centered, you MUST include a left/right/center tag
+          even if they are empty.
         </p>
-        {% styled_table site.data.type.headers_table %}
-        <p>The default ratios between the texts are:</p>
-        <ul style="list-style-type:none;">
-          <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-          <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-          <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
-          <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
+        <ul>
+          <li>
+            <code class="scss-var">nav</code> - Using the <code>nav</code> component is good for
+            accessibility purposes.
+            <ul>
+              <li>
+                <code class="scss-var">.navbar</code> - class that includes all navbar elements
+                <ul>
+                  <li>
+                    <code class="scss-var">.navbar-left</code> - class for what goes on the left
+                    side of the navbar
+                    <ul>
+                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class="scss-var">.navbar-center</code> - class for what goes in the middle
+                    of the navbar
+                    <ul>
+                      <li><code class="scss-var">.navbar-brand</code> - regular</li>
+                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class="scss-var">.navbar-right</code> - class for what goes on the right
+                    side of the navbar
+                    <ul>
+                      <li><code class="scss-var">.navbar-item</code> - regular old navbar item</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
         <h4>Usage</h4>
-        {% include snippet.html file="type/h.html" %}
+        TODO
       </div>
       <div class="section">
         <h3>Why</h3>
         <hr />
-        <p>
-          Type is important. It can be hard to find good settings for headers that are also
-          responsive. Sartorial sets a ratio that deterines the relationship between each font-size
-          instead of needing to manually define it.
-        </p>
-        <p>
-          I decided to not require any classes for text and just add the styling to the heading tags
-          directly to ease use.
-        </p>
+        <p>TODO</p>
       </div>
       <div class="section">
         <h3>Customize</h3>
