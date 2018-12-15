@@ -1,0 +1,21 @@
+title: Left/Right Navbar
+description: If you only have a left side and right side, you can use this setup.
+items:
+  - tag: nav
+    description: using the <code>nav</code> component is good for accessibility purposes
+    children:
+      - tag: .navbar
+        description: class that includes all navbar elements
+        children:
+          - tag: .navbar-start
+            description: class for what goes on the left side of the navbar
+            children:
+              - tag: .navbar-brand
+                description: class for your logo
+              - tag: .navbar-item
+                description: regular old navbar-item
+          - tag: .navbar-end
+            description: class for what goes on the right side of the navbar
+            children:
+              - tag: .navbar-item
+                description: regular old navbar-item
