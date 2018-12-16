@@ -244,6 +244,9 @@ hr {
 .no-wrap, .scss-var, .variable-table tr td:nth-child(1) {
   white-space: nowrap; }
 
+pre {
+  overflow-x: scroll; }
+
 .highlight .hll {
   background-color: #ffffcc; }
 
