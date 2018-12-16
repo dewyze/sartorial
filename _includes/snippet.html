@@ -3,6 +3,8 @@
     <div class="container {{ include.class }}">{%- include {{include.file}} -%}</div>
   </div>
   <div class="source">
-    {%- highlight html -%} {%- include {{include.file}} -%} {%- endhighlight -%}
+    {%- highlight html -%}
+    {%- include {{include.file}} -%}
+    {%- endhighlight -%}
   </div>
 </div>
