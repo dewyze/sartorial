@@ -11,17 +11,17 @@
 //   border-radius: 4px;
 // }
 //
-// pre {
-//   background: $color__theme--light-gray;
-// 	border: .1rem solid $color__theme--light-gray-border;
-//   border-radius: .4rem;
-//   padding: 1rem 1.5rem;
-//   overflow-x: scroll;
-//
-//   > code {
-//     border: none;
-//     display: block;
-//     padding: 0;
-//     white-space: pre;
-//   }
-// }
+pre {
+  //   background: $color__theme--light-gray;
+  // 	border: .1rem solid $color__theme--light-gray-border;
+  //   border-radius: .4rem;
+  //   padding: 1rem 1.5rem;
+  overflow-x: scroll;
+
+  // > code {
+  //   border: none;
+  //   display: block;
+  //   padding: 0;
+  //   white-space: pre;
+  // }
+}

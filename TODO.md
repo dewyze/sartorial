@@ -39,6 +39,8 @@
 - [ ] Hover caption/text
 - [ ] Progress Bar?
 
+- Don't actually ignore all of includes, maybe create a snippets folder and only
+  have prettier ignore that
 
 # Stylings
 - Table stylings on variable tables
@@ -47,3 +49,4 @@
 - Copy Source
 - Hide/reveal source
 - Hide/reveal Customize/why
+- Table overflow
