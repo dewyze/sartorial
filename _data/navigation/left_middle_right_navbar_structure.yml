@@ -1,5 +1,3 @@
-title: Left/Middle/Right Navbar
-description: If you need a centered section of a navbar
 items:
   - tag: .navbar
     description: class that includes all navbar elements

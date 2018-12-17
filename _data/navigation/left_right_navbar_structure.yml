@@ -1,5 +1,3 @@
-title: Left/Right Navbar
-description: If you only have a left side and right side, you can use this setup.
 items:
   - tag: .navbar
     description: class that includes all navbar elements

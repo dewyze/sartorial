@@ -8,9 +8,7 @@ module Jekyll
     def render(context)
       @data = context[@source]
 
-      result = "<h3>#{@data["title"]}</h3><hr/>"
-      result += "<p>#{@data["description"]}</p>"
-      result += "<ul class=\"structured_html\">\n"
+      result = "<ul class=\"structured_html\">\n"
       @data["items"].each {|item| result += _item(item)}
       result += "</ul>"
       result
