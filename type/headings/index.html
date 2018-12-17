@@ -33,11 +33,12 @@
     <div class="section">
       <h1>Headings</h1>
       <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
-      <div class="section">
-        <h3>Headers</h3>
-        <hr />
-        <p>The Sartorial Type modules provides the following header tags.</p>
-        <table class=docs-table><tr>
+    </div>
+    <div class="section">
+      <h3>Headers</h3>
+      <hr />
+      <p>The Sartorial Type modules provides the following header tags.</p>
+      <table class=docs-table><tr>
 <th>Html tag</th>
 <th>Widescreen size</th>
 <th>Desktop size</th>
@@ -118,15 +119,15 @@
 </tr>
 </table>
 
-        <p>The default ratios between the texts are:</p>
-        <ul style="list-style-type:none;">
-          <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-          <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-          <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
-          <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
-        </ul>
-        <h4>Usage</h4>
-        <div class="example">
+      <p>The default ratios between the texts are:</p>
+      <ul style="list-style-type:none;">
+        <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+        <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
+        <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
+        <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
+      </ul>
+      <h4>Usage</h4>
+      <div class="example">
   <div class="rendered">
     <div class="container "><h1>This is h1 text.</h1>
 <h2>This is h2 text.</h2>
@@ -146,53 +147,53 @@
 <span class="nt">&lt;p&gt;</span>This is p text.<span class="nt">&lt;/p&gt;</span></code></pre></figure></div>
 </div>
 
-      </div>
-      <div class="section">
-        <h3>Modifiers</h3>
-        <hr />
-        <p>The following clases can be used to modify headers</p>
-        <ul style="list-style-type:none;">
-          <li>
-            <code class="scss-var">.subheader</code> : This can be used for a muted colored and
-            light stroke text.
-          </li>
-        </ul>
+    </div>
+    <div class="section">
+      <h3>Modifiers</h3>
+      <hr />
+      <p>The following clases can be used to modify headers</p>
+      <ul style="list-style-type:none;">
+        <li>
+          <code class="scss-var">.subheader</code> : This can be used for a muted colored and light
+          stroke text.
+        </li>
+      </ul>
 
-        <h4>Usage</h4>
-        <div class="example">
+      <h4>Usage</h4>
+      <div class="example">
   <div class="rendered">
     <div class="container "><h3>Main heading</h3>
-<h4 class="subheader">Some information about my heading</h4>
+<h4 class="subheader">Some information about my heading</h4>   
 </div>
   </div>
   <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>Main heading<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"subheader"</span><span class="nt">&gt;</span>Some information about my heading<span class="nt">&lt;/h4&gt;</span></code></pre></figure></div>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"subheader"</span><span class="nt">&gt;</span>Some information about my heading<span class="nt">&lt;/h4&gt;</span>   </code></pre></figure></div>
 </div>
 
-      </div>
-      <div class="section">
-        <h3>Why</h3>
-        <hr />
-        <p>
-          Type is important. It can be hard to find good settings for headers that are also
-          responsive. Sartorial sets a ratio that deterines the relationship between each font-size
-          instead of needing to manually define it.
-        </p>
-        <p>
-          I decided to not require any classes for text and just add the styling to the heading tags
-          directly to ease use.
-        </p>
-      </div>
-      <div class="section">
-        <h3>Customize</h3>
-        <hr />
-        <h4>Font & Line Height Variables</h4>
-        <p>
-          The type sizes are built off of a base font-size and a ratio. Additionally, there are
-          separate variables that can be used to build those up per media size. See the table below
-          for what you can set and the defaults.
-        </p>
-        <table class=docs-table><tr>
+    </div>
+    <div class="section">
+      <h3>Why</h3>
+      <hr />
+      <p>
+        Type is important. It can be hard to find good settings for headers that are also
+        responsive. Sartorial sets a ratio that deterines the relationship between each font-size
+        instead of needing to manually define it.
+      </p>
+      <p>
+        I decided to not require any classes for text and just add the styling to the heading tags
+        directly to ease use.
+      </p>
+    </div>
+    <div class="section">
+      <h3>Customize</h3>
+      <hr />
+      <h4>Font & Line Height Variables</h4>
+      <p>
+        The type sizes are built off of a base font-size and a ratio. Additionally, there are
+        separate variables that can be used to build those up per media size. See the table below
+        for what you can set and the defaults.
+      </p>
+      <table class=docs-table><tr>
 <th>Variable</th>
 <th>Default Value</th>
 <th>Details</th>
@@ -264,12 +265,12 @@
 </table>
 
 
-        <h4>Available Ratios</h4>
-        <p>
-          The ratio between the main height and the header size is based on an explicit ratio. You
-          can either use one of these or your own. The ratios are set per media size:
-        </p>
-        <table class=docs-table><tr>
+      <h4>Available Ratios</h4>
+      <p>
+        The ratio between the main height and the header size is based on an explicit ratio. You can
+        either use one of these or your own. The ratios are set per media size:
+      </p>
+      <table class=docs-table><tr>
 <th>Variable</th>
 <th>Default (See below table for details)</th>
 <th>Details</th>
@@ -316,8 +317,8 @@
 </tr>
 </table>
 
-        <p>You can set your own ratio or use one of the below variables.</p>
-        <table class=docs-table><tr>
+      <p>You can set your own ratio or use one of the below variables.</p>
+      <table class=docs-table><tr>
 <th>Variable</th>
 <th>Step Value</th>
 <th>Ratio Name</th>
@@ -388,7 +389,6 @@
 </tr>
 </table>
 
-      </div>
     </div>
   </div>
 </div>
