@@ -35,6 +35,8 @@
       <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
       <p>There are two types of navbars available in sartorial.</p>
     </div>
+    <div class="section"><div class="callout callout-warning">The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
+</div></div>
     <div class="section">
       <div class="section">
         <h3>Left/Right Navbar</h3>
@@ -214,16 +216,21 @@
 </div>
 
       </div>
-
-      <div class="section"><div class="callout callout-info">Use the <code>.full-width</code> class if you want the navbar to expand to the full size of the screen.
-</div></div>
-      <div class="section"><div class="callout callout-warning">The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
-</div></div>
     </div>
     <div class="section">
-      <h3>Why</h3>
+      <h3>Modifiers</h3>
       <hr />
-      <p>TODO</p>
+      <ul>
+        <li>
+          <code class="bold">.navbar</code>
+          <ul>
+            <li>
+              <code class="scss-var">.full-width</code> - This will not limit the navbar to the
+              <code class="scss-var">$container-size</code>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="section">
       <h3>Customize</h3>
