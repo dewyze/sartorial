@@ -1,5 +1,5 @@
 module Jekyll
-  class NoteTag < Liquid::Tag
+  class CalloutTag < Liquid::Tag
     def initialize(tag_name, source, tokens)
       super
       @source = source
@@ -12,4 +12,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('note', Jekyll::NoteTag)
+Liquid::Template.register_tag('callout', Jekyll::CalloutTag)
