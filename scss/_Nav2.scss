@@ -1,0 +1,165 @@
+.navbar {
+  &:not(.full-width) {
+    max-width: $container-width;
+    @include margin(null auto);
+  }
+  width: 100%;
+  min-height: $navbar-height;
+  display: flex;
+  background-color: $color-navbar-background;
+  .navbar-keep {
+    display: flex;
+  }
+
+  @include phone {
+    .navbar-start,
+    .navbar-end,
+    .navbar-right,
+    .navbar-center,
+    .navbar-left {
+      display: none;
+    }
+
+    :not(.navbar-keep) {
+      .navbar-item {
+        display: none;
+      }
+    }
+
+    .navbar-keep {
+      flex-grow: 1;
+      .navbar-item {
+        display: flex;
+        &:last-of-type {
+          margin-right: auto;
+        }
+      }
+    }
+
+    .navbar-toggle {
+      display: flex;
+      position: relative;
+      width: $navbar-height;
+      height: $navbar-height;
+      margin-left: auto;
+      input[type='checkbox']:not(:checked) {
+        ~ span {
+          position: absolute;
+          width: 20px;
+          display: block;
+          height: 1px;
+          background-color: black;
+          left: calc(50% - 10px);
+        }
+        @for $i from 2 to 5 {
+          ~ span:nth-child(#{$i}) {
+            top: calc(50% - #{(($i - 1) * 8) - 16}px);
+          }
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    .navbar-start,
+    .navbar-end,
+    .navbar-right,
+    .navbar-center,
+    .navbar-left {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    :not(.navbar-keep) {
+      .navbar-item {
+        display: flex;
+      }
+    }
+
+    .navbar-start {
+      margin-right: auto;
+    }
+
+    .navbar-end {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+
+    // TODO: Center should not be used without left/right
+    .navbar-left {
+      flex: 1;
+    }
+
+    .navbar-center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar-right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .navbar-keep {
+      flex-grow: 0;
+    }
+  }
+
+  .navbar-toggle input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-keep,
+  .navbar-item,
+  .navbar-toggle {
+    align-items: center;
+  }
+  .navbar-item {
+    padding: 0.5rem ($navbar-spacing / 2);
+  }
+
+  .navbar-item,
+  .navbar-toggle {
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-navbar-background-hover;
+    }
+
+    &:last-child {
+      padding-right: $navbar-spacing;
+    }
+  }
+
+  &:not(.navbar-keep) > .navbar-item {
+    &:first-child {
+      padding-left: $navbar-spacing;
+    }
+  }
+
+  // TODO: Brand is visible on small screen
+  .navbar-keep img {
+    height: $navbar-height;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-links;
+
+    &:hover {
+      color: $color-links-hover;
+    }
+  }
+
+  .icon,
+  i {
+    margin-right: 0.75rem;
+  }
+}

@@ -23,7 +23,6 @@
 
   .navbar-end {
     margin-left: auto;
-    justify-content: flex-end;
   }
 
   // TODO: Center should not be used without left/right
@@ -42,7 +41,7 @@
     justify-content: flex-end;
   }
 
-  .navbar-brand,
+  .navbar-logo,
   .navbar-item {
     display: flex;
     align-items: center;
@@ -55,19 +54,10 @@
     &:hover {
       background-color: $color-navbar-background-hover;
     }
-
-    &:first-child {
-      padding-left: $navbar-spacing;
-    }
-
-    &:last-child {
-      padding-right: $navbar-spacing;
-    }
   }
 
-  // TODO: Brand is visible on small screen
-  .navbar-brand img {
-    padding: 8px; // TODO: Document this? this makes it about the same size as the navbar, other ways to do this?
+  // TODO: logo is visible on small screen
+  img {
     height: $navbar-height;
   }
 
