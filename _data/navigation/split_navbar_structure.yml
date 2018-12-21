@@ -14,7 +14,7 @@ items:
         children:
           - tag: <span></span><span></span><span></span>
             description: these are needed to form the hamburger menu visible on mobile
-      - tag: .navbar-item-left
+      - tag: .navbar-item
         description: 
         description: this is an item on the left side of the navbar (to the right of the logo)
       - tag: .navbar-item-right

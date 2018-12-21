@@ -10,61 +10,9 @@
   background-color: $color-navbar-background;
   align-items: stretch;
 
-  .navbar-start,
-  .navbar-end,
-  .navbar-right,
-  .navbar-center,
-  .navbar-left {
-    display: flex;
-    align-items: stretch;
-  }
-
-  .navbar-start {
-    margin-right: auto;
-  }
-
-  .navbar-end {
-    margin-left: auto;
-  }
-
-  // TODO: Center should not be used without left/right
-  .navbar-left {
-    flex: 1;
-  }
-
-  .navbar-center {
-    flex: 1;
+  &.centered {
     justify-content: center;
   }
-
-  .navbar-right {
-    flex: 1;
-    justify-content: flex-end;
-  }
-
-  // .navbar-item-right {
-  //   margin-left: auto;
-  //   & ~ .navbar-item-right {
-  //     margin-left: unset;
-  //   }
-  // }
-  //
-  // .navbar-logo,
-  // .navbar-item-left,
-  // .navbar-item-right {
-  //   display: flex;
-  //   align-items: center;
-  //   padding: 0.5rem ($navbar-spacing / 2);
-  // }
-  //
-  // .navbar-item-left,
-  // .navbar-item-right {
-  //   background-color: transparent;
-  //
-  //   &:hover {
-  //     background-color: $color-navbar-background-hover;
-  //   }
-  // }
 
   .navbar-image {
     height: $navbar-height - ($navbar-vertical-padding * 2);
@@ -84,7 +32,43 @@
     margin-right: 0.75rem;
   }
 
+  .navbar-item-logo,
+  .navbar-item-keep,
+  .navbar-item,
+  .navbar-item-right {
+    display: flex;
+    align-items: center;
+    padding: $navbar-vertical-padding $navbar-horizontal-padding;
+  }
+
+  .navbar-item-logo,
+  .navbar-item-keep {
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+
+  .navbar-item-keep,
+  .navbar-item,
+  .navbar-item-right {
+    background-color: transparent;
+    &:hover {
+      background-color: $color-navbar-background-hover;
+    }
+  }
+
+  &:not(.centered) {
+    .navbar-item-right {
+      margin-left: auto;
+      & ~ .navbar-item-right {
+        margin-left: unset;
+      }
+    }
+  }
+
   @include phone {
+    flex-wrap: wrap;
+
     input.navbar-toggle {
       display: none;
       &:checked {
@@ -118,6 +102,13 @@
             display: none;
           }
         }
+
+        ~ .navbar-item,
+        ~ .navbar-item-right {
+          display: flex;
+          flex: 1 100%;
+          padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
+        }
       }
       &:not(:checked) {
         & + label.navbar-toggle {
@@ -141,6 +132,11 @@
             }
           }
         }
+
+        ~ .navbar-item,
+        ~ .navbar-item-right {
+          display: none;
+        }
       }
     }
 
@@ -160,6 +156,13 @@
   @include desktop {
     .navbar-toggle {
       display: none !important;
+    }
+
+    input.navbar-toggle ~ .navbar-item,
+    input.navbar-toggle ~ .navbar-item-right {
+      display: flex !important;
+      flex: 0 1 auto;
+      padding: $navbar-vertical-padding $navbar-horizontal-padding;
     }
   }
 }

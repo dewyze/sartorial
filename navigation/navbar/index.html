@@ -8,45 +8,32 @@ title: Navigation
     <div class="section">
       <h1>Navbar</h1>
       <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
-      <p>There are two types of navbars available in sartorial.</p>
+      <p>
+        There are two types of navbars available in sartorial: Split; and Centered. Both styles of
+        navbar will collapse on mobile devices.
+      </p>
     </div>
     <div class="section">
       <div class="section">
-        <h3>Navbar</h3>
+        <h3>Split Navbar</h3>
         <hr />
         <p>
           If you want to make a collapsible navbar with the logo, left side, and right side, look no
           further!
         </p>
-        {% structured_html site.data.navigation.standard_navbar_structure %}
+        {% structured_html site.data.navigation.split_navbar_structure %}
         <h4>Usage</h4>
-        {% include snippet.html file="navigation/navbar/standard.html" class="no-pad" %}
+        {% include snippet.html file="navigation/navbar/split.html" class="no-pad" %}
       </div>
       <div class="section">
-        <h3>Left/Middle/Right Navbar</h3>
+        <h3>Centered navbar</h3>
         <hr />
         <p>If you need a centered section of a navbar</p>
-        {% structured_html site.data.navigation.left_middle_right_navbar_structure %}
+        {% structured_html site.data.navigation.centered_navbar_structure %}
         <h4>Usage</h4>
-        {% include snippet.html file="navigation/navbar/left_middle_right.html" class="no-pad" %}
-      </div>
-    </div>
-    <div class="section">
-      <div class="section">
-        <h3>Left/Right Navbar</h3>
-        <hr />
-        <p>If you only have a left side and right side, you can use this setup.</p>
-        {% structured_html site.data.navigation.left_right_navbar_structure %}
-        <h4>Usage</h4>
-        {% include snippet.html file="navigation/navbar/start_end.html" class="no-pad" %}
-      </div>
-      <div class="section">
-        <h3>Left/Middle/Right Navbar</h3>
-        <hr />
-        <p>If you need a centered section of a navbar</p>
-        {% structured_html site.data.navigation.left_middle_right_navbar_structure %}
-        <h4>Usage</h4>
-        {% include snippet.html file="navigation/navbar/left_middle_right.html" class="no-pad" %}
+        {% include snippet.html file="navigation/navbar/centered.html" class="no-pad" %}
+
+        <div class="section">{% callout site.data.navigation.callouts.navbar_container %}</div>
       </div>
     </div>
     <div class="section">

@@ -6,3 +6,7 @@ navbar_full_width:
   kind: info
   content: | 
     Use the <code>.full-width</code> class if you want the navbar to expand to the full size of the screen.
+navbar-item-right:
+  kind: warning
+  content: | 
+    Note that <code class="scss-var">.navbar-item-right</code> does not have any effect on the navbar. When the bar is centered, this is ignored. If you want to undo this, see more details in the <a href="#" data="TODO">How</a> section.
