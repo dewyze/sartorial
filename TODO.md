@@ -5,16 +5,17 @@
 - [ ] Media breakpoints
 - [ ] Responsiveness helpers/hiders
 - [ ] Navigation
-  - [ ] Left Logo
-  - [ ] Centered Logo
-  - [ ] Right Logo
-  - [ ] Symmetrical
+  - [x] Left Logo
+  - [x] Centered Logo
+  - [x] Right Logo
+  - [x] Symmetrical
   - [ ] Sectioned
   - [ ] Search Bar
   - [ ] Active Class Options
     - [ ] Underlines
     - [ ] Highlights
-  - [ ] Responsiveness
+  - [x] Responsiveness
+  - [ ] `.keep` functionality for on mobile
 - [ ] Type
   - [ ] Titles
   - [ ] h1 - h6
@@ -46,7 +47,7 @@
 - Table stylings on variable tables
 
 # Features
-- Copy Source
-- Hide/reveal source
-- Hide/reveal Customize/why
-- Table overflow
+- [ ] Copy Source
+- [ ] Hide/reveal source
+- [ ] Hide/reveal Customize/why
+- [ ] Table overflow
