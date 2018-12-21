@@ -1,4 +1,6 @@
 .navbar {
+  .navbar-item-logo,
+  .navbar-item-keep,
   .navbar-item-left,
   .navbar-item-right {
     display: flex;
@@ -6,6 +8,7 @@
     padding: 0.5rem ($navbar-spacing / 2);
   }
 
+  .navbar-item-keep,
   .navbar-item-left,
   .navbar-item-right,
   .navbar-toggle {
@@ -23,9 +26,13 @@
   }
 
   @include phone {
+    flex-wrap: wrap;
+
     .navbar-toggle ~ .navbar-item-left,
     .navbar-toggle ~ .navbar-item-right {
-      display: none;
+      display: flex;
+      flex: 1 100%;
+      padding: 1rem $navbar-spacing;
     }
 
     .navbar-toggle input {
