@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   &:not(.full-width) {
     max-width: $container-width;
     @include margin(null auto);
@@ -41,29 +42,29 @@
     justify-content: flex-end;
   }
 
-  .navbar-item-right {
-    margin-left: auto;
-    & ~ .navbar-item-right {
-      margin-left: unset;
-    }
-  }
-
-  .navbar-logo,
-  .navbar-item-left,
-  .navbar-item-right {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem ($navbar-spacing / 2);
-  }
-
-  .navbar-item-left,
-  .navbar-item-right {
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-navbar-background-hover;
-    }
-  }
+  // .navbar-item-right {
+  //   margin-left: auto;
+  //   & ~ .navbar-item-right {
+  //     margin-left: unset;
+  //   }
+  // }
+  //
+  // .navbar-logo,
+  // .navbar-item-left,
+  // .navbar-item-right {
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 0.5rem ($navbar-spacing / 2);
+  // }
+  //
+  // .navbar-item-left,
+  // .navbar-item-right {
+  //   background-color: transparent;
+  //
+  //   &:hover {
+  //     background-color: $color-navbar-background-hover;
+  //   }
+  // }
 
   // TODO: logo is visible on small screen
   img {
