@@ -56,14 +56,14 @@
 <code class="scss-var">.navbar-item-logo</code> - this only differs from the other element types in that the background color does not change (normally or on hover)
 <ul>
 <li>
-<code class="scss-var">.navbar-image</code> - this is used in <code class="scss-var">.navbar-item-<logo|keep|left|right|></code> to set the size of the image and pad it correctly to maintain <code class="scss-var">$navbar-height</code>
+<code class="scss-var">.navbar-image</code> - this is used in <code class="scss-var">.navbar-item-&lt;logo|keep|left|right|&gt;</code> to set the size of the image and pad it correctly to maintain <code class="scss-var">$navbar-height</code>
 </li>
 </ul>
 </li>
 </ul>
 <ul>
 <li>
-<code class="scss-var">input.navbar-item-<left|right></code> - any items that appear <em>before</em> the navbar toggle will not be collapsed on mobile
+<code class="scss-var">input.navbar-item-&lt;left|right&gt;</code> - any items that appear <em>before</em> the navbar toggle will not be collapsed on mobile
 </li>
 </ul>
 <ul>
@@ -71,7 +71,8 @@
 <code class="scss-var">label.navbar-toggle</code> - this forms the hamburger menu that can be clicked on mobile
 <ul>
 <li>
-<code class="scss-var"><span></span><span></span><span></span></code> - these are needed to form the hamburger menu visible on mobile
+<code class="scss-var">&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+</code> - these are needed to form the hamburger menu visible on mobile
 </li>
 </ul>
 </li>
@@ -136,49 +137,10 @@
       <div class="section">
         <h3>Centered navbar</h3>
         <hr />
-        <p>If you need a centered section of a navbar</p>
-        <ul class="structured_html">
-<ul>
-<li>
-<code class="scss-var">.navbar</code> - class that includes all navbar elements
-<ul>
-<li>
-<code class="scss-var">.navbar-left</code> - class for what goes on the left side of the navbar
-<ul>
-<li>
-<code class="scss-var">.navbar-item</code> - regular old navbar-item
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-middle</code> - class for what goes in the middle of the navbar
-<ul>
-<li>
-<code class="scss-var">.navbar-brand</code> - class for your logo
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-item</code> - regular old navbar-item
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-right</code> - class for what goes on the right side of the navbar
-<ul>
-<li>
-<code class="scss-var">.navbar-item</code> - regular old navbar-item
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</ul>
+        <p>
+          If you need a centered section of a navbar just add a
+          <code class="scss-var">.centered</code> class to your navbar.
+        </p>
         <h4>Usage</h4>
         <div class="example">
   <div class="rendered">
