@@ -1,0 +1,22 @@
+items:
+  - tag: .navbar
+    description: class that includes all navbar elements
+    children:
+      - tag: .navbar-item-logo
+        description: this only differs from the other element types in that the background color does not change (normally or on hover)
+        children:
+          - tag: .navbar-image
+            description: this is used in <code class="scss-var">.navbar-item-<logo|keep|left|right|></code> to set the size of the image and pad it correctly to maintain <code class="scss-var">$navbar-height</code>
+      - tag: input.navbar-item-<left|right>
+        description: any items that appear <em>before</em> the navbar toggle will not be collapsed on mobile
+      - tag: label.navbar-toggle
+        description: this forms the hamburger menu that can be clicked on mobile
+        children:
+          - tag: <span></span><span></span><span></span>
+            description: these are needed to form the hamburger menu visible on mobile
+      - tag: .navbar-item-left
+        description: 
+        description: this is an item on the left side of the navbar (to the right of the logo)
+      - tag: .navbar-item-right
+        description: 
+        description: this is an item on the right side of the navbar

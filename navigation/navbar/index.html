@@ -12,6 +12,27 @@ title: Navigation
     </div>
     <div class="section">
       <div class="section">
+        <h3>Navbar</h3>
+        <hr />
+        <p>
+          If you want to make a collapsible navbar with the logo, left side, and right side, look no
+          further!
+        </p>
+        {% structured_html site.data.navigation.standard_navbar_structure %}
+        <h4>Usage</h4>
+        {% include snippet.html file="navigation/navbar/standard.html" class="no-pad" %}
+      </div>
+      <div class="section">
+        <h3>Left/Middle/Right Navbar</h3>
+        <hr />
+        <p>If you need a centered section of a navbar</p>
+        {% structured_html site.data.navigation.left_middle_right_navbar_structure %}
+        <h4>Usage</h4>
+        {% include snippet.html file="navigation/navbar/left_middle_right.html" class="no-pad" %}
+      </div>
+    </div>
+    <div class="section">
+      <div class="section">
         <h3>Left/Right Navbar</h3>
         <hr />
         <p>If you only have a left side and right side, you can use this setup.</p>
