@@ -66,9 +66,8 @@
   //   }
   // }
 
-  // TODO: These paddings should be vars probably
-  img {
-    height: $navbar-height - ($navbar-spacing * 1.333333);
+  .navbar-image {
+    height: $navbar-height - ($navbar-vertical-padding * 2);
   }
 
   a {
@@ -90,7 +89,7 @@
       display: none;
       &:checked {
         & + label.navbar-toggle {
-          padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+          padding: $navbar-vertical-padding $navbar-horizontal-padding;
           span {
             position: absolute;
             width: 20px;
@@ -127,7 +126,7 @@
           width: $navbar-height;
           height: $navbar-height;
           margin-left: auto;
-          padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+          padding: $navbar-vertical-padding $navbar-horizontal-padding;
           span {
             position: absolute;
             width: 20px;

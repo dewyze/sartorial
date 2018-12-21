@@ -5,7 +5,7 @@
   .navbar-item-right {
     display: flex;
     align-items: center;
-    padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+    padding: $navbar-vertical-padding $navbar-horizontal-padding;
   }
 
   .navbar-item-logo,
@@ -40,7 +40,7 @@
         ~ .navbar-item-right {
           display: flex;
           flex: 1 100%;
-          padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+          padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
         }
       }
       &:not(:checked) {
@@ -57,7 +57,7 @@
     input.navbar-toggle ~ .navbar-item-right {
       display: flex !important;
       flex: 0 1 auto;
-      padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+      padding: $navbar-vertical-padding $navbar-horizontal-padding;
     }
   }
 }
