@@ -5,13 +5,19 @@
   .navbar-item-right {
     display: flex;
     align-items: center;
-    padding: 0.5rem ($navbar-spacing / 2);
+    padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
+  }
+
+  .navbar-item-logo,
+  .navbar-item-keep {
+    &:first-child {
+      padding-left: 20px;
+    }
   }
 
   .navbar-item-keep,
   .navbar-item-left,
-  .navbar-item-right,
-  .navbar-toggle {
+  .navbar-item-right {
     background-color: transparent;
     &:hover {
       background-color: $color-navbar-background-hover;
@@ -28,43 +34,13 @@
   @include phone {
     flex-wrap: wrap;
 
-    #navbar-toggle {
-      display: none;
+    input.navbar-toggle {
       &:checked {
         ~ .navbar-item-left,
         ~ .navbar-item-right {
           display: flex;
           flex: 1 100%;
-          padding: 1rem $navbar-spacing;
-        }
-        & + label.navbar-toggle {
-          span {
-            position: absolute;
-            width: 20px;
-            display: block;
-            height: 1px;
-            background-color: black;
-            left: calc(50% - 10px);
-            top: 0;
-            -webkit-transition: -webkit-transform 0.2s linear;
-            -ms-transition: -ms-transform 0.2s linear;
-            transition: transform 0.2s linear;
-          }
-          span:nth-child(1) {
-            transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            top: 50%;
-          }
-          span:nth-child(2) {
-            transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-            top: 50%;
-          }
-          span:nth-child(3) {
-            display: none;
-          }
+          padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
         }
       }
       &:not(:checked) {
@@ -72,47 +48,16 @@
         ~ .navbar-item-right {
           display: none;
         }
-        & + label.navbar-toggle {
-          display: flex;
-          position: relative;
-          width: $navbar-height;
-          height: $navbar-height;
-          margin-left: auto;
-          span {
-            position: absolute;
-            width: 20px;
-            display: block;
-            height: 1px;
-            background-color: black;
-            left: calc(50% - 10px);
-          }
-          @for $i from 1 to 4 {
-            span:nth-child(#{$i}) {
-              top: calc(50% - #{(($i) * 8) - 16}px);
-            }
-          }
-        }
       }
-    }
-
-    label.navbar-toggle {
-      display: flex;
-      position: relative;
-      width: $navbar-height;
-      height: $navbar-height;
-      margin-left: auto;
     }
   }
 
   @include desktop {
-    .navbar-toggle ~ .navbar-item-left,
-    .navbar-toggle ~ .navbar-item-right {
+    input.navbar-toggle ~ .navbar-item-left,
+    input.navbar-toggle ~ .navbar-item-right {
       display: flex !important;
       flex: 0 1 auto;
-      padding: 0.5rem ($navbar-spacing / 2);
-    }
-    .navbar-toggle {
-      display: none !important;
+      padding: ($navbar-spacing * 0.66667) ($navbar-spacing / 2);
     }
   }
 }
