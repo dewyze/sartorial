@@ -13,7 +13,7 @@ items:
         description: this forms the hamburger menu that can be clicked on mobile
         children:
           - tag: |
-              &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+              &lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;
             description: these are needed to form the hamburger menu visible on mobile
       - tag: .navbar-item
         description: 
