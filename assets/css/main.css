@@ -192,6 +192,7 @@ hr {
   min-height: 6rem;
   display: flex;
   background-color: #ffffff;
+  padding-left: 20px;
   align-items: stretch; }
   .navbar:not(.full-width) {
     max-width: 120rem;
@@ -199,7 +200,7 @@ hr {
     margin-left: auto; }
   .navbar.centered {
     justify-content: center; }
-  .navbar .navbar-image {
+  .navbar img.navbar-image {
     height: 3.99999rem; }
   .navbar a {
     text-decoration: none;
@@ -209,31 +210,25 @@ hr {
   .navbar .icon,
   .navbar i {
     margin-right: 0.75rem; }
-  .navbar .navbar-item-logo,
-  .navbar .navbar-item-keep,
-  .navbar .navbar-item,
-  .navbar .navbar-item-right {
+  .navbar .navbar-logo,
+  .navbar .navbar-item {
     display: flex;
     align-items: center;
     padding: 1.000005rem 0.75rem; }
-  .navbar .navbar-item-logo:first-child,
-  .navbar .navbar-item-keep:first-child {
-    padding-left: 20px; }
-  .navbar .navbar-item-keep,
-  .navbar .navbar-item,
-  .navbar .navbar-item-right {
+  .navbar .navbar-item:not(.navbar-no-bg) {
     background-color: transparent; }
-    .navbar .navbar-item-keep:hover,
-    .navbar .navbar-item:hover,
-    .navbar .navbar-item-right:hover {
+    .navbar .navbar-item:not(.navbar-no-bg):hover {
       background-color: #fafafa; }
-  .navbar:not(.centered) .navbar-item-right {
+  .navbar:not(.centered) .navbar-right {
     margin-left: auto; }
-    .navbar:not(.centered) .navbar-item-right ~ .navbar-item-right {
+    .navbar:not(.centered) .navbar-right ~ .navbar-right {
       margin-left: unset; }
   @media (min-width: 320px) {
     .navbar {
       flex-wrap: wrap; }
+      .navbar .navbar-no-collapse,
+      .navbar .navbar-mobile-only {
+        order: 2; }
       .navbar input.navbar-toggle {
         display: none; }
         .navbar input.navbar-toggle:checked + label.navbar-toggle {
@@ -261,10 +256,11 @@ hr {
             top: 50%; }
           .navbar input.navbar-toggle:checked + label.navbar-toggle span:nth-child(3) {
             display: none; }
-        .navbar input.navbar-toggle:checked ~ .navbar-item,
-        .navbar input.navbar-toggle:checked ~ .navbar-item-right {
+        .navbar input.navbar-toggle:checked ~ .navbar-item:not(.navbar-no-collapse), .navbar input.navbar-toggle:checked ~ .navbar-item:not(.navbar-mobile-only) {
           display: flex;
+          order: 4;
           flex: 1 100%;
+          margin-left: -15px;
           padding: 1.000005rem 1.5rem; }
         .navbar input.navbar-toggle:not(:checked) + label.navbar-toggle {
           display: flex;
@@ -286,23 +282,24 @@ hr {
             top: calc(50% - 0px); }
           .navbar input.navbar-toggle:not(:checked) + label.navbar-toggle span:nth-child(3) {
             top: calc(50% - 8px); }
-        .navbar input.navbar-toggle:not(:checked) ~ .navbar-item,
-        .navbar input.navbar-toggle:not(:checked) ~ .navbar-item-right {
+        .navbar input.navbar-toggle:not(:checked) ~ .navbar-item:not(.navbar-no-collapse), .navbar input.navbar-toggle:not(:checked) ~ .navbar-item:not(.navbar-mobile-only) {
           display: none; }
       .navbar label.navbar-toggle {
         display: flex;
+        order: 3;
         position: relative;
         width: 6rem;
         height: 6rem;
         margin-left: auto;
         background-color: transparent; }
         .navbar label.navbar-toggle:hover {
-          background-color: #fafafa; } }
+          background-color: #fafafa; }
+      .navbar .navbar-desktop-only {
+        display: none !important; } }
   @media (min-width: 1140px) {
     .navbar .navbar-toggle {
       display: none !important; }
-    .navbar input.navbar-toggle ~ .navbar-item,
-    .navbar input.navbar-toggle ~ .navbar-item-right {
+    .navbar input.navbar-toggle ~ .navbar-item:not(.navbar-collapse-only):not(.navbar-mobile-only) {
       display: flex !important;
       flex: 0 1 auto;
       padding: 1.000005rem 0.75rem; } }
@@ -646,6 +643,17 @@ hr {
 .source code {
   font-size: 1.4rem; }
 
+.docs-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto; }
+  @media (min-width: 320px) {
+    .docs-table {
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    .docs-table {
+      font-size: unset; } }
+
 .callout {
   padding: 5px 10px;
   margin-top: 58px;
@@ -678,3 +686,6 @@ hr {
     content: 'INFO';
     border-bottom: none;
     color: white; }
+
+.navbar-logo {
+  margin-left: -10px; }
