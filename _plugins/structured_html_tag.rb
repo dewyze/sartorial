@@ -17,9 +17,10 @@ module Jekyll
     private
 
     def _item(item)
+      description = " - #{item["description"]}\n" if item["description"]
       result = "<ul>\n"
       result += "<li>\n"
-      result += "<code class=\"scss-var\">#{item["tag"]}</code> - #{item["description"]}\n"
+      result += "<code class=\"scss-var\">#{item["tag"]}</code>#{description}"
       item["children"].each{|child| result += _item(child)} if item["children"]
       result += "</li>\n"
       result += "</ul>\n"

@@ -8,13 +8,14 @@
   min-height: $navbar-height;
   display: flex;
   background-color: $color-navbar-background;
+  padding-left: 20px;
   align-items: stretch;
 
   &.centered {
     justify-content: center;
   }
 
-  .navbar-image {
+  img.navbar-image {
     height: $navbar-height - ($navbar-vertical-padding * 2);
   }
 
@@ -32,35 +33,26 @@
     margin-right: 0.75rem;
   }
 
-  .navbar-item-logo,
-  .navbar-item-keep,
-  .navbar-item,
-  .navbar-item-right {
+  .navbar-logo,
+  .navbar-item {
     display: flex;
     align-items: center;
     padding: $navbar-vertical-padding $navbar-horizontal-padding;
   }
 
-  .navbar-item-logo,
-  .navbar-item-keep {
-    &:first-child {
-      padding-left: 20px;
-    }
-  }
-
-  .navbar-item-keep,
-  .navbar-item,
-  .navbar-item-right {
-    background-color: transparent;
-    &:hover {
-      background-color: $color-navbar-background-hover;
+  .navbar-item {
+    &:not(.navbar-no-bg) {
+      background-color: transparent;
+      &:hover {
+        background-color: $color-navbar-background-hover;
+      }
     }
   }
 
   &:not(.centered) {
-    .navbar-item-right {
+    .navbar-right {
       margin-left: auto;
-      & ~ .navbar-item-right {
+      & ~ .navbar-right {
         margin-left: unset;
       }
     }
@@ -68,6 +60,11 @@
 
   @include phone {
     flex-wrap: wrap;
+
+    .navbar-no-collapse,
+    .navbar-mobile-only {
+      order: 2;
+    }
 
     input.navbar-toggle {
       display: none;
@@ -103,11 +100,15 @@
           }
         }
 
-        ~ .navbar-item,
-        ~ .navbar-item-right {
-          display: flex;
-          flex: 1 100%;
-          padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
+        ~ .navbar-item {
+          &:not(.navbar-no-collapse),
+          &:not(.navbar-mobile-only) {
+            display: flex;
+            order: 4;
+            flex: 1 100%;
+            margin-left: -15px; // TODO: Is this the best way to solve this?
+            padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
+          }
         }
       }
       &:not(:checked) {
@@ -133,15 +134,18 @@
           }
         }
 
-        ~ .navbar-item,
-        ~ .navbar-item-right {
-          display: none;
+        ~ .navbar-item {
+          &:not(.navbar-no-collapse),
+          &:not(.navbar-mobile-only) {
+            display: none;
+          }
         }
       }
     }
 
     label.navbar-toggle {
       display: flex;
+      order: 3;
       position: relative;
       width: $navbar-height;
       height: $navbar-height;
@@ -151,6 +155,10 @@
         background-color: $color-navbar-background-hover;
       }
     }
+
+    .navbar-desktop-only {
+      display: none !important;
+    }
   }
 
   @include desktop {
@@ -158,11 +166,14 @@
       display: none !important;
     }
 
-    input.navbar-toggle ~ .navbar-item,
-    input.navbar-toggle ~ .navbar-item-right {
-      display: flex !important;
-      flex: 0 1 auto;
-      padding: $navbar-vertical-padding $navbar-horizontal-padding;
+    input.navbar-toggle ~ .navbar-item {
+      &:not(.navbar-collapse-only) {
+        &:not(.navbar-mobile-only) {
+          display: flex !important;
+          flex: 0 1 auto;
+          padding: $navbar-vertical-padding $navbar-horizontal-padding;
+        }
+      }
     }
   }
 }

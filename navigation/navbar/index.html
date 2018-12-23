@@ -41,19 +41,9 @@ title: Navigation
     <div class="section">
       <h3>Modifiers</h3>
       <hr />
-      <ul>
-        <li>
-          <code class="bold">.navbar</code>
-          <ul>
-            <li>
-              <code class="scss-var">.full-width</code> - This will not limit the navbar to the
-              <code class="scss-var">$container-size</code>
-            </li>
-          </ul>
-          <div class="section">{% callout site.data.navigation.callouts.navbar_container %}</div>
-        </li>
-      </ul>
+      {% structured_html site.data.navigation.navbar_modifiers %}
     </div>
+    <div class="section">{% callout site.data.navigation.callouts.navbar_container %}</div>
     <div class="section">
       <h3>Customize</h3>
       <hr />
