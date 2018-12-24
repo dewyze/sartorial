@@ -48,6 +48,17 @@ title: Navigation
       {% include snippet.html file="navigation/navbar/collapse_options.html" class="no-pad" %}
     </div>
     <div class="section">
+      <h3>Left/Center/Right Navbar</h3>
+      <hr />
+      <p>This creates a 3 part navbar with the middle completely centered.</p>
+      <div class="section">
+        {% callout site.data.navigation.callouts.left_center_right_mobile %}
+      </div>
+      {% structured_html site.data.navigation.left_center_right_navbar_structure %}
+      <h4>Usage</h4>
+      {% include snippet.html file="navigation/navbar/left_center_right.html" class="no-pad" %}
+    </div>
+    <div class="section">
       <h3>Modifiers</h3>
       <hr />
       {% structured_html site.data.navigation.navbar_modifiers %}

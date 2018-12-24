@@ -8,7 +8,7 @@ module Jekyll
     def render(context)
       @data = context[@source]
 
-      result = "<div class=\"structured_html\">\n"
+      result = "<div class=\"structured-html\">\n"
       @data["items"].each {|item| result += _item(item)}
       result += "</div>"
       result

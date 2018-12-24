@@ -1,0 +1,32 @@
+items:
+  - tag: .navbar
+    description: class that includes all navbar elements
+    children:
+      - tag: input.navbar-toggle
+        description: an invisible checkbox that goes at the beginning of a navbar, this <em>MUST</em> appear before all items for collapsing to work
+      - tag: label.navbar-toggle
+        description: this forms the hamburger menu that can be clicked on mobile
+        children:
+          - tag: |
+              &lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;
+            description: these are needed to form the hamburger menu visible on mobile
+      - tag: .navbar-section<br/>&nbsp;.section-left
+        description: left section of the navbar
+        children:
+          - tag: .navbar-item
+            description: this is an item in the navbar
+      - tag: .navbar-section<br/>&nbsp;.section-center
+        description: center section of the navbar
+        children:
+          - tag: .navbar-item
+            description: this is an item in the navbar
+          - tag: .navbar-logo
+            description: normal item but the background color does not change (normally or on hover), and it does not collapse on mobile
+            children:
+              - tag: .navbar-image
+                description: this is used in <code class="scss-var">.navbar-item</code> or <code class="scss-var">.navbar-logo</code> to set the size of the image and pad it correctly to maintain <code class="scss-var">$navbar-height</code>
+      - tag: .navbar-section<br/>&nbsp;.section-right
+        description: right section of the navbar
+        children:
+          - tag: .navbar-item
+            description: this is an item in the navbar

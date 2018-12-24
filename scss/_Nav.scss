@@ -11,6 +11,21 @@
   padding-left: 20px;
   align-items: stretch;
 
+  .navbar-section {
+    display: flex;
+    flex: 1;
+    & + .section-left {
+      margin-right: auto;
+    }
+    & + .section-center {
+      justify-content: center;
+    }
+    & + .section-right {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  }
+
   &.centered {
     justify-content: center;
   }
@@ -61,6 +76,15 @@
   @include phone {
     flex-wrap: wrap;
 
+    .navbar-section {
+      .navbar-logo {
+        // display: none;
+      }
+      order: 3;
+      flex: 1 100%;
+      flex-wrap: wrap;
+    }
+
     .navbar-no-collapse,
     .navbar-mobile-only {
       order: 2;
@@ -100,7 +124,8 @@
           }
         }
 
-        ~ .navbar-item {
+        ~ .navbar-item,
+        ~ .navbar-section > .navbar-item {
           &:not(.navbar-no-collapse) {
             &:not(.navbar-mobile-only) {
               display: flex;
@@ -135,7 +160,8 @@
           }
         }
 
-        ~ .navbar-item {
+        ~ .navbar-item,
+        ~ .navbar-section > .navbar-item {
           &:not(.navbar-no-collapse) {
             &:not(.navbar-mobile-only) {
               display: none;
@@ -173,8 +199,19 @@
       order: unset;
     }
 
+    .navbar-section {
+      .navbar-logo {
+        // display: none;
+      }
+      order: unset;
+      flex-wrap: nowrap;
+      flex: 1;
+    }
+
     input.navbar-toggle ~ .navbar-item,
-    input.navbar-toggle ~ .navbar-desktop-only {
+    input.navbar-toggle ~ .navbar-desktop-only,
+    input.navbar-toggle ~ .navbar-section > .navbar-item,
+    input.navbar-toggle ~ .navbar-section > .navbar-logo {
       &:not(.navbar-collapse-only) {
         &:not(.navbar-mobile-only) {
           display: flex !important;

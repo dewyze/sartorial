@@ -3,7 +3,7 @@ items:
     description: class that includes all navbar elements
     children:
       - tag: input.navbar-toggle
-        description: an invisible checkbox that goes at the beginning of a navbar
+        description: an invisible checkbox that goes at the beginning of a navbar, this <em>MUST</em> appear before all items for collapsing to work
       - tag: label.navbar-toggle
         description: this forms the hamburger menu that can be clicked on mobile
         children:
