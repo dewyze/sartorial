@@ -1,7 +1,7 @@
 left_center_right_mobile:
   kind: warning
   content: | 
-    When using a left/center/right navbar, note that in order for it to appear correctly on mobile you will need to specify outside of the sections what should appear in the uncollapsed section. E.g. the world logo is <code class="scss-var">.navbar-mobile-only</code> and the centered logo has the class <code class="scss-var">.navbar-desktop-only</code>.
+    When using a left/center/right navbar, note that in order for it to appear correctly on mobile you will need to specify outside of the sections what should appear in the uncollapsed section. E.g. the word logo is <code class="scss-var">.navbar-mobile-only</code> and the centered logo has the class <code class="scss-var">.navbar-desktop-only</code>.
 navbar_container:
   kind: warning
   content: | 
