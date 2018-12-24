@@ -101,13 +101,14 @@
         }
 
         ~ .navbar-item {
-          &:not(.navbar-no-collapse),
-          &:not(.navbar-mobile-only) {
-            display: flex;
-            order: 4;
-            flex: 1 100%;
-            margin-left: -15px; // TODO: Is this the best way to solve this?
-            padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
+          &:not(.navbar-no-collapse) {
+            &:not(.navbar-mobile-only) {
+              display: flex;
+              order: 4;
+              flex: 1 100%;
+              margin-left: -20px; // TODO: Is this the best way to solve this?
+              padding: $navbar-vertical-padding ($navbar-horizontal-padding * 2);
+            }
           }
         }
       }
@@ -135,9 +136,10 @@
         }
 
         ~ .navbar-item {
-          &:not(.navbar-no-collapse),
-          &:not(.navbar-mobile-only) {
-            display: none;
+          &:not(.navbar-no-collapse) {
+            &:not(.navbar-mobile-only) {
+              display: none;
+            }
           }
         }
       }
@@ -162,11 +164,17 @@
   }
 
   @include desktop {
-    .navbar-toggle {
+    .navbar-toggle,
+    .navbar-mobile-only {
       display: none !important;
     }
 
-    input.navbar-toggle ~ .navbar-item {
+    .navbar-no-collapse {
+      order: unset;
+    }
+
+    input.navbar-toggle ~ .navbar-item,
+    input.navbar-toggle ~ .navbar-desktop-only {
       &:not(.navbar-collapse-only) {
         &:not(.navbar-mobile-only) {
           display: flex !important;

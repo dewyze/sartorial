@@ -1,0 +1,13 @@
+items:
+  - tag: .navbar-item
+    children:
+      - tag: .navbar-no-bg
+        description: items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
+      - tag: .navbar-no-collapse
+        description: this will remain in the navbar on mobile devices
+      - tag: .navbar-desktop-only
+        description: this will only appear on a desktop in the navbar, and will not be in the collapsed menu
+      - tag: .navbar-mobile-only
+        description: this will only appear on a mobile device in the navbar, and will not be in the collapsed menu
+      - tag: .navbar-collapse-only
+        description: this will only appear in the collapsed menu, and not in the navbar
