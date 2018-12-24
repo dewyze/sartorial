@@ -40,14 +40,13 @@
       </p>
     </div>
     <div class="section">
-      <div class="section">
-        <h3>Split Navbar</h3>
-        <hr />
-        <p>
-          If you want to make a collapsible navbar with the logo, left side, and right side, look no
-          further!
-        </p>
-        <div class="structured_html">
+      <h3>Split Navbar</h3>
+      <hr />
+      <p>
+        If you want to make a collapsible navbar with the logo, left side, and right side, look no
+        further!
+      </p>
+      <div class="structured_html">
 <ul>
 <li>
 <code class="scss-var">.navbar</code> - class that includes all navbar elements
@@ -85,8 +84,8 @@
 </li>
 </ul>
 </div>
-        <h4>Usage</h4>
-        <div class="example">
+      <h4>Usage</h4>
+      <div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar">
   <input class="navbar-toggle" id="navbar-toggle-split" type="checkbox" />
@@ -128,16 +127,16 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
-      </div>
-      <div class="section">
-        <h3>Centered navbar</h3>
-        <hr />
-        <p>
-          If you need a centered section of a navbar just add a
-          <code class="scss-var">.centered</code> class to your navbar.
-        </p>
-        <h4>Usage</h4>
-        <div class="example">
+    </div>
+    <div class="section">
+      <h3>Centered navbar</h3>
+      <hr />
+      <p>
+        If you need a centered section of a navbar just add a
+        <code class="scss-var">.centered</code> class to your navbar.
+      </p>
+      <h4>Usage</h4>
+      <div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar centered">
   <input class="navbar-toggle" id="navbar-toggle-centered" type="checkbox" />
@@ -179,10 +178,96 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
+    </div>
+    <div class="section">
+      <h3>Collapse options</h3>
+      <hr />
+      <p>There are a variety of options for customizing how navbar collapses:</p>
+      <div class="structured_html">
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code><ul>
+<li>
+<code class="scss-var">.navbar-no-bg</code> - items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-no-collapse</code> - this will remain in the navbar on mobile devices
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-desktop-only</code> - this will only appear on a desktop in the navbar, and will not be in the collapsed menu
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-mobile-only</code> - this will only appear on a mobile device in the navbar, and will not be in the collapsed menu
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-collapse-only</code> - this will only appear in the collapsed menu, and not in the navbar
+</li>
+</ul>
+</li>
+</ul>
+</div>
+      <h4>Usage</h4>
+      <h5
+        style="text-align:center; border: 1px solid black; margin-bottom: 0; background-color: #3273dc; color: white;"
+      >
+        Resize this window to see how collapse options work
+      </h5>
+      <div class="example">
+  <div class="rendered">
+    <div class="container no-pad"><nav class="navbar">
+  <input class="navbar-toggle" id="navbar-toggle-collapse" type="checkbox" />
+  <label class="navbar-toggle" for="navbar-toggle-collapse">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="navbar-logo navbar-desktop-only">
+    <a href="#">
+      <img class="navbar-image" src="/sartorial/assets/img/word_logo.png" alt="Logo" />
+    </a>
+  </div>
+  <div class="navbar-logo navbar-mobile-only">
+    <a href="#">
+      <img class="navbar-image" src="/sartorial/assets/img/logo.png" alt="Logo" />
+    </a>
+  </div>
+  <a class="navbar-item navbar-no-collapse" href="#"><i class="fas fa-book icon"></i>Docs</a>
+  <a class="navbar-item navbar-collapse-only" href="#"><i class="fas fa-phone icon"></i>Mobile</a>
+  <a class="navbar-item navbar-right" href="#">About</a>
+</nav>
+</div>
+  </div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">id=</span><span class="s">"navbar-toggle-collapse"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">for=</span><span class="s">"navbar-toggle-collapse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-logo navbar-desktop-only"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"navbar-image"</span> <span class="na">src=</span><span class="s">"/sartorial/assets/img/word_logo.png"</span> <span class="na">alt=</span><span class="s">"Logo"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-logo navbar-mobile-only"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"navbar-image"</span> <span class="na">src=</span><span class="s">"/sartorial/assets/img/logo.png"</span> <span class="na">alt=</span><span class="s">"Logo"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-no-collapse"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-book icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Docs<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-collapse-only"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-phone icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Mobile<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
+</div>
 
-        <div class="section"><div class="callout callout-warning">The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
-</div></div>
-      </div>
     </div>
     <div class="section">
       <h3>Modifiers</h3>
@@ -197,15 +282,19 @@
 </ul>
 <ul>
 <li>
-<code class="scss-var">.navbar-item</code> - this forms the hamburger menu that can be clicked on mobile
-<ul>
-<li>
-<code class="scss-var">.navbar-nobg</code> - items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
+<code class="scss-var">.centered</code> - center all the navbar content
 </li>
 </ul>
 <ul>
 <li>
-<code class="scss-var">.navbar-nocollapse</code> - this will remain in the navbar on mobile devices
+<code class="scss-var">.navbar-item</code><ul>
+<li>
+<code class="scss-var">.navbar-no-bg</code> - items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-no-collapse</code> - this will remain in the navbar on mobile devices
 </li>
 </ul>
 <ul>
