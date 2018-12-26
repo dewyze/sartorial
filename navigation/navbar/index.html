@@ -1,62 +1,16 @@
 ---
 layout: default
 title: Navigation
-includes: navigation/navbar/
+snippets: snippets/navigation/navbar/
 data: ['site', 'data', 'navigation', 'navbar']
 ---
 
 <div class="container">
   <div class="main">
-    <div class="section">
-      <h1>Navbar</h1>
-      <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
-      <p>
-        There are two types of navbars available in sartorial: Split; and Centered. Both styles of
-        navbar will collapse on mobile devices.
-      </p>
-    </div>
-    <div class="section">
-      <h3>Split Navbar</h3>
-      <hr />
-      <p>
-        If you want to make a collapsible navbar with the logo, left side, and right side, look no
-        further!
-      </p>
-      {% structured_html split_structure %}
-      <h4>Usage</h4>
-      {% include snippet.html file="split.html" class="no-pad" %}
-    </div>
-    <div class="section">
-      <h3>Centered navbar</h3>
-      <hr />
-      <p>
-        If you need a centered section of a navbar just add a
-        <code class="scss-var">.centered</code> class to your navbar.
-      </p>
-      <h4>Usage</h4>
-      {% include snippet.html file="centered.html" class="no-pad" %}
-    </div>
-    <div class="section">
-      <h3>Collapse options</h3>
-      <hr />
-      <p>There are a variety of options for customizing how navbar collapses:</p>
-      {% structured_html collapse_structure %}
-      <h4>Usage</h4>
-      <h5
-        style="text-align:center; border: 1px solid black; margin-bottom: 0; background-color: #3273dc; color: white;"
-      >
-        Resize this window to see how collapse options work
-      </h5>
-      {% include snippet.html file="collapse_options.html" class="no-pad" %}
-    </div>
-    <div class="section">
-      <h3>Left/Center/Right Navbar</h3>
-      <hr />
-      <p>This creates a 3 part navbar with the middle completely centered.</p>
-      <div class="section">{% callout left_center_right_mobile %}</div>
-      {% structured_html left_center_right_structure %}
-      <h4>Usage</h4>
-      {% include snippet.html file="left_center_right.html" class="no-pad" %}
-    </div>
+    {% include navigation/navbar/title.html %}
+    {% include navigation/navbar/split_navbar.html %}
+    {% include navigation/navbar/centered_navbar.html %}
+    {% include navigation/navbar/collapse_options.html %}
+    {% include navigation/navbar/left_center_right_navbar.html %}
   </div>
 </div>

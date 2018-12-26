@@ -1,64 +1,15 @@
 ---
 layout: default
 title: Typography
-includes: type/headings/
+snippets: snippets/type/headings/
 data: ['site', 'data', 'type']
 ---
 
 <div class="container">
   <div class="main">
-    <div class="section">
-      <h1>Headings</h1>
-      <h4 class="subheader">Sartorial uses a ratio based system for determining heading sizes</h4>
-    </div>
-    <div class="section">
-      <h3>Headers</h3>
-      <hr />
-      <p>The Sartorial Type modules provides the following header tags.</p>
-      {% styled_table headers_table %}
-      <p>The default ratios between the texts are:</p>
-      <ul style="list-style-type:none;">
-        <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-        <li>Desktop: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
-        <li>Tablet: <code class="scss-var">$ratio-minor-third</code> (1.200)</li>
-        <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
-      </ul>
-      <h4>Usage</h4>
-      {% include snippet.html file="h.html" %}
-    </div>
-    <div class="section">
-      <h3>Modifiers</h3>
-      <hr />
-      <p>The following clases can be used to modify headers</p>
-      <ul style="list-style-type:none;">
-        <li>
-          <code class="scss-var">.subheader</code> : This can be used for a muted colored and light
-          stroke text.
-        </li>
-      </ul>
-
-      <h4>Usage</h4>
-      {% include snippet.html file="subheader.html" %}
-    </div>
-    <div class="section">
-      <h3>Customize</h3>
-      <hr />
-      <h4>Font & Line Height Variables</h4>
-      <p>
-        The type sizes are built off of a base font-size and a ratio. Additionally, there are
-        separate variables that can be used to build those up per media size. See the table below
-        for what you can set and the defaults.
-      </p>
-      {% styled_table font_line_height_table %}
-
-      <h4>Available Ratios</h4>
-      <p>
-        The ratio between the main height and the header size is based on an explicit ratio. You can
-        either use one of these or your own. The ratios are set per media size:
-      </p>
-      {% styled_table site.data.globals.media_ratios_table %}
-      <p>You can set your own ratio or use one of the below variables.</p>
-      {% styled_table site.data.globals.ratios_table %}
-    </div>
+    {% include type/headings/title.html %}
+    {% include type/headings/headers.html %}
+    {% include type/headings/modifiers.html %}
+    {% include type/headings/customize.html %}
   </div>
 </div>
