@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Typography
+includes: type/headings/
+data: ['site', 'data', 'type']
 ---
 
 <div class="container">
@@ -13,7 +15,7 @@ title: Typography
       <h3>Headers</h3>
       <hr />
       <p>The Sartorial Type modules provides the following header tags.</p>
-      {% styled_table site.data.type.headers_table %}
+      {% styled_table headers_table %}
       <p>The default ratios between the texts are:</p>
       <ul style="list-style-type:none;">
         <li>Widescreen: <code class="scss-var">$ratio-major-third</code> (1.250)</li>
@@ -22,7 +24,7 @@ title: Typography
         <li>Phone: <code class="scss-var">$ratio-major-second</code> (1.125)</li>
       </ul>
       <h4>Usage</h4>
-      {% include snippet.html file="type/headings/h.html" %}
+      {% include snippet.html file="h.html" %}
     </div>
     <div class="section">
       <h3>Modifiers</h3>
@@ -36,7 +38,7 @@ title: Typography
       </ul>
 
       <h4>Usage</h4>
-      {% include snippet.html file="type/headings/subheader.html" %}
+      {% include snippet.html file="subheader.html" %}
     </div>
     <div class="section">
       <h3>Customize</h3>
@@ -47,7 +49,7 @@ title: Typography
         separate variables that can be used to build those up per media size. See the table below
         for what you can set and the defaults.
       </p>
-      {% styled_table site.data.type.font_line_height_table %}
+      {% styled_table font_line_height_table %}
 
       <h4>Available Ratios</h4>
       <p>

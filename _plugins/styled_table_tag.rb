@@ -3,12 +3,18 @@ module Jekyll
 
     def initialize(tag_name, source, tokens)
       super
-      @source = source
+      @source = source.strip
     end
 
     def render(context)
-      @data = context[@source]["data"]
-      @style = context[@source]["style"]
+      if context["page"]["data"] && !@source.start_with?("site.data")
+        data = context["page"]["data"].inject(context) {|acc, key| acc[key]}
+        data = data[@source]
+      else
+        data = context[@source]
+      end
+      @data = data["data"]
+      @style = data["style"]
 
       result = "<table class=#{@style["table"]["classes"]}>"
       result << _headers(@data["headers"])

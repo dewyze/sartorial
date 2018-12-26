@@ -2,11 +2,16 @@ module Jekyll
   class CalloutTag < Liquid::Tag
     def initialize(tag_name, source, tokens)
       super
-      @source = source
+      @source = source.strip
     end
 
     def render(context)
-      @data = context[@source]
+      if context["page"]["data"]
+        data = context["page"]["data"].inject(context) {|acc, key| acc[key]}
+        @data = data["callouts"][@source]
+      else
+        @data = context[@source]
+      end
       "<div class=\"callout callout-#{@data["kind"]}\">#{@data["content"]}</div>"
     end
   end

@@ -1,10 +1,11 @@
+{% assign file = page.includes | append: include.file %}
 <div class="example">
   <div class="rendered">
-    <div class="container {{ include.class }}">{%- include {{include.file}} -%}</div>
+    <div class="container {{ include.class }}">{%- include {{file}} -%}</div>
   </div>
   <div class="source">
     {%- highlight html -%}
-    {%- include {{include.file}} -%}
+    {%- include {{file}} -%}
     {%- endhighlight -%}
   </div>
 </div>

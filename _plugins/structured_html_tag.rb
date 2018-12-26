@@ -2,11 +2,16 @@ module Jekyll
   class StructuredHtmlTag < Liquid::Tag
     def initialize(tag_name, source, tokens)
       super
-      @source = source
+      @source = source.strip
     end
 
     def render(context)
-      @data = context[@source]
+      if context["page"]["data"] && !@source.start_with?("site.data")
+        data = context["page"]["data"].inject(context) {|acc, key| acc[key]}
+        @data = data[@source]
+      else
+        @data = context[@source]
+      end
 
       result = "<div class=\"structured-html\">\n"
       @data["items"].each {|item| result += _item(item)}

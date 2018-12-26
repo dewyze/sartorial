@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Navigation
+includes: navigation/navbar/
+data: ['site', 'data', 'navigation', 'navbar']
 ---
 
 <div class="container">
@@ -20,9 +22,9 @@ title: Navigation
         If you want to make a collapsible navbar with the logo, left side, and right side, look no
         further!
       </p>
-      {% structured_html site.data.navigation.split_navbar_structure %}
+      {% structured_html split_structure %}
       <h4>Usage</h4>
-      {% include snippet.html file="navigation/navbar/split.html" class="no-pad" %}
+      {% include snippet.html file="split.html" class="no-pad" %}
     </div>
     <div class="section">
       <h3>Centered navbar</h3>
@@ -32,48 +34,29 @@ title: Navigation
         <code class="scss-var">.centered</code> class to your navbar.
       </p>
       <h4>Usage</h4>
-      {% include snippet.html file="navigation/navbar/centered.html" class="no-pad" %}
+      {% include snippet.html file="centered.html" class="no-pad" %}
     </div>
     <div class="section">
       <h3>Collapse options</h3>
       <hr />
       <p>There are a variety of options for customizing how navbar collapses:</p>
-      {% structured_html site.data.navigation.collapse_structure %}
+      {% structured_html collapse_structure %}
       <h4>Usage</h4>
       <h5
         style="text-align:center; border: 1px solid black; margin-bottom: 0; background-color: #3273dc; color: white;"
       >
         Resize this window to see how collapse options work
       </h5>
-      {% include snippet.html file="navigation/navbar/collapse_options.html" class="no-pad" %}
+      {% include snippet.html file="collapse_options.html" class="no-pad" %}
     </div>
     <div class="section">
       <h3>Left/Center/Right Navbar</h3>
       <hr />
       <p>This creates a 3 part navbar with the middle completely centered.</p>
-      <div class="section">
-        {% callout site.data.navigation.callouts.left_center_right_mobile %}
-      </div>
-      {% structured_html site.data.navigation.left_center_right_navbar_structure %}
+      <div class="section">{% callout left_center_right_mobile %}</div>
+      {% structured_html left_center_right_structure %}
       <h4>Usage</h4>
-      {% include snippet.html file="navigation/navbar/left_center_right.html" class="no-pad" %}
-    </div>
-    <div class="section">
-      <h3>Modifiers</h3>
-      <hr />
-      {% structured_html site.data.navigation.navbar_modifiers %}
-    </div>
-    <div class="section">{% callout site.data.navigation.callouts.navbar_container %}</div>
-    <div class="section">
-      <h3>Customize</h3>
-      <hr />
-      <h4>Navbar variables</h4>
-      <p>
-        The type sizes are built off of a base font-size and a ratio. Additionally, there are
-        separate variables that can be used to build those up per media size. See the table below
-        for what you can set and the defaults.
-      </p>
-      {% styled_table site.data.navigation.navbar_vars_table %}
+      {% include snippet.html file="left_center_right.html" class="no-pad" %}
     </div>
   </div>
 </div>
