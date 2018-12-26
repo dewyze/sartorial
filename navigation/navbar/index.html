@@ -32,21 +32,22 @@
  <div class="container">
   <div class="main">
     <div class="section">
-      <h1>Navbar</h1>
-      <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
-      <p>
-        There are two types of navbars available in sartorial: Split; and Centered. Both styles of
-        navbar will collapse on mobile devices.
-      </p>
-    </div>
+  <h1>Navbar</h1>
+  <h4 class="subheader">Sartorial provides classes for common navbar styles</h4>
+  <p>
+    There are two types of navbars available in sartorial: Split; and Centered. Both styles of
+    navbar will collapse on mobile devices.
+  </p>
+</div>
+
     <div class="section">
-      <h3>Split Navbar</h3>
-      <hr />
-      <p>
-        If you want to make a collapsible navbar with the logo, left side, and right side, look no
-        further!
-      </p>
-      <div class="structured-html">
+  <h3>Split Navbar</h3>
+  <hr />
+  <p>
+    If you want to make a collapsible navbar with the logo, left side, and right side, look no
+    further!
+  </p>
+  <div class="structured-html">
 <ul>
 <li>
 <code class="scss-var">.navbar</code> - class that includes all navbar elements
@@ -84,8 +85,9 @@
 </li>
 </ul>
 </div>
-      <h4>Usage</h4>
-      <div class="example">
+  <h4>Usage</h4>
+  
+<div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar">
   <input class="navbar-toggle" id="navbar-toggle-split" type="checkbox" />
@@ -127,16 +129,18 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
-    </div>
+</div>
+
     <div class="section">
-      <h3>Centered navbar</h3>
-      <hr />
-      <p>
-        If you need a centered section of a navbar just add a
-        <code class="scss-var">.centered</code> class to your navbar.
-      </p>
-      <h4>Usage</h4>
-      <div class="example">
+  <h3>Centered navbar</h3>
+  <hr />
+  <p>
+    If you need a centered section of a navbar just add a
+    <code class="scss-var">.centered</code> class to your navbar.
+  </p>
+  <h4>Usage</h4>
+  
+<div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar centered">
   <input class="navbar-toggle" id="navbar-toggle-centered" type="checkbox" />
@@ -178,12 +182,13 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
-    </div>
+</div>
+
     <div class="section">
-      <h3>Collapse options</h3>
-      <hr />
-      <p>There are a variety of options for customizing how navbar collapses:</p>
-      <div class="structured-html">
+  <h3>Collapse options</h3>
+  <hr />
+  <p>There are a variety of options for customizing how navbar collapses:</p>
+  <div class="structured-html">
 <ul>
 <li>
 <code class="scss-var">.navbar-item</code><ul>
@@ -214,13 +219,14 @@
 </li>
 </ul>
 </div>
-      <h4>Usage</h4>
-      <h5
-        style="text-align:center; border: 1px solid black; margin-bottom: 0; background-color: #3273dc; color: white;"
-      >
-        Resize this window to see how collapse options work
-      </h5>
-      <div class="example">
+  <h4>Usage</h4>
+  <h5
+    style="text-align:center; border: 1px solid black; margin-bottom: 0; background-color: #3273dc; color: white;"
+  >
+    Resize this window to see how collapse options work
+  </h5>
+  
+<div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar">
   <input class="navbar-toggle" id="navbar-toggle-collapse" type="checkbox" />
@@ -268,16 +274,15 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
-    </div>
-    <div class="section">
-      <h3>Left/Center/Right Navbar</h3>
-      <hr />
-      <p>This creates a 3 part navbar with the middle completely centered.</p>
-      <div class="section">
-        <div class="callout callout-warning">When using a left/center/right navbar, note that in order for it to appear correctly on mobile you will need to specify outside of the sections what should appear in the uncollapsed section. E.g. the word logo is <code class="scss-var">.navbar-mobile-only</code> and the centered logo has the class <code class="scss-var">.navbar-desktop-only</code>.
 </div>
-      </div>
-      <div class="structured-html">
+
+    <div class="section">
+  <h3>Left/Center/Right Navbar</h3>
+  <hr />
+  <p>This creates a 3 part navbar with the middle completely centered.</p>
+  <div class="section"><div class="callout callout-warning">When using a left/center/right navbar, note that in order for it to appear correctly on mobile you will need to specify outside of the sections what should appear in the uncollapsed section. E.g. the word logo is <code class="scss-var">.navbar-mobile-only</code> and the centered logo has the class <code class="scss-var">.navbar-desktop-only</code>.
+</div></div>
+  <div class="structured-html">
 <ul>
 <li>
 <code class="scss-var">.navbar</code> - class that includes all navbar elements
@@ -340,8 +345,9 @@
 </li>
 </ul>
 </div>
-      <h4>Usage</h4>
-      <div class="example">
+  <h4>Usage</h4>
+  
+<div class="example">
   <div class="rendered">
     <div class="container no-pad"><nav class="navbar">
   <input class="navbar-toggle" id="navbar-toggle-tri" type="checkbox" />
@@ -403,115 +409,8 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
 
-    </div>
-    <div class="section">
-      <h3>Modifiers</h3>
-      <hr />
-      <div class="structured-html">
-<ul>
-<li>
-<code class="scss-var">.navbar</code><ul>
-<li>
-<code class="scss-var">.full-width</code> - this will not limit the navbar to the <code class="scss-var">$container-size</code>
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.centered</code> - center all the navbar content
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-item</code><ul>
-<li>
-<code class="scss-var">.navbar-no-bg</code> - items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-no-collapse</code> - this will remain in the navbar on mobile devices
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-desktop-only</code> - this will only appear on a desktop in the navbar, and will not be in the collapsed menu
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-mobile-only</code> - this will only appear on a mobile device in the navbar, and will not be in the collapsed menu
-</li>
-</ul>
-<ul>
-<li>
-<code class="scss-var">.navbar-collapse-only</code> - this will only appear in the collapsed menu, and not in the navbar
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </div>
-    </div>
-    <div class="section"><div class="callout callout-warning">The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
-</div></div>
-    <div class="section">
-      <h3>Customize</h3>
-      <hr />
-      <h4>Navbar variables</h4>
-      <p>
-        The type sizes are built off of a base font-size and a ratio. Additionally, there are
-        separate variables that can be used to build those up per media size. See the table below
-        for what you can set and the defaults.
-      </p>
-      <table class=docs-table><tr>
-<th>Variable</th>
-<th>Default Value</th>
-<th>Details</th>
-</tr>
-<tr>
-<td class="scss-var"><code>$navbar-height</code>
-</td>
-<td >3.25rem
-</td>
-<td >Default height of navbar
-</td>
-</tr>
-<tr>
-<td class="scss-var"><code>$navbar-spacing</code>
-</td>
-<td >1.5rem
-</td>
-<td >Default spacing between navbar elements
-</td>
-</tr>
-<tr>
-<td class="scss-var"><code>$navbar-vertical-padding</code>
-</td>
-<td >2/3 of <code class="scss-var">$navbar-spacing</code>
-</td>
-<td >Default padding above and below a navbar element
-</td>
-</tr>
-<tr>
-<td class="scss-var"><code>$color-navbar-background</code>
-</td>
-<td ><code>#ffffff</code> (white)
-</td>
-<td >Background color of navbar
-</td>
-</tr>
-<tr>
-<td class="scss-var"><code>$color-navbar-background-hover</code>
-</td>
-<td ><code>#fafafa</code> (light gray)
-</td>
-<td >Background color of navbar element on hover
-</td>
-</tr>
-</table>
 
-    </div>
   </div>
 </div>
 
