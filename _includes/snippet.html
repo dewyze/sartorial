@@ -1,4 +1,4 @@
-{% assign file = page.includes | append: include.file %}
+{% assign file = "snippets/" | append: page.includes | append: include.file %}
 <div class="example">
   <div class="rendered">
     <div class="container {{ include.class }}">{%- include {{file}} -%}</div>
