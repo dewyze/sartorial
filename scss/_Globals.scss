@@ -55,4 +55,4 @@ $type-header-font-weight: 700 !default;
 $navbar-height: 6rem !default;
 $navbar-spacing: 1.5rem !default;
 $navbar-horizontal-padding: $navbar-spacing / 2 !default;
-$navbar-vertical-padding: $navbar-spacing * 0.66667 !default;
+$navbar-vertical-padding: $navbar-spacing * (2 / 3) !default;
