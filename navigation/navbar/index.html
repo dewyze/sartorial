@@ -25,7 +25,15 @@
   </div>
   <a class="navbar-item" href="#"><i class="fas fa-home icon"></i>Home</a>
   <a class="navbar-item" href="#"><i class="fas fa-book icon"></i>Docs</a>
-  <a class="navbar-item" href="#">More</a> <a class="navbar-item navbar-right" href="#">About</a>
+  <div class="navbar-dropdown">
+    <a class="navbar-item" href="#">More</a>
+    <div class="navbar-dropdown-menu">
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-download icon"></i>Download</a>
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-phone icon"></i>Contact</a>
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-donate icon"></i>Donate</a>
+    </div>
+  </div>
+  <a class="navbar-item navbar-right" href="#">About</a>
   <a class="navbar-item navbar-right" href="#">Signup</a>
 </nav>
  <div class="container">
@@ -52,7 +60,7 @@
 <code class="scss-var">.navbar</code> - class that includes all navbar elements
 <ul>
 <li>
-<code class="scss-var">input.navbar-toggle</code> - an invisible checkbox that goes at the beginning of a navbar, this <em>MUST</em> appear before all items for collapsing to work
+<code class="scss-var">input.navbar-toggle</code> - an invisible checkbox that goes at the beginning of a navbar, this <strong>**MUST**</strong> appear before all items for collapsing to work
 </li>
 </ul>
 <ul>
@@ -112,61 +120,6 @@
   <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">id=</span><span class="s">"navbar-toggle-split"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">for=</span><span class="s">"navbar-toggle-split"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-logo"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/sartorial/assets/img/word_logo.png"</span> <span class="na">class=</span><span class="s">"navbar-image"</span> <span class="na">alt=</span><span class="s">"Logo"</span><span class="nt">/&gt;</span>
-
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-home icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-book icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Docs<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>More<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Signup<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
-</div>
-
-</div>
-
-    <div class="section">
-  <h3>Centered navbar</h3>
-  <hr />
-  <p>
-    If you need a centered section of a navbar just add a
-    <code class="scss-var">.centered</code> class to your navbar.
-  </p>
-  <h4>Usage</h4>
-  
-<div class="example">
-  <div class="rendered">
-    <div class="container no-pad"><nav class="navbar centered">
-  <input class="navbar-toggle" id="navbar-toggle-centered" type="checkbox" />
-  <label class="navbar-toggle" for="navbar-toggle-centered">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <div class="navbar-logo">
-    <a href="#">
-      <img src="/sartorial/assets/img/word_logo.png" class="navbar-image" alt="Logo"/>
-
-    </a>
-  </div>
-  <a class="navbar-item" href="#"><i class="fas fa-home icon"></i>Home</a>
-  <a class="navbar-item" href="#"><i class="fas fa-book icon"></i>Docs</a>
-  <a class="navbar-item" href="#">More</a>
-  <a class="navbar-item navbar-right" href="#">About</a>
-  <a class="navbar-item navbar-right" href="#">Signup</a>
-</nav>
-</div>
-  </div>
-  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar centered"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">id=</span><span class="s">"navbar-toggle-centered"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">for=</span><span class="s">"navbar-toggle-centered"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
@@ -284,6 +237,61 @@
 </div>
 
     <div class="section">
+  <h3>Centered navbar</h3>
+  <hr />
+  <p>
+    If you need a centered section of a navbar just add a
+    <code class="scss-var">.centered</code> class to your navbar.
+  </p>
+  <h4>Usage</h4>
+  
+<div class="example">
+  <div class="rendered">
+    <div class="container no-pad"><nav class="navbar centered">
+  <input class="navbar-toggle" id="navbar-toggle-centered" type="checkbox" />
+  <label class="navbar-toggle" for="navbar-toggle-centered">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="navbar-logo">
+    <a href="#">
+      <img src="/sartorial/assets/img/word_logo.png" class="navbar-image" alt="Logo"/>
+
+    </a>
+  </div>
+  <a class="navbar-item" href="#"><i class="fas fa-home icon"></i>Home</a>
+  <a class="navbar-item" href="#"><i class="fas fa-book icon"></i>Docs</a>
+  <a class="navbar-item" href="#">More</a>
+  <a class="navbar-item navbar-right" href="#">About</a>
+  <a class="navbar-item navbar-right" href="#">Signup</a>
+</nav>
+</div>
+  </div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar centered"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">id=</span><span class="s">"navbar-toggle-centered"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">for=</span><span class="s">"navbar-toggle-centered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/sartorial/assets/img/word_logo.png"</span> <span class="na">class=</span><span class="s">"navbar-image"</span> <span class="na">alt=</span><span class="s">"Logo"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-home icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-book icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Docs<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>More<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Signup<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
+</div>
+
+</div>
+
+    <div class="section">
   <h3>Left/Center/Right Navbar</h3>
   <hr />
   <p>This creates a 3 part navbar with the middle completely centered.</p>
@@ -295,7 +303,7 @@
 <code class="scss-var">.navbar</code> - class that includes all navbar elements
 <ul>
 <li>
-<code class="scss-var">input.navbar-toggle</code> - an invisible checkbox that goes at the beginning of a navbar, this <em>MUST</em> appear before all items for collapsing to work
+<code class="scss-var">input.navbar-toggle</code> - an invisible checkbox that goes at the beginning of a navbar, this <strong>**MUST**</strong> appear before all items for collapsing to work
 </li>
 </ul>
 <ul>
@@ -419,6 +427,220 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
 </div>
+
+</div>
+
+    <div class="section">
+  <h3>Dropdown Navbar</h3>
+  <hr />
+  <p>Sartorial supports dropdown with navbar items.</p>
+  <div class="structured-html">
+<ul>
+<li>
+<code class="scss-var">.navbar</code> - class that includes all navbar elements
+<ul>
+<li>
+<code class="scss-var">input.navbar-toggle</code> - an invisible checkbox that goes at the beginning of a navbar, this <strong>**MUST**</strong> appear before all items for collapsing to work
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">label.navbar-toggle</code> - this forms the hamburger menu that can be clicked on mobile
+<ul>
+<li>
+<code class="scss-var">&lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;<br/>&lt;span&gt;&lt;/span&gt;
+</code> - these are needed to form the hamburger menu visible on mobile
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-logo</code> - normal item but the background color does not change (normally or on hover), and it does not collapse on mobile
+<ul>
+<li>
+<code class="scss-var">.navbar-image</code> - this is used in <code class="scss-var">.navbar-item</code> or <code class="scss-var">.navbar-logo</code> to set the size of the image and pad it correctly to maintain <code class="scss-var">$navbar-height</code>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code> - this is an item in the navbar
+</li>
+</ul>
+</li>
+</ul>
+</div>
+  <h4>Usage</h4>
+  
+<div class="example">
+  <div class="rendered">
+    <div class="container no-pad"><nav class="navbar">
+  <input class="navbar-toggle" id="navbar-toggle-split" type="checkbox" />
+  <label class="navbar-toggle" for="navbar-toggle-split">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="navbar-logo">
+    <a href="#">
+      <img src="/sartorial/assets/img/word_logo.png" class="navbar-image" alt="Logo"/>
+
+    </a>
+  </div>
+  <a class="navbar-item" href="#"><i class="fas fa-home icon"></i>Home</a>
+  <a class="navbar-item" href="#"><i class="fas fa-book icon"></i>Docs</a>
+  <div class="navbar-dropdown">
+    <a class="navbar-item" href="#">More</a>
+    <div class="navbar-dropdown-menu">
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-download icon"></i>Download</a>
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-phone icon"></i>Contact</a>
+      <a class="navbar-dropdown-item" href="#"><i class="fas fa-donate icon"></i>Donate</a>
+    </div>
+  </div>
+  <a class="navbar-item navbar-right" href="#">About</a>
+  <a class="navbar-item navbar-right" href="#">Signup</a>
+</nav>
+</div>
+  </div>
+  <div class="source"><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">id=</span><span class="s">"navbar-toggle-split"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">for=</span><span class="s">"navbar-toggle-split"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/sartorial/assets/img/word_logo.png"</span> <span class="na">class=</span><span class="s">"navbar-image"</span> <span class="na">alt=</span><span class="s">"Logo"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-home icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-book icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Docs<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>More<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-download icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Download<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-phone icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-donate icon"</span><span class="nt">&gt;&lt;/i&gt;</span>Donate<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item navbar-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Signup<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure></div>
+</div>
+
+</div>
+
+    <div class="section">
+  <h3>Modifiers</h3>
+  <hr />
+  <div class="section"><div class="callout callout-warning">The <code>.navbar</code> element does not need a surrounding container. It will respect the <code>$container-width</code> variable and center the nav. <br /> <br /> <code>.container</code> elements contain padding by default. If you had a <code>.container.no-pad</code> element around a nav, it would function the same way.
+</div></div>
+  <div class="structured-html">
+<ul>
+<li>
+<code class="scss-var">.navbar</code><ul>
+<li>
+<code class="scss-var">.full-width</code> - this will not limit the navbar to the <code class="scss-var">$container-size</code>
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.centered</code> - center all the navbar content
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-item</code><ul>
+<li>
+<code class="scss-var">.navbar-no-bg</code> - items will not have a transparent background and will not change background color on hover (for use with images/logos/etc.)
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-no-collapse</code> - this will remain in the navbar on mobile devices
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-desktop-only</code> - this will only appear on a desktop in the navbar, and will not be in the collapsed menu
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-mobile-only</code> - this will only appear on a mobile device in the navbar, and will not be in the collapsed menu
+</li>
+</ul>
+<ul>
+<li>
+<code class="scss-var">.navbar-collapse-only</code> - this will only appear in the collapsed menu, and not in the navbar
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+    <div class="section">
+  <h3>Customize</h3>
+  <hr />
+  <h4>Navbar variables</h4>
+  <p>
+    The type sizes are built off of a base font-size and a ratio. Additionally, there are separate
+    variables that can be used to build those up per media size. See the table below for what you
+    can set and the defaults.
+  </p>
+  <table class=docs-table><tr>
+<th>Variable</th>
+<th>Default Value</th>
+<th>Details</th>
+</tr>
+<tr>
+<td class="scss-var"><code>$navbar-height</code>
+</td>
+<td >3.25rem
+</td>
+<td >Default height of navbar
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$navbar-spacing</code>
+</td>
+<td >1.5rem
+</td>
+<td >Default spacing between navbar elements
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$navbar-vertical-padding</code>
+</td>
+<td >2/3 of <code class="scss-var">$navbar-spacing</code>
+</td>
+<td >Default padding above and below a navbar element
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$color-navbar-background</code>
+</td>
+<td ><code>#ffffff</code> (white)
+</td>
+<td >Background color of navbar
+</td>
+</tr>
+<tr>
+<td class="scss-var"><code>$color-navbar-background-hover</code>
+</td>
+<td ><code>#fafafa</code> (light gray)
+</td>
+<td >Background color of navbar element on hover
+</td>
+</tr>
+</table>
 
 </div>
 
