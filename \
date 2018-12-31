@@ -1,0 +1,12 @@
+<div class="section">
+  <h3>Customize</h3>
+  <hr />
+  <h4>Navbar variables</h4>
+  <p>
+    The type sizes are built off of a base font-size and a ratio. Additionally, there are separate
+    variables that can be used to build those up per media size. See the table below for what you
+    can set and the defaults.
+  </p>
+  {% styled_table vars_table %} {% include snippet.html
+  file="left_center_right.html" class="no-pad" %}
+</div>
