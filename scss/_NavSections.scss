@@ -1,0 +1,34 @@
+.navbar {
+  .navbar-section {
+    order: 3;
+    flex: 1 100%;
+    flex-wrap: wrap;
+    display: flex;
+    & + .section-left {
+      margin-right: auto;
+    }
+    & + .section-center {
+      justify-content: center;
+    }
+    & + .section-right {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  }
+
+  input.navbar-toggle {
+    &:checked {
+      ~ .navbar-section > .navbar-item {
+        @extend .navbar-item-collapsed;
+      }
+    }
+  }
+
+  @include desktop {
+    .navbar-section {
+      order: unset;
+      flex-wrap: nowrap;
+      flex: 1;
+    }
+  }
+}
