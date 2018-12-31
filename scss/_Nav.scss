@@ -1,3 +1,20 @@
+// Navbar
+// ------
+$navbar-height: 6rem !default;
+$navbar-spacing: 1.5rem !default;
+$navbar-horizontal-padding: $navbar-spacing / 2 !default;
+$navbar-vertical-padding: $navbar-spacing * (2 / 3) !default;
+
+// Dropdown
+// --------
+$navbar-dropdown-menu-radius: 5px !default;
+
+// Colors
+// ------
+$color-navbar-background: #ffffff !default;
+$color-navbar-background-hover: #fafafa !default;
+$color-navbar-dropdown-border: #9a9a9a !default;
+
 .navbar {
   position: relative;
   &:not(.full-width) {
@@ -186,16 +203,16 @@
       position: relative;
       display: flex;
       .navbar-dropdown-menu {
+        border-radius: $navbar-dropdown-menu-radius;
+        border: 1px solid $color-navbar-dropdown-border;
         background-color: $color-navbar-background;
         opacity: 0;
         display: flex;
         flex-wrap: wrap;
         width: 200px;
         position: absolute;
-        top: $navbar-height;
-        &:hover {
-          opacity: 1;
-        }
+        pointer-events: none;
+        top: ($navbar-height - 1rem);
 
         .navbar-dropdown-item {
           position: relative;
@@ -204,14 +221,27 @@
           flex: 1 100%;
           z-index: 100;
           padding: 2rem 1rem;
-          // width: 100%;
           background-color: $color-navbar-background;
           &:hover {
             background-color: $color-navbar-background-hover;
           }
+          &:first-child {
+            // TODO, make this configurable
+            border-top-right-radius: $navbar-dropdown-menu-radius;
+            border-top-left-radius: $navbar-dropdown-menu-radius;
+          }
+          &:last-child {
+            // TODO, make this configurable
+            border-bottom-right-radius: $navbar-dropdown-menu-radius;
+            border-bottom-left-radius: $navbar-dropdown-menu-radius;
+          }
+          &:not(:first-child) {
+            border-top: 1px solid $color-navbar-dropdown-border;
+          }
         }
       }
       &:hover > .navbar-dropdown-menu {
+        pointer-events: auto;
         opacity: 1;
       }
       .navbar-item:not(.navbar-collapse-only):not(.navbar-mobile-only) {
