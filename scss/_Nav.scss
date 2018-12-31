@@ -143,21 +143,21 @@ $color-navbar-dropdown-border: #9a9a9a !default;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      .navbar-dropdown-item {
+      .navbar-item {
         display: none;
       }
-    }
-    .navbar-dropdown-item {
-      padding-left: 40px;
-      position: relative;
-      align-items: center;
-      flex: 1 100%;
-      background-color: $color-navbar-background;
-      &:hover {
-        background-color: $color-navbar-background-hover;
+      .navbar-item {
+        padding-left: 40px;
+        position: relative;
+        align-items: center;
+        flex: 1 100%;
+        background-color: $color-navbar-background;
+        &:hover {
+          background-color: $color-navbar-background-hover;
+        }
       }
     }
-    .navbar-item:not(.navbar-collapse-only):not(.navbar-mobile-only) {
+    > .navbar-item:not(.navbar-collapse-only):not(.navbar-mobile-only) {
       position: relative;
       padding-right: $navbar-horizontal-padding * 4;
       &:after {
@@ -168,9 +168,8 @@ $color-navbar-dropdown-border: #9a9a9a !default;
         content: ' ';
         height: 1rem;
         width: 1rem;
-        border: 3px solid black;
-        border-top: none;
-        border-left: none;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
         transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
@@ -208,7 +207,7 @@ $color-navbar-dropdown-border: #9a9a9a !default;
         }
       }
 
-      ~ .navbar-dropdown > .navbar-dropdown-menu > .navbar-dropdown-item {
+      ~ .navbar-dropdown > .navbar-dropdown-menu > .navbar-item {
         padding: $navbar-vertical-padding ($navbar-horizontal-padding * 3);
         padding-left: $navbar-horizontal-padding * 5;
         display: flex;
@@ -269,9 +268,10 @@ $color-navbar-dropdown-border: #9a9a9a !default;
         pointer-events: none;
         top: ($navbar-height - 1rem);
 
-        .navbar-dropdown-item {
+        .navbar-item {
           display: flex;
           z-index: 100;
+          flex: 1 100%;
           padding: 2rem 1rem !important;
           &:first-child {
             border-top-right-radius: $navbar-dropdown-menu-radius;

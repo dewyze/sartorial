@@ -25,5 +25,5 @@ items:
           - tag: .navbar-dropdown-menu
             description: this is the wrapper for the items in the dropdown menu
             children:
-              - tag: .navbar-dropdown-item
+              - tag: .navbar-item
                 description: this is an item in the dropdown menu
