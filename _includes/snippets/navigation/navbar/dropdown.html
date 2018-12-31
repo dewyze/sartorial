@@ -1,11 +1,14 @@
 <nav class="navbar">
-  <input class="navbar-toggle" id="navbar-toggle" type="checkbox" />
-  <label class="navbar-toggle" for="navbar-toggle">
-    <!-- prettier-ignore -->
-    <span></span><span></span><span></span>
+  <input class="navbar-toggle" id="navbar-toggle-split" type="checkbox" />
+  <label class="navbar-toggle" for="navbar-toggle-split">
+    <span></span>
+    <span></span>
+    <span></span>
   </label>
   <div class="navbar-logo">
-    <a href="#">{% image word_logo.png, class: navbar-image, alt: Logo %}</a>
+    <a href="#">
+      {% image word_logo.png, class: navbar-image, alt: Logo %}
+    </a>
   </div>
   <a class="navbar-item" href="#"><i class="fas fa-home icon"></i>Home</a>
   <a class="navbar-item" href="#"><i class="fas fa-book icon"></i>Docs</a>
