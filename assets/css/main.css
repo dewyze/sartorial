@@ -228,6 +228,14 @@ hr {
       background-color: transparent; }
       .navbar .navbar-item:not(.navbar-no-bg):hover {
         background-color: #fafafa; }
+  .navbar .navbar-item-collapsed, .navbar input.navbar-toggle:checked ~ .navbar-item:not(.navbar-no-collapse):not(.navbar-mobile-only),
+  .navbar input.navbar-toggle:checked ~ .navbar-collapse-only, .navbar input.navbar-toggle:checked ~ .navbar-section > .navbar-item, .navbar input.navbar-toggle:checked ~ .navbar-dropdown,
+  .navbar input.navbar-toggle:checked ~ .navbar-dropdown > .navbar-item,
+  .navbar input.navbar-toggle:checked ~ .navbar-dropdown > .navbar-dropdown-menu {
+    display: flex;
+    order: 4;
+    flex: 1 100%;
+    margin-left: -20px; }
   .navbar .navbar-no-collapse {
     order: 2;
     display: flex;
@@ -277,14 +285,6 @@ hr {
         top: 50%; }
       .navbar input.navbar-toggle:checked + label.navbar-toggle span:nth-child(3) {
         display: none; }
-    .navbar input.navbar-toggle:checked .navbar-item-collapsed, .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-item:not(.navbar-no-collapse):not(.navbar-mobile-only),
-    .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-collapse-only, .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-section > .navbar-item, .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-dropdown,
-    .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-dropdown > .navbar-item,
-    .navbar input.navbar-toggle:checked input.navbar-toggle:checked ~ .navbar-dropdown > .navbar-dropdown-menu {
-      display: flex;
-      order: 4;
-      flex: 1 100%;
-      margin-left: -20px; }
   .navbar .navbar-desktop-only {
     display: none; }
   @media (min-width: 1140px) {
