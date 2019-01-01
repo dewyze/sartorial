@@ -73,6 +73,13 @@ $color-navbar-background-hover: #fafafa !default;
     }
   }
 
+  .navbar-item-collapsed {
+    display: flex;
+    order: 4;
+    flex: 1 100%;
+    margin-left: -20px; // TODO: Is this the best way to solve this?
+  }
+
   .navbar-no-collapse {
     order: 2;
     display: flex;
@@ -137,13 +144,6 @@ $color-navbar-background-hover: #fafafa !default;
             display: none;
           }
         }
-      }
-
-      .navbar-item-collapsed {
-        display: flex;
-        order: 4;
-        flex: 1 100%;
-        margin-left: -20px; // TODO: Is this the best way to solve this?
       }
 
       ~ .navbar-item:not(.navbar-no-collapse):not(.navbar-mobile-only),
