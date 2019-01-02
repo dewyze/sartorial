@@ -1,0 +1,63 @@
+@include phone {
+  .hide-phone {
+    display: none;
+  }
+}
+
+@include tablet {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+@include desktop {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@include widescreen {
+  .hide-widescreen {
+    display: none;
+  }
+}
+
+@include phone {
+  .show-phone {
+    display: block;
+  }
+
+  .show-phone-flex {
+    display: flex;
+  }
+}
+
+@include tablet {
+  .show-tablet {
+    display: block;
+  }
+
+  .show-tablet-flex {
+    display: flex;
+  }
+}
+
+@include desktop {
+  .show-desktop {
+    display: block;
+  }
+
+  .show-desktop-flex {
+    display: flex;
+  }
+}
+
+@include widescreen {
+  .show-widescreen {
+    display: block;
+  }
+
+  .show-widescreen-flex {
+    display: flex;
+  }
+}

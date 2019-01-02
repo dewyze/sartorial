@@ -2,7 +2,7 @@
 - [x] Move away from BEM to simpler words
 - [ ] Margin helpers
 - [ ] Padding helpers
-- [ ] Media breakpoints
+- [x] Media breakpoints
 - [ ] Responsiveness helpers/hiders
 - [ ] Navigation
   - [x] Left Logo
@@ -51,4 +51,4 @@
 - [ ] Copy Source
 - [ ] Hide/reveal source
 - [ ] Hide/reveal Customize/why
-- [ ] Table overflow
+- [x] Table overflow
