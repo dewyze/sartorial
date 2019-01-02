@@ -1,9 +1,9 @@
 - [ ] Copy code snippets
 - [x] Move away from BEM to simpler words
-- [ ] Margin helpers
-- [ ] Padding helpers
+- [x] Margin helpers
+- [x] Padding helpers
 - [x] Media breakpoints
-- [ ] Responsiveness helpers/hiders
+- [x] Responsiveness helpers/hiders
 - [ ] Navigation
   - [x] Left Logo
   - [x] Centered Logo
@@ -18,7 +18,7 @@
   - [x] `.keep` functionality for on mobile
   - [ ] Mega menu
 - [ ] Type
-  - [ ] Titles
+  - [x] Titles
   - [x] h1 - h6
   - [ ] Font families
 - [ ] Lists
