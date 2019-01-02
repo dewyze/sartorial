@@ -1,5 +1,5 @@
 style:
-  table:
+  wrapper:
     classes: "docs-table"
   columns:
     0:

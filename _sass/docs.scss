@@ -40,11 +40,13 @@ hr {
   display: block;
   width: 100%;
   overflow-x: auto;
-  @include phone {
-    font-size: 1.2rem;
-  }
-  @include tablet {
-    font-size: unset;
+  table {
+    @include phone {
+      font-size: 1.2rem;
+    }
+    @include tablet {
+      font-size: unset;
+    }
   }
 }
 

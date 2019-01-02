@@ -15,8 +15,11 @@ module Jekyll
       end
       @data = data["data"]
       @style = data["style"]
+      wrapper_style = @style.dig("wrapper","classes")
+      table_style = @style.dig("table","classes")
 
-      result = "<table class=#{@style["table"]["classes"]}>"
+      result = "<div class=#{wrapper_style}>\n"
+      result << "<table class=#{table_style}>\n"
       result << _headers(@data["headers"])
       result << _rows(@data["rows"])
       result << "</table>\n"
