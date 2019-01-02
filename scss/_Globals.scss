@@ -17,35 +17,3 @@ $screen-phone: 320px !default;
 $screen-tablet: 768px !default;
 $screen-desktop: 1140px !default;
 $screen-widescreen: 1690px !default;
-
-// Font Defaults
-// -------------
-$font-size: 1.6rem !default;
-$font-sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-$font-serif: Georgia, serif !default;
-
-$line-height: 1.5 !default;
-$line-height-phone: $line-height !default;
-$line-height-tablet: 1.4 !default;
-$line-height-desktop: 1.6 !default;
-$line-height-widescreen: 1.6 !default;
-
-// Ratios
-// ------
-$ratio-minor-second: '1.067';
-$ratio-major-second: '1.125';
-$ratio-minor-third: '1.200';
-$ratio-major-third: '1.250';
-$ratio-perfect-fourth: '1.333';
-$ratio-augmented-fourth: '1.414';
-$ratio-perfect-fifth: '1.500';
-$ratio-golden-ratio: '1.618';
-
-$ratio-phone: $ratio-major-second !default;
-$ratio-tablet: $ratio-minor-third !default;
-$ratio-desktop: $ratio-major-third !default;
-$ratio-widescreen: $ratio-desktop !default;
-
-// Type Characteristics
-// --------------------
-$type-header-font-weight: 700 !default;
