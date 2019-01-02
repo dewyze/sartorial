@@ -16,19 +16,19 @@ $type-header-font-weight: 700 !default;
 
 // Ratios
 // ------
-$type-ratio-minor-second: '1.067';
-$type-ratio-major-second: '1.125';
-$type-ratio-minor-third: '1.200';
-$type-ratio-major-third: '1.250';
-$type-ratio-perfect-fourth: '1.333';
-$type-ratio-augmented-fourth: '1.414';
-$type-ratio-perfect-fifth: '1.500';
-$type-ratio-golden-ratio: '1.618';
+$ratio-minor-second: '1.067';
+$ratio-major-second: '1.125';
+$ratio-minor-third: '1.200';
+$ratio-major-third: '1.250';
+$ratio-perfect-fourth: '1.333';
+$ratio-augmented-fourth: '1.414';
+$ratio-perfect-fifth: '1.500';
+$ratio-golden-ratio: '1.618';
 
-$type-ratio-phone: $type-ratio-major-second !default;
-$type-ratio-tablet: $type-ratio-minor-third !default;
-$type-ratio-desktop: $type-ratio-major-third !default;
-$type-ratio-widescreen: $type-ratio-desktop !default;
+$ratio-phone: $ratio-major-second !default;
+$ratio-tablet: $ratio-minor-third !default;
+$ratio-desktop: $ratio-major-third !default;
+$ratio-widescreen: $ratio-desktop !default;
 
 body {
   color: black;
@@ -75,25 +75,25 @@ h6 {
 }
 
 @if global-variable-exists(ratio-global) {
-  @include type-with-ratio(#{$type-ratio-global}, #{$type-font-size});
+  @include type-with-ratio(#{$ratio-global}, #{$type-font-size});
 } @else {
   @include phone {
-    @include type-with-ratio(#{$type-ratio-phone}, #{$type-font-size});
+    @include type-with-ratio(#{$ratio-phone}, #{$type-font-size});
   }
 
   @include tablet {
     line-height: #{$type-line-height-tablet};
-    @include type-with-ratio(#{$type-ratio-tablet}, #{$type-font-size});
+    @include type-with-ratio(#{$ratio-tablet}, #{$type-font-size});
   }
 
   @include desktop {
     line-height: #{$type-line-height-desktop};
-    @include type-with-ratio(#{$type-ratio-desktop}, #{$type-font-size});
+    @include type-with-ratio(#{$ratio-desktop}, #{$type-font-size});
   }
 
   @include widescreen {
     line-height: #{$type-line-height-desktop};
-    @include type-with-ratio(#{$type-ratio-widescreen}, #{$type-font-size});
+    @include type-with-ratio(#{$ratio-widescreen}, #{$type-font-size});
   }
 
   .subheader {
