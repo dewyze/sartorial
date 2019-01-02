@@ -1,3 +1,39 @@
+@media (min-width: 320px) {
+  .hide-phone {
+    display: none; } }
+@media (min-width: 768px) {
+  .hide-tablet {
+    display: none; } }
+@media (min-width: 1140px) {
+  .hide-desktop {
+    display: none; } }
+@media (min-width: 1690px) {
+  .hide-widescreen {
+    display: none; } }
+@media (min-width: 320px) {
+  .show-phone {
+    display: block; }
+
+  .show-phone-flex {
+    display: flex; } }
+@media (min-width: 768px) {
+  .show-tablet {
+    display: block; }
+
+  .show-tablet-flex {
+    display: flex; } }
+@media (min-width: 1140px) {
+  .show-desktop {
+    display: block; }
+
+  .show-desktop-flex {
+    display: flex; } }
+@media (min-width: 1690px) {
+  .show-widescreen {
+    display: block; }
+
+  .show-widescreen-flex {
+    display: flex; } }
 body {
   color: black;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -392,6 +428,9 @@ hr {
 
 .no-pad {
   padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
 
 .no-wrap, .scss-var, .variable-table tr td:nth-child(1) {
   white-space: nowrap; }
