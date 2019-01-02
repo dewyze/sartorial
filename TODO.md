@@ -9,16 +9,17 @@
   - [x] Centered Logo
   - [x] Right Logo
   - [x] Symmetrical
-  - [ ] Sectioned
+  - [x] Sectioned
   - [ ] Search Bar
   - [ ] Active Class Options
     - [ ] Underlines
     - [ ] Highlights
   - [x] Responsiveness
-  - [ ] `.keep` functionality for on mobile
+  - [x] `.keep` functionality for on mobile
+  - [ ] Mega menu
 - [ ] Type
   - [ ] Titles
-  - [ ] h1 - h6
+  - [x] h1 - h6
   - [ ] Font families
 - [ ] Lists
 - [ ] Form additions

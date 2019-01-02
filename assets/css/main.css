@@ -734,10 +734,10 @@ hr {
   width: 100%;
   overflow-x: auto; }
   @media (min-width: 320px) {
-    .docs-table {
+    .docs-table table {
       font-size: 1.2rem; } }
   @media (min-width: 768px) {
-    .docs-table {
+    .docs-table table {
       font-size: unset; } }
 
 .callout {
