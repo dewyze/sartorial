@@ -4,7 +4,7 @@ gem "bourbon"
 
 gem "rake"
 
-gem "jekyll", "~> 3.7.4"
+gem "jekyll", "~> 3.8.5"
 gem "rouge"
 
 gem "travis"
