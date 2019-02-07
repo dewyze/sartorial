@@ -53,37 +53,46 @@ $color-navbar-background-hover: #fafafa !default;
   i {
     margin-right: 0.75rem;
   }
+}
 
-  .navbar-logo {
-    display: flex;
-    flex: 0 1 auto;
-    align-items: center;
-    padding: $navbar-vertical-padding $navbar-horizontal-padding;
-  }
+.navbar-logo {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  padding: $navbar-vertical-padding $navbar-horizontal-padding;
+}
 
-  .navbar-item {
-    align-items: center;
-    display: none;
-    padding: $navbar-vertical-padding ($navbar-horizontal-padding * 3);
-    &:not(.navbar-no-bg) {
-      background-color: transparent;
-      &:hover {
-        background-color: $color-navbar-background-hover;
-      }
+.navbar-item {
+  align-items: center;
+  display: none;
+  padding: $navbar-vertical-padding ($navbar-horizontal-padding * 3);
+  &:not(.navbar-no-bg) {
+    background-color: transparent;
+    &:hover {
+      background-color: $color-navbar-background-hover;
     }
   }
+}
 
-  .navbar-item-collapsed {
-    display: flex;
-    order: 4;
-    flex: 1 100%;
-    margin-left: -20px; // TODO: Is this the best way to solve this?
-  }
+@mixin navbar-item-collapsed {
+  display: flex;
+  order: 4;
+  flex: 1 100%;
+  margin-left: -20px; // TODO: Is this the best way to solve this?
+}
 
+.navbar-no-collapse {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+@include mobile {
   .navbar-no-collapse {
     order: 2;
-    display: flex;
-    flex: 0 1 auto;
+  }
+
+  .navbar-desktop-only {
+    display: none;
   }
 
   .navbar-mobile-only {
@@ -148,30 +157,28 @@ $color-navbar-background-hover: #fafafa !default;
 
       ~ .navbar-item:not(.navbar-no-collapse):not(.navbar-mobile-only),
       ~ .navbar-collapse-only {
-        @extend .navbar-item-collapsed;
+        @include navbar-item-collapsed;
       }
     }
   }
+}
 
-  .navbar-desktop-only {
-    display: none;
+@include desktop {
+  .navbar-no-collapse {
+    order: unset;
   }
 
-  @include desktop {
-    .navbar-toggle,
-    .navbar-mobile-only {
-      display: none !important;
-    }
+  .navbar-item,
+  .navbar-desktop-only {
+    display: flex;
+    flex: 0 1 auto;
+    padding: $navbar-vertical-padding $navbar-horizontal-padding;
+  }
 
-    .navbar-no-collapse {
-      order: unset;
-    }
-
-    .navbar-item:not(.navbar-collapse-only):not(.navbar-mobile-only),
-    .navbar-desktop-only {
-      display: flex !important;
-      flex: 0 1 auto;
-      padding: $navbar-vertical-padding $navbar-horizontal-padding;
-    }
+  .navbar-toggle,
+  .navbar-mobile-only,
+  .navbar-collapse-only,
+  .navbar-mobile-only {
+    display: none;
   }
 }

@@ -62,7 +62,7 @@ $color-navbar-dropdown-border: #9a9a9a !default;
       ~ .navbar-dropdown,
       ~ .navbar-dropdown > .navbar-item,
       ~ .navbar-dropdown > .navbar-dropdown-menu {
-        @extend .navbar-item-collapsed;
+        @include navbar-item-collapsed;
       }
     }
   }

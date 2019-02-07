@@ -19,7 +19,7 @@
   input.navbar-toggle {
     &:checked {
       ~ .navbar-section > .navbar-item {
-        @extend .navbar-item-collapsed;
+        @include navbar-item-collapsed;
       }
     }
   }
