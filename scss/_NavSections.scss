@@ -1,19 +1,22 @@
-.navbar {
+.navbar-section {
+  display: flex;
+  & + .section-left {
+    margin-right: auto;
+  }
+  & + .section-center {
+    justify-content: center;
+  }
+  & + .section-right {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+@include mobile {
   .navbar-section {
     order: 3;
     flex: 1 100%;
     flex-wrap: wrap;
-    display: flex;
-    & + .section-left {
-      margin-right: auto;
-    }
-    & + .section-center {
-      justify-content: center;
-    }
-    & + .section-right {
-      margin-left: auto;
-      justify-content: flex-end;
-    }
   }
 
   input.navbar-toggle {
@@ -23,12 +26,11 @@
       }
     }
   }
+}
 
-  @include desktop {
-    .navbar-section {
-      order: unset;
-      flex-wrap: nowrap;
-      flex: 1;
-    }
+@include desktop {
+  .navbar-section {
+    flex-wrap: nowrap;
+    flex: 1;
   }
 }

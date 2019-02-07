@@ -64,7 +64,6 @@ $color-navbar-background-hover: #fafafa !default;
 
 .navbar-item {
   align-items: center;
-  display: none;
   padding: $navbar-vertical-padding ($navbar-horizontal-padding * 3);
   &:not(.navbar-no-bg) {
     background-color: transparent;
@@ -87,16 +86,12 @@ $color-navbar-background-hover: #fafafa !default;
 }
 
 @include mobile {
-  .navbar-no-collapse {
-    order: 2;
-  }
-
   .navbar-desktop-only {
     display: none;
   }
 
-  .navbar-mobile-only {
-    order: 2;
+  .navbar-item {
+    display: none;
   }
 
   label.navbar-toggle {
@@ -161,13 +156,15 @@ $color-navbar-background-hover: #fafafa !default;
       }
     }
   }
+
+  .navbar-no-collapse,
+  .navbar-mobile-only {
+    display: flex;
+    order: 2;
+  }
 }
 
 @include desktop {
-  .navbar-no-collapse {
-    order: unset;
-  }
-
   .navbar-item,
   .navbar-desktop-only {
     display: flex;
