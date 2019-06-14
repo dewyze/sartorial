@@ -23,6 +23,7 @@ module Jekyll
       result << _headers(@data["headers"])
       result << _rows(@data["rows"])
       result << "</table>\n"
+      result << "</div>\n"
     end
 
     private

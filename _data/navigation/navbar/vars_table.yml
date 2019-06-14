@@ -25,4 +25,7 @@ data:
       - Background color of navbar
     - - $color-navbar-background-hover
       - <code>#fafafa</code> (light gray)
-      - Background color of navbar element on hover 
+      - Background color of navbar element on hover
+    - - $navbar-dropdown-menu-radius
+      - <code>5px</code>
+      - Radius of navbar dropdown box
