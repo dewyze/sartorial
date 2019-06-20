@@ -74,12 +74,6 @@ h3 {
 h4 {
   line-height: 1.4; }
 
-h5 {
-  line-height: 1.5; }
-
-h6 {
-  line-height: 1.5; }
-
 @media (min-width: 0px) {
   body {
     font-size: 1.6rem; }
@@ -100,12 +94,13 @@ h6 {
     font-size: calc(1.6rem * calc(calc(1 * 1.125) * 1.125)); }
 
   h5 {
+    line-height: 1.5;
     font-size: calc(1.6rem * calc(1 * 1.125)); }
 
   h6 {
+    line-height: 1.5;
     font-size: calc(1.6rem * 1); } }
 @media (min-width: 768px) {
-  line-height: 1.4;
   body {
     font-size: 1.6rem; }
 
@@ -125,12 +120,13 @@ h6 {
     font-size: calc(1.6rem * calc(calc(1 * 1.200) * 1.200)); }
 
   h5 {
+    line-height: 1.4;
     font-size: calc(1.6rem * calc(1 * 1.200)); }
 
   h6 {
+    line-height: 1.4;
     font-size: calc(1.6rem * 1); } }
 @media (min-width: 1140px) {
-  line-height: 1.6;
   body {
     font-size: 1.6rem; }
 
@@ -150,12 +146,13 @@ h6 {
     font-size: calc(1.6rem * calc(calc(1 * 1.250) * 1.250)); }
 
   h5 {
+    line-height: 1.6;
     font-size: calc(1.6rem * calc(1 * 1.250)); }
 
   h6 {
+    line-height: 1.6;
     font-size: calc(1.6rem * 1); } }
 @media (min-width: 1690px) {
-  line-height: 1.6;
   body {
     font-size: 1.6rem; }
 
@@ -175,9 +172,11 @@ h6 {
     font-size: calc(1.6rem * calc(calc(1 * 1.250) * 1.250)); }
 
   h5 {
+    line-height: 1.6;
     font-size: calc(1.6rem * calc(1 * 1.250)); }
 
   h6 {
+    line-height: 1.6;
     font-size: calc(1.6rem * 1); } }
 .subheader {
   font-weight: 300;
@@ -402,7 +401,7 @@ h6 {
     position: absolute;
     top: calc(50% - 0.7rem);
     right: 1rem;
-    content: ' ';
+    content: " ";
     height: 1rem;
     width: 1rem;
     border-right: 3px solid black;
