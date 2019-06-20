@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Navigation
+subheader: Sartorial provides classes for common navbar styles
+description: |
+  There are two types of navbars available in Sartorial: Split, and Centered. Both styles of navbar will collapse on mobile devices.
 snippets: snippets/navigation/navbar/
 data: ['site', 'data', 'navigation', 'navbar']
 ---
 
 <div class="container">
   <div class="main">
-    {% include navigation/navbar/title.html %}
+    {% include title.html %}
     {% include navigation/navbar/split_navbar.html %}
     {% include navigation/navbar/collapse_options.html %}
     {% include navigation/navbar/centered_navbar.html %}
