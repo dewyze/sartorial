@@ -27,7 +27,7 @@
   }
 }
 
-@mixin type-with-ratio($ratio, $font-size) {
+@mixin type-with-ratio($ratio, $font-size, $line-height) {
   $scale-0: 1;
   $scale--1: calc(#{$scale-0} / #{$ratio});
   $scale-1: calc(#{$scale-0} * #{$ratio});
@@ -56,9 +56,11 @@
     font-size: calc(#{$font-size} * #{$scale-2});
   }
   h5 {
+    line-height: #{$line-height};
     font-size: calc(#{$font-size} * #{$scale-1});
   }
   h6 {
+    line-height: #{$line-height};
     font-size: calc(#{$font-size} * #{$scale-0});
   }
 }

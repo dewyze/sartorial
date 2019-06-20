@@ -1,6 +1,7 @@
 // Dropdown
 // --------
 $navbar-dropdown-menu-radius: 5px !default;
+$navbar-dropdown-menu-offset: $navbar-height + -1rem !default;
 $color-navbar-dropdown-border: #9a9a9a !default;
 
 .navbar-dropdown {
@@ -46,7 +47,7 @@ $color-navbar-dropdown-border: #9a9a9a !default;
       position: absolute;
       top: calc(50% - 0.7rem);
       right: 1rem;
-      content: ' ';
+      content: " ";
       height: 1rem;
       width: 1rem;
       border-right: 3px solid black;
@@ -95,7 +96,7 @@ input.navbar-toggle {
     width: 200px;
     position: absolute;
     pointer-events: none;
-    top: ($navbar-height - 1rem);
+    top: $navbar-dropdown-menu-offset;
 
     .navbar-item {
       z-index: 100;
